@@ -4,9 +4,9 @@ from .widgets import SafeVizWidget, data_choropleth, data_gdp, data_bar, data_pi
 from visualizations.viz1 import get_sunburst_viz
 from visualizations.viz2 import get_sankey_viz
 from visualizations.viz3 import get_bar_viz
-from visualizations.viz4 import get_treemap_viz
+from visualizations.tab1_treemap import get_treemap_viz
 from visualizations.viz6 import get_pie_viz
-from visualizations.viz7 import get_choropleth_viz
+from visualizations.tab1_chloropleth import get_choropleth_viz
 
 # Topbar
 Topbar = html.Div(className="topbar", children=[
