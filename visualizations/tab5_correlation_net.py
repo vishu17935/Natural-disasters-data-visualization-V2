@@ -17,13 +17,13 @@ def get_disaster_network_viz(
     Parameters:
     - data (pd.DataFrame): DataFrame containing disaster data.
     - country (str): Country to filter.
-    - metric (str): Metric to analyze correlations on (e.g., 'Deaths').
-    - year_start (int): Start year for filtering.
-    - year_end (int): End year for filtering.
-    - corr_threshold (float): Minimum absolute correlation value to draw an edge.
+    - metric (str): Metric to analyze correlations on.
+    - year_start (int): Start year.
+    - year_end (int): End year.
+    - corr_threshold (float): Minimum absolute correlation value to draw edge.
 
     Returns:
-    - go.Figure: Plotly interactive network graph figure.
+    - go.Figure: Plotly network graph figure.
     """
 
     # Filter data
@@ -35,23 +35,33 @@ def get_disaster_network_viz(
     if df_filtered.empty:
         raise ValueError("No data available for given filters.")
 
-    # Pivot: aggregate by year and disaster type
+    # Pivot: group by year and disaster type
     pivot_df = df_filtered.groupby(['Year', 'Disaster Type'])[metric].sum().reset_index()
 
-    # Create wide-form table: years as rows, disaster types as columns
+    # Create wide format
     pivot_wide = pivot_df.pivot(index='Year', columns='Disaster Type', values=metric).fillna(0)
 
-    # Compute correlation matrix across years
+    # Remove columns with zero variance (constant columns)
+    pivot_wide = pivot_wide.loc[:, pivot_wide.std() > 0]
+
+    # Check again
+    if pivot_wide.shape[1] < 2:
+        raise ValueError("Not enough non-constant disaster types to compute correlations.")
+
+    # Compute correlation matrix
     corr = pivot_wide.corr()
 
-    # Build graph
+    # Debug: print correlation matrix
+    #print("Correlation matrix:\n", corr)
+
+    # Create graph
     G = nx.Graph()
 
     # Add nodes
     for disaster in corr.columns:
         G.add_node(disaster)
 
-    # Add edges based on threshold
+    # Add edges
     for i in corr.columns:
         for j in corr.columns:
             if i != j:
@@ -62,7 +72,7 @@ def get_disaster_network_viz(
     # Layout
     pos = nx.spring_layout(G, seed=42)
 
-    # Nodes
+    # Node positions
     node_x, node_y, node_text = [], [], []
     for node in G.nodes():
         x, y = pos[node]
@@ -84,7 +94,7 @@ def get_disaster_network_viz(
         )
     )
 
-    # Edges
+    # Edge traces
     edge_traces = []
     for edge in G.edges(data=True):
         x0, y0 = pos[edge[0]]
@@ -92,17 +102,18 @@ def get_disaster_network_viz(
         weight = edge[2]['weight']
         color = '#FF0000' if weight > 0 else '#0000FF'
         width = max(1, abs(weight) * 10)
-
+    
         edge_traces.append(go.Scatter(
             x=[x0, x1, None],
             y=[y0, y1, None],
-            line=dict(width=width, color=color, opacity=0.7),
+            line=dict(width=width, color=color),  # only color and width inside line
+            opacity=0.7,                          # move opacity here
             hoverinfo='text',
             mode='lines',
             text=[f"{edge[0]} ↔ {edge[1]}<br>Correlation: {weight:.2f}"]
         ))
 
-    # Assemble figure
+    # Compose figure
     fig = go.Figure()
 
     for et in edge_traces:

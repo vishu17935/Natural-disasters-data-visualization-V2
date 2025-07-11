@@ -4,11 +4,11 @@ from dash import html, dcc
 
 # Import all visualization functions
 from visualizations.viz1 import get_sunburst_viz
-from visualizations.viz2 import get_sankey_viz
-from visualizations.viz3 import get_bar_viz
+from visualizations.tab2_sankey import get_sankey_viz
+from visualizations.tab2_bar_chart import get_bar_viz
 from visualizations.tab1_treemap import get_treemap_viz
-from visualizations.viz5 import get_stacked_area_viz
-from visualizations.viz6 import get_pie_viz
+from visualizations.tab2_stacked_area import get_stacked_area_viz
+from visualizations.tab2_pie_chart import get_pie_viz
 from visualizations.tab1_chloropleth import get_choropleth_viz
 
 # Load datasets (example: you may need to adjust filenames as needed)

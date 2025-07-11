@@ -2,10 +2,10 @@
 from dash import html
 from .widgets import SafeVizWidget, data_choropleth, data_gdp, data_bar, data_pie, data_treemap, data_sankey
 from visualizations.viz1 import get_sunburst_viz
-from visualizations.viz2 import get_sankey_viz
-from visualizations.viz3 import get_bar_viz
+from visualizations.tab2_sankey import get_sankey_viz
+from visualizations.tab2_bar_chart import get_bar_viz
 from visualizations.tab1_treemap import get_treemap_viz
-from visualizations.viz6 import get_pie_viz
+from visualizations.tab2_pie_chart import get_pie_viz
 from visualizations.tab1_chloropleth import get_choropleth_viz
 
 # Topbar
