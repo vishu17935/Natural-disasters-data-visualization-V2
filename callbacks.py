@@ -117,13 +117,66 @@ def set_default_country(country_options):
 # Metrics card callback
 @callback(
     Output("metrics-card", "children"),
+    Input("region-hotspot-map", "clickData"),
     Input("country-selector", "value"),
-    Input("year-selector", "value")
+    Input("year-selector", "value"),
 )
-def update_metrics_card(selected_country, selected_year):
-    """Update the metrics card with key statistics and rankings for selected country and year, and add a bar graph."""
-    if not selected_country or not selected_year or risk_data is None:
+def update_metrics_card(clickData, selected_country, selected_year):
+    if risk_data is None:
         return []
+    # If a map point is clicked, show disaster info
+    if clickData and clickData.get("points"):
+        point = clickData["points"][0]
+        disaster_id = None
+        if "customdata" in point and point["customdata"]:
+            disaster_id = point["customdata"][0]
+        elif "text" in point and point["text"]:
+            lat = point.get("lat")
+            lon = point.get("lon")
+            filtered = risk_data[(risk_data["Country_x"] == selected_country) & (risk_data["Start Year"] == selected_year)]
+            if lat is not None and lon is not None and isinstance(filtered, pd.DataFrame) and not filtered.empty:
+                match = filtered[(filtered["Latitude"] == lat) & (filtered["Longitude"] == lon)]
+                if isinstance(match, pd.DataFrame) and not match.empty:
+                    disaster_id = match.iloc[0]["DisNo."]
+        if disaster_id is not None:
+            row = risk_data[risk_data["DisNo."] == disaster_id]
+            if isinstance(row, pd.DataFrame) and not row.empty:
+                row = row.iloc[0]
+                summary = [
+                    html.Div(
+                        className="metrics-card-header",
+                        style={"borderBottom": "1px solid rgba(255,255,255,0.1)", "paddingBottom": "8px", "marginBottom": "12px"},
+                        children=[
+                            html.H3(f"{row['Disaster Type']} in {row['Country_x']} ({row['Start Year']})", style={"color": "white", "margin": "0", "fontSize": "14px", "fontWeight": "600"}),
+                            html.P(row['Location'] if pd.notna(row['Location']) else "", style={"color": "#ccc", "margin": "2px 0 0 0", "fontSize": "10px"})
+                        ]
+                    ),
+                    html.Div([
+                        html.Div(["🆔", html.Span(f" {row['DisNo.']}" if 'DisNo.' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Type: ", html.B(row['Disaster Type'] if 'Disaster Type' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Deaths: ", html.B(f"{int(row['Total Deaths']):,}" if 'Total Deaths' in row and pd.notna(row['Total Deaths']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Damage: ", html.B(f"${int(row['Total Damage (\'000 US$)']):,}" if 'Total Damage (\'000 US$)' in row and pd.notna(row['Total Damage (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Affected: ", html.B(f"{int(row['Total Affected']):,}" if 'Total Affected' in row and pd.notna(row['Total Affected']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Event: ", html.B(row['Event Name'] if 'Event Name' in row and pd.notna(row['Event Name']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Subgroup: ", html.B(row['Disaster Subgroup'] if 'Disaster Subgroup' in row and pd.notna(row['Disaster Subgroup']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Subtype: ", html.B(row['Disaster Subtype'] if 'Disaster Subtype' in row and pd.notna(row['Disaster Subtype']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Origin: ", html.B(row['Origin'] if 'Origin' in row and pd.notna(row['Origin']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        html.Div(["Magnitude: ", html.B(f"{row['Magnitude']} {row['Magnitude Scale']}" if 'Magnitude' in row and pd.notna(row['Magnitude']) and 'Magnitude Scale' in row and pd.notna(row['Magnitude Scale']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                    ], style={"marginTop": "8px"})
+                ]
+                return summary
+    # Otherwise, show default metrics
+    if not selected_country or not selected_year or risk_data is None:
+        return [
+            html.Div(
+                className="metrics-card-empty",
+                children=[
+                    html.H3("No Data Available", style={"color": "#ff6b6b", "margin": "0"}),
+                    html.P(f"No data found for {selected_country} in {selected_year}", 
+                           style={"color": "#ccc", "margin": "5px 0 0 0"})
+                ]
+            )
+        ]
     
     try:
         # Filter data for selected country and year
@@ -534,59 +587,6 @@ def update_region_hotspot_map(selected_country, selected_year, map_style):
     except Exception as e:
         print(f"Error updating region hotspot map: {e}")
         return {} 
-
-@callback(
-    Output("metrics-card", "children", allow_duplicate=True),
-    Input("region-hotspot-map", "clickData"),
-    Input("country-selector", "value"),
-    Input("year-selector", "value"),
-    prevent_initial_call=True
-)
-def update_metrics_card_on_map_click(clickData, selected_country, selected_year):
-    """Show disaster summary in metrics card when a map point is clicked, otherwise show default metrics."""
-    if risk_data is None:
-        return []
-    if clickData and clickData.get("points"):
-        point = clickData["points"][0]
-        disaster_id = None
-        if "customdata" in point and point["customdata"]:
-            disaster_id = point["customdata"][0]
-        elif "text" in point and point["text"]:
-            lat = point.get("lat")
-            lon = point.get("lon")
-            filtered = risk_data[(risk_data["Country_x"] == selected_country) & (risk_data["Start Year"] == selected_year)]
-            if lat is not None and lon is not None and isinstance(filtered, pd.DataFrame) and not filtered.empty:
-                match = filtered[(filtered["Latitude"] == lat) & (filtered["Longitude"] == lon)]
-                if isinstance(match, pd.DataFrame) and not match.empty:
-                    disaster_id = match.iloc[0]["DisNo."]
-        if disaster_id is not None:
-            row = risk_data[risk_data["DisNo."] == disaster_id]
-            if isinstance(row, pd.DataFrame) and not row.empty:
-                row = row.iloc[0]
-                summary = [
-                    html.Div(
-                        className="metrics-card-header",
-                        style={"borderBottom": "1px solid rgba(255,255,255,0.1)", "paddingBottom": "8px", "marginBottom": "12px"},
-                        children=[
-                            html.H3(f"{row['Disaster Type']} in {row['Country_x']} ({row['Start Year']})", style={"color": "white", "margin": "0", "fontSize": "14px", "fontWeight": "600"}),
-                            html.P(row['Location'] if pd.notna(row['Location']) else "", style={"color": "#ccc", "margin": "2px 0 0 0", "fontSize": "10px"})
-                        ]
-                    ),
-                    html.Div([
-                        html.Div(["🆔", html.Span(f" {row['DisNo.']}" if 'DisNo.' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Type: ", html.B(row['Disaster Type'] if 'Disaster Type' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Deaths: ", html.B(f"{int(row['Total Deaths']):,}" if 'Total Deaths' in row and pd.notna(row['Total Deaths']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Damage: ", html.B(f"${int(row['Total Damage (\'000 US$)']):,}" if 'Total Damage (\'000 US$)' in row and pd.notna(row['Total Damage (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Affected: ", html.B(f"{int(row['Total Affected']):,}" if 'Total Affected' in row and pd.notna(row['Total Affected']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Event: ", html.B(row['Event Name'] if 'Event Name' in row and pd.notna(row['Event Name']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Subgroup: ", html.B(row['Disaster Subgroup'] if 'Disaster Subgroup' in row and pd.notna(row['Disaster Subgroup']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Subtype: ", html.B(row['Disaster Subtype'] if 'Disaster Subtype' in row and pd.notna(row['Disaster Subtype']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Origin: ", html.B(row['Origin'] if 'Origin' in row and pd.notna(row['Origin']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Magnitude: ", html.B(f"{row['Magnitude']} {row['Magnitude Scale']}" if 'Magnitude' in row and pd.notna(row['Magnitude']) and 'Magnitude Scale' in row and pd.notna(row['Magnitude Scale']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                    ], style={"marginTop": "8px"})
-                ]
-                return summary
-    return update_metrics_card(selected_country, selected_year) 
 
 @callback(
     Output("tab4-parallel-plot", "figure"),

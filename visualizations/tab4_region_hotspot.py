@@ -59,11 +59,14 @@ def plot_disasters_on_map(disasters_df, cities_df, country_name, year, min_death
     if country_disasters.empty:
         print(f"No disasters found for {country_name} in {year} with at least {min_deaths} deaths")
         return None
-    
+   
     # Filter cities for the specified country
+    # country_cities = cities_df[
+    #     cities_df['country_code'].str.contains(iso_code, case=False, na=False)
+    # ].copy()
     country_cities = cities_df[
-        cities_df['country_name'].str.contains(country_name, case=False, na=False)
-    ].copy()
+    cities_df['country_name'].apply(lambda code: code in country_name)
+].copy()
     
     if country_cities.empty:
         print(f"No cities found for {country_name}")
@@ -246,7 +249,7 @@ def plot_disasters_on_map(disasters_df, cities_df, country_name, year, min_death
             mode='markers',
             marker=dict(
                 size=type_data['marker_size'],
-                color=color_discrete_map[disaster_type],
+                color=color_discrete_map.get(disaster_type, '#636EFA'),  # fallback color,
                 sizemode='area',
                 opacity=0.8
             ),
