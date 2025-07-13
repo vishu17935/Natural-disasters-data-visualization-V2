@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
 
 body, #app-container {
-  font-family: 'Tektur', 'Segoe UI', sans-serif;
+  font-family: Tektur, 'Segoe UI', sans-serif;
   font-size: 15px;
   line-height: 1.5;
   color: var(--text-color, #111);
 }
+
 #app-container.light {
   background-image: url('https://img.freepik.com/free-vector/gradient-template-background-new-minimalist_483537-4985.jpg?semt=ais_hybrid&w=740');
   background-size: cover;
@@ -15,6 +16,7 @@ body, #app-container {
   color: var(--text-color, #111);
   
 }
+
 #app-container.dark {
   background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148879890.jpg?semt=ais_hybrid&w=740');
   background-size: cover;
@@ -41,7 +43,7 @@ body, #app-container {
   left: 0;
   width: 200px;                     /* Thinner expanded width */
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.4); /* white, high transparency */
+  background-color: rgb(255 255 255 / 40%); /* white, high transparency */
   overflow-y: auto;                 /* scroll if content grows */
   transition: width 0.3s ease, background-color 0.3s ease;      /* smooth collapse/expand */
   display: flex;
@@ -60,12 +62,13 @@ body, #app-container {
 }
 
 /* Responsive adjustment: full-screen toggled off on small viewports */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .sidebar {
     width: 100%;                    /* full width on mobile */
     position: relative;
     height: auto;
   }
+
   .sidebar--collapsed {
     width: 100%;
   }
@@ -89,7 +92,7 @@ body, #app-container {
 /* Hover effect: slight scale/translate */
 .sidebar-tab:hover {
   transform: scale(1.05) translateX(3px);
-  background-color: rgba(236, 240, 241, 0.1);
+  background-color: rgb(236 240 241 / 10%);
 }
 
 /* Active tab indicator */
@@ -107,6 +110,7 @@ body, #app-container {
   opacity: 0;
   width: 0;
   margin: 0;
+
   /* still takes up space for transition if needed */
   transition: opacity 0.2s ease, width 0.2s ease;
 }
@@ -118,7 +122,7 @@ body, #app-container {
   cursor: pointer;
   position: absolute;
   top: 12px;
-  right: 0px;
+  right: 0;
   width: 36px;
   height: 36px;
   z-index: 10;
@@ -167,32 +171,36 @@ body, #app-container {
 .sidebar--collapsed ~ .main-content {
   margin-left: 60px;
 }
+
 .layout--sidebar-collapsed .main-content {
   margin-left: 60px;
 }
+
 .layout:not(.layout--sidebar-collapsed) .main-content {
   margin-left: 200px;
 }
+
 /* --------------------------------------------------------------------------
    3a. Grid layout variant
    -------------------------------------------------------------------------- */
 .content-section {
   display: none;
 }
+
 .content-section.active {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Always 3 columns, fixed min width */
   gap: 24px;
-  justify-items: stretch;
-  align-items: stretch;
+  place-items: stretch stretch;
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .content-section.active {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 }
-@media (max-width: 800px) {
+
+@media (width <= 800px) {
   .content-section.active {
     grid-template-columns: 1fr;
   }
@@ -203,18 +211,20 @@ body, #app-container {
    —————————————————————— */
 .widget {
   min-width: 0; /* Prevents overflow in grid layouts */
-  min-height: 200px; /* Ensures consistent height for all widgets */
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  min-height: 200px;
+
+ /* Ensures consistent height for all widgets */
+  background-color: rgb(0 0 0 / 50%); /* semi-transparent black */
   border-radius: 12px;
   padding: 3px;
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .widget:hover {
-  box-shadow: 0 0 16px 4px rgba(52, 152, 219, 0.6), 0 4px 12px rgba(0,0,0,0.1);
-  border: 1.5px solid rgba(52, 152, 219, 0.7);
+  box-shadow: 0 0 16px 4px rgb(52 152 219 / 60%), 0 4px 12px rgb(0 0 0 / 10%);
+  border: 1.5px solid rgb(52 152 219 / 70%);
 }
 
 /* ——————————————————————
@@ -223,7 +233,7 @@ body, #app-container {
 .widget--loading {
   position: relative;
   pointer-events: none; /* prevent interactions while loading */
-  background-color: rgba(240, 240, 240, 0.4); /* semi-transparent */
+  background-color: rgb(240 240 240 / 40%); /* semi-transparent */
   min-height: 200px; /* prevent layout collapse */
   overflow: hidden;
 }
@@ -254,7 +264,7 @@ body, #app-container {
    Error State
    —————————————————————— */
 .widget--error {
-  background-color: rgba(255, 0, 0, 0.05);
+  background-color: rgb(255 0 0 / 5%);
   border: 1px dashed #ff4d4d;
   color: #d8000c;
   font-size: 14px;
@@ -269,9 +279,9 @@ body, #app-container {
 
 /* Dark mode override */
 .theme-dark .widget--error {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: #ffaaaa;
-  border-color: #ff9999;
+  background-color: rgb(255 0 0 / 10%);
+  color: #faa;
+  border-color: #f99;
 }
 
 /* ==========================================================================
@@ -311,6 +321,7 @@ body, #app-container {
 /* ——————————————————————
    Fixed vs. Static
    —————————————————————— */
+
 /* Updated fixed topbar */
 .topbar {
   position: fixed;
@@ -339,17 +350,18 @@ body, #app-container {
    Shadow on Scroll
    —————————————————————— */
 .topbar--shadow {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
 }
 
 /* ——————————————————————
    Responsive Collapse Padding
    —————————————————————— */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .topbar--fixed {
     left: 60px; /* match collapsed sidebar width */
   }
 }
+
 /* ——————————————————————
    Base Pill + Thumb
    —————————————————————— */
@@ -391,6 +403,7 @@ body, #app-container {
   --toggle-bg: #ccc;
   --thumb-bg: #fff;
 }
+
 .theme-toggle--dark {
   --toggle-bg: #444;
   --thumb-bg: #eee;
@@ -405,19 +418,19 @@ body, #app-container {
 }
 
 #app-container.light {
-  --widget-bg: rgba(0, 0, 0, 0.05); /* light mode: light translucent */
+  --widget-bg: rgb(0 0 0 / 5%); /* light mode: light translucent */
   --widget-text: #111;
   --bg-color: #f5f5f5;
   --text-color: #111;
-  --sidebar-bg: rgba(46, 58, 89, 0.85);
-  --topbar-bg: rgba(255, 255, 255, 0.9);
+  --sidebar-bg: rgb(46 58 89 / 85%);
+  --topbar-bg: rgb(255 255 255 / 90%);
 
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
 #app-container.light .sidebar {
-  background: rgba(255, 255, 255, 0.4); /* white, high transparency */
+  background: rgb(255 255 255 / 40%); /* white, high transparency */
 }
 
 #app-container.light .topbar {
@@ -432,10 +445,10 @@ body, #app-container {
 #app-container.dark {
   /* Theme-scoped variables */
   --bg-color: #121212;
-  --text-color: #eeeeee;
-  --sidebar-bg: rgba(25, 25, 35, 0.9);
-  --topbar-bg: rgba(30, 30, 30, 0.9);
-  --widget-bg: rgba(255, 255, 255, 0.05); /* dark mode: soft white translucent */
+  --text-color: #eee;
+  --sidebar-bg: rgb(25 25 35 / 90%);
+  --topbar-bg: rgb(30 30 30 / 90%);
+  --widget-bg: rgb(255 255 255 / 5%); /* dark mode: soft white translucent */
   --widget-text: #eee;
 
   /* Apply global theme styles */
@@ -525,7 +538,7 @@ body, #app-container {
 }
 
 .action-button--secondary:hover {
-  background-color: rgba(0, 123, 255, 0.1);
+  background-color: rgb(0 123 255 / 10%);
 }
 
 /* Disabled State */
@@ -577,6 +590,7 @@ body, #app-container {
   outline: none;
   border-color: #007bff;
 }
+
 .sidebar {
   padding-top: 60px; /* enough room for the toggle */
 }
@@ -590,6 +604,7 @@ body, #app-container {
   margin-left: 8px;
   transition: opacity 0.2s ease, width 0.2s ease;
 }
+
 #app-container {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -606,33 +621,21 @@ body {
 .sidebar-tab:focus {
   outline: 2px solid #3498db;
   outline-offset: 2px;
-  background-color: rgba(52, 152, 219, 0.15);
+  background-color: rgb(52 152 219 / 15%);
 }
 
 .action-button:focus {
   outline: 2px solid #007bff;
   outline-offset: 2px;
-  background-color: rgba(0, 123, 255, 0.08);
+  background-color: rgb(0 123 255 / 8%);
 }
 
 .theme-toggle:focus {
   outline: 2px solid #ffb300;
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.2);
+  box-shadow: 0 0 0 3px rgb(255 179 0 / 20%);
 }
 
-/* =============================
-   Glowing Cursor (CSS only)
-   ============================= */
-body, html {
-  /* Use a custom SVG as a glowing cursor */
-  cursor: url('data:image/svg+xml;utf8,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="8" fill="%233498db" fill-opacity="0.7"/><filter id="glow"><feGaussianBlur stdDeviation="4" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><circle cx="20" cy="20" r="12" fill="%233498db" fill-opacity="0.3" filter="url(%23glow)"/></svg>') 20 20, auto;
-}
-
-/* Optional: pointer cursor for buttons/links with glow */
-button, .action-button, a, .sidebar-tab {
-  cursor: url('data:image/svg+xml;utf8,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="8" fill="%23ffb300" fill-opacity="0.8"/><filter id="glow"><feGaussianBlur stdDeviation="4" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><circle cx="20" cy="20" r="12" fill="%23ffb300" fill-opacity="0.3" filter="url(%23glow)"/></svg>') 20 20, pointer;
-}
 
 /* ========================================
    Theme Toggle Sliding Animation
@@ -644,19 +647,22 @@ button, .action-button, a, .sidebar-tab {
 @keyframes theme-toggle-ball-slide {
   0% {
     transform: translateX(0) scale(1);
-    box-shadow: 0 0 0 0 rgba(52,152,219,0.2);
+    box-shadow: 0 0 0 0 rgb(52 152 219 / 20%);
   }
+
   30% {
     transform: translateX(18px) scale(1.15);
-    box-shadow: 0 0 16px 4px rgba(52,152,219,0.25);
+    box-shadow: 0 0 16px 4px rgb(52 152 219 / 25%);
   }
+
   60% {
     transform: translateX(-10px) scale(0.95);
-    box-shadow: 0 0 8px 2px rgba(52,152,219,0.18);
+    box-shadow: 0 0 8px 2px rgb(52 152 219 / 18%);
   }
+
   100% {
     transform: translateX(0) scale(1);
-    box-shadow: 0 0 0 0 rgba(52,152,219,0.0);
+    box-shadow: 0 0 0 0 rgb(52 152 219 / 0%);
   }
 }
 
@@ -665,7 +671,7 @@ button, .action-button, a, .sidebar-tab {
 ======================================== */
 .widget--skeleton {
   position: relative;
-  background: linear-gradient(90deg, rgba(200,200,200,0.12) 25%, rgba(220,220,220,0.18) 50%, rgba(200,200,200,0.12) 75%);
+  background: linear-gradient(90deg, rgb(200 200 200 / 12%) 25%, rgb(220 220 220 / 18%) 50%, rgb(200 200 200 / 12%) 75%);
   background-size: 200% 100%;
   animation: skeleton-shimmer 1.2s infinite linear;
   min-height: 200px;
@@ -682,20 +688,23 @@ button, .action-button, a, .sidebar-tab {
 .widget--skeleton .skeleton-bar {
   height: 18px;
   width: 80%;
-  margin: 24px auto 12px auto;
+  margin: 24px auto 12px;
   border-radius: 8px;
-  background: rgba(180,180,180,0.18);
+  background: rgb(180 180 180 / 18%);
 }
+
 .widget--skeleton .skeleton-bar.short {
   width: 40%;
 }
+
 .widget--skeleton .skeleton-circle {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  margin: 24px auto 12px auto;
-  background: rgba(180,180,180,0.18);
+  margin: 24px auto 12px;
+  background: rgb(180 180 180 / 18%);
 }
+
 #globe-container {
   position: fixed;
   top: 0;

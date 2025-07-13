@@ -23,7 +23,12 @@ def SafeVizWidget(viz_func, data, style=None, **kwargs):
         return html.Div(
             className="widget",
             style=style or {},
-            children=[dcc.Graph(figure=fig, config={"displayModeBar": False})]
+            children=[dcc.Graph(
+    figure=fig,
+    config={"displayModeBar": False},
+    style={"height": "100%", "width": "100%"}
+)
+]
         )
     except Exception:
         return SkeletonWidget(style)

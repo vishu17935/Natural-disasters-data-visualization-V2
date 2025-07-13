@@ -8,7 +8,7 @@ from visualizations import *
 
 # Topbar
 Topbar = html.Div(className="topbar", children=[
-    html.Div("My Dashboard", className="topbar-logo"),
+    html.Div("Natural Disasters Analysis", className="topbar-logo"),
     html.Div(className="theme-toggle theme-toggle--dark", id="theme-toggle", children=[
         html.Div(className="theme-toggle__ball")
     ])
@@ -58,17 +58,13 @@ def SkeletonWidget(style=None):
 def region_widgets(region):
     if region == "overview":
         return [
-            SafeVizWidget(get_choropleth_viz,combined_disaster_data_data,{"gridColumn": "1 / 4", "gridRow": "1 / 3"}),
+            SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 4"}),
             SafeVizWidget(get_treemap_viz,merged_output_data,{"gridColumn": "1 / 4", "gridRow": "3 / 4"}),
         ]
     elif region == "disaster-analysis":
         return [
-            SkeletonWidget({"gridColumn": "1 / 4", "gridRow": "1 / 2", "background": "#b33"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "2 / 4", "gridRow": "3 / 4"})
+            SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 7"}),
+            
         ]
     elif region == "economic-impact":
         return [
