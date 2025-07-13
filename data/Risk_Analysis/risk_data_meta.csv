@@ -1,0 +1,118 @@
+Field,Label,Value
+id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+title,Title of Dataset,WorldRiskIndex
+name,Dataset URL,worldriskindex
+notes,Description,"The WorldRiskIndex is a statistical model that provides an assessment of the latent risk of 193 countries falling victim to a humanitarian disaster caused by extreme natural events and the negative impacts of climate change.  Based on peer-reviewed concepts of risk, hazard and vulnerability, it is assumed that disaster risks are not solely shaped by the occurrence, intensity, and duration of extreme natural events, but that social factors, political conditions, and economic structures are equally responsible for whether disasters occur in the context of extreme natural events. Accordingly, both main spheres of disaster risk, exposure and vulnerability, are treated as equals. The WorldRiskIndex was initially developed in 2011 by the United Nations University Institute for Environment and Human Security (UNU-EHS) for Bündnis Entwicklung Hilft  as a model with 27 indicators to analytically link and relate the two spheres of disaster risks – exposure to natural hazards such as earthquakes, storms or droughts, and societal capacities to respond to these kinds of events. The methodology of the WorldRiskIndex has been continuously revised and developed by the Institute for International Law of Peace and Armed Conflict (IFHV) since 2018. In 2022, a new, fully revised model of the WorldRiskIndex was published, enabling more accurate analyses by incorporating more than 100 high-quality indicators, new data sources, and more robust statistical methods, thus finally replacing the previously used model."
+dataset_source,Source,Institute for International Law of Peace and Armed Conflict
+organization,Contributor,Institute for International Law of Peace and Armed Conflict
+dataset_date,Reference Period,[2000-01-01T00:00:00 TO 2024-09-09T23:59:59]
+last_modified,Updated,2024-09-09T06:38:26.627267
+data_update_frequency,Expected Update Frequency,Every year
+groups,Location,World
+license_title,License,Creative Commons Attribution International (CC BY)
+methodology,Methodology,Other
+methodology_other,Define Methodology,"The WorldRiskIndex is a statistical model that provides an assessment of the latent risk of 193 countries falling victim to a humanitarian disaster caused by extreme natural events and the negative impacts of climate change. 
+Based on peer-reviewed concepts of risk, hazard and vulnerability, it is assumed that disaster risks are not solely shaped by the occurrence, intensity, and duration of extreme natural events, but that social factors, political conditions, and economic structures are equally responsible for whether disasters occur in the context of extreme natural events. Accordingly, both main spheres of disaster risk, exposure and vulnerability, are treated as equals.
+
+The WorldRiskIndex was initially developed in 2011 by the United Nations University Institute for Environment and Human Security (UNU-EHS) for [Bündnis Entwicklung Hilft]( https://weltrisikobericht.de/en/) as a model with 27 indicators to analytically link and relate the two spheres of disaster risks – exposure to natural hazards such as earthquakes, storms or droughts, and societal capacities to respond to these kinds of events. The methodology of the WorldRiskIndex has been continuously revised and developed by the [Institute for International Law of Peace and Armed Conflict (IFHV)]( https://www.ifhv.de/) since 2018. In 2022, a new, fully revised model of the WorldRiskIndex was published, enabling more accurate analyses by incorporating more than 100 high-quality indicators, new data sources, and more robust statistical methods, thus finally replacing the previously used model.
+
+In terms of the exposure of countries, the new WorldRiskIndex includes probabilistic estimates of populations affected by earthquakes, tsunamis, cyclones, coastal and riverine floodings, droughts and sea level rise for three intensity levels, while the vulnerability sphere is mapped by a susceptibility component and two components measuring the lack of coping capacities and the lack of adaptive capacities using indicators from international databases. It thus provides more flexibility and consistency to use a wide range of data for risk analysis, enables faster integration of new aspects and increases analytical reproducibility through clearer processes and methods. The new WorldRiskIndex builds on the terminology of the United Nations Office for Disaster Risk Reduction (UNDRR) to facilitate easier integration and, where necessary, adaptation by other public or organizational information for strategic processes.
+
+The WorldRiskIndex is part of the WorldRiskReport, an annual technical report on global disaster risks published jointly by IFHV and Bündnis Entwicklung Hilft. Therefore, the statistical model is continuously extended and updated to integrate new aspects of disaster risks for future reports. To ensure the analytical consistency of the provided data in case of changes or updates, the new model stipulates that all innovations, changes, updates or other adjustments to the WorldRiskIndex must be applied retrospectively for the past ten years to provide users with sufficient data for trend analyses. 
+
+This is achieved by providing two different dataset formats, which offer users the greatest possible flexibility for their analyses: Accompanying the publication of the annual WorldRiskReport, the results are made available as stand-alone datasets and geopackages. At the same time, a longitudinal dataset is provided which, in contrast to the stand-alone datasets, is subject to annual revisions and, if necessary, takes into account changes, adjustments or updates in the source data. Accordingly, there is a possibility of discrepancies between the longitudinal dataset and the stand-alone datasets, which is why only the former should be used for valid trend analyses. All changes to datasets are documented in a change log. A full review of the methodology can be found in the most recent WorldRiskReport, which can be accessed [here](https://www.ifhv.de/publications/world-risk-report)."
+caveats,Caveats/Comments,"The new WorldRiskIndex focuses on the latent risk of disasters due to extreme natural events and adverse impacts of climate change. Other types of risk such as conflicts, wars, or pandemics are deliberately only partially or not at all considered, as the driving forces of these risks differ in many respects from those of risks from natural events and climate. Furthermore, it would be extremely difficult and, in many cases, impossible to integrate their explanatory approaches into the new model’s concepts, structures, and processes. A transfer of the WorldRiskIndex results to these areas is therefore not possible, or only possible to a limited degree.
+ 
+In addition, some vulnerability categories, such as infrastructure, social networks, or material security, could not be included in the calculation despite their practical relevance due to a lack of data availability. As part of continuous revisions and updates, these gaps are to be filled using new methods or geospatial analysis. However, the new structure of the WorldRiskIndex already allows users to use their data in combination with the results provided to fill ‘white spots’ in the model and to realize specific analyses."
+tags,Tags,"climate hazards, development, hazards and risk, indicators, natural disasters, population"
+resource_1_created,Created,2023-09-19T11:47:51.849660
+resource_1_description,Description,"Additional information on the structure, calculation and indicators of the WorldRiskIndex datasets and geopackages."
+resource_1_format,File Format,XLSX
+resource_1_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/6aca2f09-ab01-4ff7-a17d-8cac9686cbba/download/worldriskindex-meta.xlsx
+resource_1_id,Resource ID,6aca2f09-ab01-4ff7-a17d-8cac9686cbba
+resource_1_last_modified,Updated,2024-09-09T06:37:59.094645
+resource_1_metadata_modified,Metadata Updated,2024-09-09T06:38:11.206513
+resource_1_microdata,Microdata,False
+resource_1_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_1_resource_type,Resource Type,file.upload
+resource_1_name,Resource Name,worldriskindex-meta.xlsx
+resource_1_mimetype,MIME Type,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+resource_1_size,Size,3.3M
+resource_2_created,Created,2023-09-19T11:48:03.765649
+resource_2_description,Description,"A longitudinal dataset for long-term trend analysis; data as of September 09, 2024; annual updates and revisions - see metadata for more information."
+resource_2_format,File Format,CSV
+resource_2_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/3a2320fa-41b4-4dda-a847-3f397d865378/download/worldriskindex-trend.csv
+resource_2_id,Resource ID,3a2320fa-41b4-4dda-a847-3f397d865378
+resource_2_last_modified,Updated,2024-09-09T06:38:02.078149
+resource_2_metadata_modified,Metadata Updated,2024-09-09T06:38:05.048183
+resource_2_microdata,Microdata,False
+resource_2_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_2_resource_type,Resource Type,file.upload
+resource_2_name,Resource Name,worldriskindex-trend.csv
+resource_2_mimetype,MIME Type,application/vnd.ms-excel
+resource_2_size,Size,6.5M
+resource_3_created,Created,2023-09-19T11:48:35.901458
+resource_3_description,Description,"A longitudinal geopackages for long-term trend analysis; data as of September 09, 2024; annual updates and revisions - see metadata for more information."
+resource_3_format,File Format,Geopackage
+resource_3_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/360962d8-ddc6-49e6-a932-127f9b445565/download/worldriskindex-trend
+resource_3_id,Resource ID,360962d8-ddc6-49e6-a932-127f9b445565
+resource_3_last_modified,Updated,2024-09-09T06:38:11.820191
+resource_3_metadata_modified,Metadata Updated,2024-09-09T06:38:15.828867
+resource_3_microdata,Microdata,False
+resource_3_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_3_resource_type,Resource Type,file.upload
+resource_3_name,Resource Name,worldriskindex-trend
+resource_3_mimetype,MIME Type,application/octet-stream
+resource_3_size,Size,36.4M
+resource_4_created,Created,2023-09-19T11:48:50.922032
+resource_4_description,Description,"An archive of stand-alone datasets from the annual WorldRiskReport based on the new methodology published in 2022; all data as of September 09, 2024; annual additions planned; all datasets correspond to values published in the respective years of the WorldRiskReport; to analyze long-term trends, please use the longitudinal data provided - see metadata for more details."
+resource_4_format,File Format,CSV
+resource_4_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/9dd7ca94-94fe-473a-9f53-277bf6544df1/download/worldriskindex-datasets.zip
+resource_4_id,Resource ID,9dd7ca94-94fe-473a-9f53-277bf6544df1
+resource_4_last_modified,Updated,2024-09-09T06:38:15.584405
+resource_4_metadata_modified,Metadata Updated,2024-09-09T06:38:18.530565
+resource_4_microdata,Microdata,False
+resource_4_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_4_resource_type,Resource Type,file.upload
+resource_4_name,Resource Name,worldriskindex-datasets.zip
+resource_4_mimetype,MIME Type,application/x-zip-compressed
+resource_4_size,Size,2.3M
+resource_5_created,Created,2023-09-19T11:49:14.742567
+resource_5_description,Description,"An archive of stand-alone geopackages from the annual WorldRiskReport based on the new methodology published in 2022; all data as of September 09, 2024; annual additions planned; all geopackages correspond to values published in the respective years of the WorldRiskReport; to analyze long-term trends, please use the longitudinal data provided - see metadata for more details."
+resource_5_format,File Format,Geopackage
+resource_5_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/09a641cd-d07f-4de9-8cf6-b0fbaa48ff21/download/worldriskindex-geopackages.zip
+resource_5_id,Resource ID,09a641cd-d07f-4de9-8cf6-b0fbaa48ff21
+resource_5_last_modified,Updated,2024-09-09T06:38:23.952683
+resource_5_metadata_modified,Metadata Updated,2024-09-09T06:38:26.775392
+resource_5_microdata,Microdata,False
+resource_5_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_5_resource_type,Resource Type,file.upload
+resource_5_name,Resource Name,worldriskindex-geopackages.zip
+resource_5_mimetype,MIME Type,application/x-zip-compressed
+resource_5_size,Size,27.9M
+resource_6_created,Created,2024-09-09T06:38:26.787089
+resource_6_description,Description,A special analysis of global conflict exposure based on the ACLED Conflict Exposure Dataset for the years 2020 to 2023 as published in the WorldRiskreport 2024.
+resource_6_format,File Format,XLSX
+resource_6_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/b9f8b354-675c-471d-aa17-11a2689823cd/download/special-issue-conflict-exposure.xlsx
+resource_6_id,Resource ID,b9f8b354-675c-471d-aa17-11a2689823cd
+resource_6_last_modified,Updated,2024-09-09T06:38:26.627267
+resource_6_metadata_modified,Metadata Updated,2024-09-09T06:38:30.500011
+resource_6_microdata,Microdata,False
+resource_6_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_6_resource_type,Resource Type,file.upload
+resource_6_name,Resource Name,Special Issue Conflict Exposure.xlsx
+resource_6_mimetype,MIME Type,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+resource_6_size,Size,122.6K
+resource_7_created,Created,2023-09-19T11:49:25.586079
+resource_7_description,Description,An archive for the historical model and supplementary materials of the WorldRiskIndex for the WorldRiskReports from 2011 to 2021 - this archive is only provided as supplementary material for the mentioned reports and is no longer maintained or updated.
+resource_7_format,File Format,CSV
+resource_7_download_url,Download URL,https://data.humdata.org/dataset/1efb6ee7-051a-440f-a2cf-e652fecccf73/resource/a00f93fa-a159-4868-9ce0-7d90f58e3d20/download/worldriskindex-legacy.zip
+resource_7_id,Resource ID,a00f93fa-a159-4868-9ce0-7d90f58e3d20
+resource_7_last_modified,Updated,2023-09-19T11:49:24.536987
+resource_7_metadata_modified,Metadata Updated,2023-10-01T07:51:48.020583
+resource_7_microdata,Microdata,False
+resource_7_dataset_id,Dataset ID,1efb6ee7-051a-440f-a2cf-e652fecccf73
+resource_7_resource_type,Resource Type,file.upload
+resource_7_name,Resource Name,WorldRiskIndex Legacy Archive.zip
+resource_7_mimetype,MIME Type,application/zip
+resource_7_size,Size,7.5M
