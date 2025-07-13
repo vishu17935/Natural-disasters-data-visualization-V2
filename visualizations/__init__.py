@@ -15,5 +15,5 @@ for file in this_dir.glob("*.py"):
     module_name = f"visualizations.{file.stem}"
     module = importlib.import_module(module_name)
     for attr_name in dir(module):
-        if attr_name.startswith("get_"):
+        if attr_name.startswith("get_") or attr_name.startswith("plot_") or attr_name.startswith("create_"):
             globals()[attr_name] = getattr(module, attr_name)

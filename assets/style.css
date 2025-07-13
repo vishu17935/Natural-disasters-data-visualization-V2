@@ -206,10 +206,17 @@ body, #app-container {
   min-height: 200px; /* Ensures consistent height for all widgets */
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   border-radius: 12px;
-  padding: 3px;
+  padding: 0 3px 3px 3px; /* Remove top padding */
+  margin-top: 0 !important; /* Remove any top margin */
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Remove top margin/padding for the region-hotspot-map widget specifically */
+#region-hotspot-map {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .widget:hover {
@@ -272,6 +279,234 @@ body, #app-container {
   background-color: rgba(255, 0, 0, 0.1);
   color: #ffaaaa;
   border-color: #ff9999;
+}
+
+/* ——————————————————————
+   Selector Widget Styles
+   —————————————————————— */
+.widget--selector {
+  min-height: 80px !important;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0.05) 100%);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000 !important;
+  position: relative !important;
+}
+
+.widget--selector:hover {
+  border-color: rgba(52, 152, 219, 0.6);
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.2);
+}
+
+.selector-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 16px;
+  flex-wrap: wrap;
+  position: relative !important;
+  z-index: 1001 !important;
+}
+
+.selector-dropdown {
+  min-width: 200px;
+  position: relative !important;
+  z-index: 1002 !important;
+}
+
+.selector-dropdown .Select-control {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(52, 152, 219, 0.5) !important;
+  border-radius: 8px !important;
+  color: white !important;
+  z-index: 1000 !important;
+}
+
+.selector-dropdown .Select-control:hover {
+  border-color: rgba(52, 152, 219, 0.8) !important;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3) !important;
+}
+
+.selector-dropdown .Select-control.is-focused {
+  border-color: rgba(52, 152, 219, 1) !important;
+  box-shadow: 0 0 12px rgba(52, 152, 219, 0.4) !important;
+}
+
+.selector-dropdown .Select-value-label {
+  color: white !important;
+}
+
+.selector-dropdown .Select-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.selector-dropdown .Select-menu-outer {
+  background-color: rgba(30, 30, 30, 0.95) !important;
+  border: 1px solid rgba(52, 152, 219, 0.5) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(10px);
+  z-index: 9999 !important;
+  position: absolute !important;
+}
+
+.selector-dropdown .Select-option {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.selector-dropdown .Select-option:hover {
+  background-color: rgba(52, 152, 219, 0.3) !important;
+}
+
+.selector-dropdown .Select-option.is-focused {
+  background-color: rgba(52, 152, 219, 0.5) !important;
+}
+
+.selector-dropdown .Select-option.is-selected {
+  background-color: rgba(52, 152, 219, 0.7) !important;
+}
+
+/* Responsive design for selectors */
+@media (max-width: 768px) {
+  .selector-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .selector-dropdown {
+    min-width: 100%;
+  }
+}
+
+/* ——————————————————————
+   Metrics Card Widget Styles
+   —————————————————————— */
+.widget--metrics {
+  min-height: 200px !important;
+  max-height: none !important;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 107, 107, 0.05) 100%);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.widget--metrics:hover {
+  border-color: rgba(255, 107, 107, 0.6);
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.2);
+}
+
+.metrics-card-header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.metric-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.metric-item:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.metric-item-compact {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.metric-item-compact:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.metric-item .metric-icon {
+  font-size: 24px;
+  width: 40px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.metric-item .metric-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.metric-item .metric-label {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.metric-item .metric-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+}
+
+.metrics-card-empty,
+.metrics-card-error {
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+}
+
+.metrics-card-empty h3,
+.metrics-card-error h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.metrics-card-empty p,
+.metrics-card-error p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Scrollbar styling for metrics card */
+.widget--metrics::-webkit-scrollbar {
+  width: 4px;
+}
+
+.widget--metrics::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.widget--metrics::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.widget--metrics::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* ==========================================================================

@@ -1,5 +1,5 @@
 # components.py
-from dash import html
+from dash import html, dcc
 
 from .widgets import *
 from visualizations import *
@@ -79,12 +79,219 @@ def region_widgets(region):
         ]
     elif region == "country-profiles":
         return [
-            SkeletonWidget({"gridColumn": "1 / 4", "gridRow": "1 / 2", "background": "#b33"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "2 / 4", "gridRow": "3 / 4"})
+            # Country and Year Selector Bar
+            html.Div(
+                className="widget widget--selector",
+                style={"gridColumn": "1 / 4", "gridRow": "1 / 2", "background": "rgba(52, 152, 219, 0.1)", "border": "1px solid rgba(52, 152, 219, 0.3)"},
+                children=[
+                    html.Div(
+                        className="selector-container",
+                        style={"display": "flex", "gap": "20px", "alignItems": "center", "padding": "16px"},
+                        children=[
+                            html.Div(
+                                style={"display": "flex", "flexDirection": "column", "gap": "8px"},
+                                children=[
+                                    html.Label("Select Country:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                                    dcc.Dropdown(
+                                        id="country-selector",
+                                        placeholder="Choose a country...",
+                                        style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
+                                        className="selector-dropdown"
+                                    )
+                                ]
+                            ),
+                            html.Div(
+                                style={"display": "flex", "flexDirection": "column", "gap": "8px"},
+                                children=[
+                                    html.Label("Select Year:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                                    dcc.Dropdown(
+                                        id="year-selector",
+                                        placeholder="Choose a year...",
+                                        style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
+                                        className="selector-dropdown"
+                                    )
+                                ]
+                            ),
+                            html.Div(
+                                style={"display": "flex", "flexDirection": "column", "gap": "8px"},
+                                children=[
+                                    html.Label("Analysis Type:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                                    dcc.Dropdown(
+                                        id="analysis-type-selector",
+                                        options=[
+                                            {"label": "Risk Profile", "value": "risk"},
+                                            {"label": "Disaster Summary", "value": "disaster"},
+                                            {"label": "Economic Impact", "value": "economic"},
+                                            {"label": "Vulnerability Analysis", "value": "vulnerability"}
+                                        ],
+                                        value="risk",
+                                        style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
+                                        className="selector-dropdown"
+                                    )
+                                ]
+                            ),
+                            html.Div(
+                                style={"display": "flex", "flexDirection": "column", "gap": "8px"},
+                                children=[
+                                    html.Label("Map Style:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                                    dcc.Dropdown(
+                                        id="map-style-selector",
+                                        options=[
+                                            {"label": "Open Street Map", "value": "open-street-map"},
+                                            {"label": "Carto Positron", "value": "carto-positron"},
+                                            {"label": "Carto Dark Matter", "value": "carto-darkmatter"},
+                                            {"label": "Stamen Terrain", "value": "stamen-terrain"},
+                                            {"label": "Stamen Toner", "value": "stamen-toner"}
+                                        ],
+                                        value="open-street-map",
+                                        style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
+                                        className="selector-dropdown"
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                ]
+            ),
+            # Metrics Card
+            html.Div(
+                className="widget widget--metrics",
+                style={"gridColumn": "1 / 2", "gridRow": "2 / 4", "background": "rgba(255, 107, 107, 0.1)", "border": "1px solid rgba(255, 107, 107, 0.3)", "height": "100%"},
+                children=[
+                    html.Div(
+                        id="metrics-card",
+                        style={"padding": "20px", "height": "100%", "overflowY": "auto"}
+                    )
+                ]
+            ),
+            # Region Hotspot Map (replacing spider chart in first row)
+            html.Div(
+                className="widget",
+                style={"gridColumn": "2 / 4", "gridRow": "2 / 4"},
+                children=[
+                    dcc.Graph(
+                        id="region-hotspot-map",
+                        config={"displayModeBar": False}
+                    )
+                ]
+            ),
+            # Risk Profile Radar Chart (moved to second row)
+            html.Div(
+                className="widget",
+                style={"gridColumn": "1 / 2", "gridRow": "4 / 5"},
+                children=[
+                    dcc.Graph(
+                        id="country-risk-radar",
+                        config={"displayModeBar": False}
+                    )
+                ]
+            ),
+            # Disaster Type Distribution Pie Chart
+            html.Div(
+                className="widget",
+                style={"gridColumn": "2 / 3", "gridRow": "4 / 5"},
+                children=[
+                    dcc.Graph(
+                        id="disaster-pie-chart",
+                        config={"displayModeBar": False}
+                    )
+                ]
+            ),
+            # Economic Impact Bubble Chart
+            html.Div(
+                className="widget",
+                style={"gridColumn": "3 / 4", "gridRow": "4 / 5"},
+                children=[
+                    dcc.Graph(
+                        id="economic-bubble-chart",
+                        config={"displayModeBar": False}
+                    )
+                ]
+            ),
+            html.Div(
+    className="widget",
+    style={"gridColumn": "1 / 2", "gridRow": "5 / 6"},
+    children=[
+        # Title + Dropdown Wrapper
+        html.Div(
+            style={
+                "width": "1200px",
+                "margin": "0 auto",
+                "marginBottom": "12px",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+            },
+            children=[
+                # Title will be updated via callback
+                html.H3(
+                    id="parallel-plot-title",
+                    children="Parallel Coordinates Plot",
+                    style={
+                        "color": "white",
+                        "margin": "0",
+                        "fontSize": "18px",
+                        "fontWeight": "bold"
+                    }
+                ),
+                html.Div(
+                    style={"display": "flex", "alignItems": "center", "gap": "12px"},
+                    children=[
+                        html.Label("Type:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                        dcc.Dropdown(
+                            id="parallel-plot-type-selector",
+                            options=[
+                                {"label": "Risk vs Outcome", "value": "risk_vs_outcome"},
+                                {"label": "Wealth vs Impact", "value": "wealth_vs_impact"},
+                                {"label": "Vulnerability Path", "value": "vulnerability_path"}
+                            ],
+                            value="risk_vs_outcome",
+                            clearable=False,
+                            style={
+        "backgroundColor": "#222",   # dark background
+        "color": "black",            # white text
+        "width": "260px",
+        # "border": "1px solid #444"
+    }
+                            # style={
+                            #     "backgroundColor": "rgba(255,255,255,0.1)",
+                            #     "color": "white",
+                            #     "width": "260px"
+                            # }
+                        )
+                    ]
+                )
+            ]
+        ),
+        html.Div(
+            style={"width": "1200px", "margin": "0 auto"},
+            children=dcc.Graph(
+                id="tab4-parallel-plot",
+                config={"displayModeBar": False},
+                style={
+                    "height": "500px",
+                    "width": "100%",
+                    "backgroundColor": "transparent"
+                }
+            )
+        )
+    ]
+)
+
+
+
+,
+            # # Vulnerability Metrics Bar Chart (right)
+            # html.Div(
+            #     className="widget",
+            #     style={"gridColumn": "2 / 3", "gridRow": "5 / 6"},
+            #     children=[
+            #         dcc.Graph(
+            #             id="vulnerability-radar",
+            #             config={"displayModeBar": False}
+            #         )
+            #     ]
+            # )
         ]
     elif region == "trends-correlations":
         return [ 

@@ -6,6 +6,10 @@ import re
 import numpy as np
 noise_words_1 = ['near', 'province', 'district', 'cities', 'city', 'state', 'municipality', 'region']
 noise_words = noise_words_1.copy()  # Create a copy to avoid modifying during iteration
+import os
+
+root_path = os.path.dirname(os.path.abspath(__file__))
+# print(root_path)
 
 for word in noise_words_1:
     noise_words.append(word[0].upper() + word[1:])
@@ -275,6 +279,161 @@ def plot_disasters_on_map(disasters_df, cities_df, country_name, year, min_death
     
     return fig
 
+def plot_disasters_on_map_simple(disasters_df, country_name, year, min_deaths=1, mapbox_style='open-street-map'):
+    """
+    Plot natural disasters on a country map with markers sized by death toll using Mapbox.
+    This version works with disaster data that already has Latitude and Longitude columns.
+    
+    Parameters:
+    -----------
+    disasters_df : pandas.DataFrame
+        Natural disasters dataset with Latitude and Longitude columns
+    country_name : str
+        Name of the country to visualize
+    year : int
+        Year to filter disasters
+    min_deaths : int, default=1
+        Minimum number of deaths to include in visualization
+    mapbox_style : str, default='open-street-map'
+        Mapbox style ('open-street-map', 'carto-positron', 'carto-darkmatter', 'stamen-terrain', etc.)
+    
+    Returns:
+    --------
+    plotly.graph_objects.Figure
+        Interactive map visualization
+    """
+    
+    # Filter disasters for the specified country and year
+    country_disasters = disasters_df[
+        (disasters_df['Country_x'].str.contains(country_name, case=False, na=False)) &
+        (disasters_df['Start Year'] == year) &
+        (disasters_df['Total Deaths'].notna()) &
+        (disasters_df['Total Deaths'] >= min_deaths) &
+        (disasters_df['Latitude'].notna()) &
+        (disasters_df['Longitude'].notna())
+    ].copy()
+    
+    if country_disasters.empty:
+        print(f"No disasters found for {country_name} in {year} with at least {min_deaths} deaths and valid coordinates")
+        return None
+    
+    print(f"Processing {len(country_disasters)} disasters for {country_name} in {year}...")
+    
+    # Create DataFrame for plotting with coordinates
+    plot_df = country_disasters[['DisNo.', 'Disaster Type', 'Location', 'Latitude', 'Longitude', 
+                                'Total Deaths', 'Total Damage (\'000 US$)']].copy()
+    
+    # Rename columns for consistency
+    plot_df = plot_df.rename(columns={
+        'Latitude': 'latitude',
+        'Longitude': 'longitude',
+        'Total Deaths': 'deaths',
+        'Total Damage (\'000 US$)': 'total_damage'
+    })
+    
+    # Convert damage to USD (multiply by 1000)
+    plot_df['total_damage'] = plot_df['total_damage'] * 1000
+    
+    # Calculate marker sizes (proportional to deaths)
+    max_deaths = plot_df['deaths'].max()
+    min_deaths_plot = plot_df['deaths'].min()
+
+    # Normalize deaths to marker size
+    if max_deaths > min_deaths_plot:
+        plot_df['marker_size'] = 10 * scale_marker_sizes(plot_df['deaths'])
+    else:
+        plot_df['marker_size'] = 60
+    
+    # Create color mapping for disaster types
+    disaster_types = plot_df['Disaster Type'].unique()
+    colors = px.colors.qualitative.Set1[:len(disaster_types)]
+    color_discrete_map = dict(zip(disaster_types, colors))
+    
+    # Calculate map center
+    center_lat = plot_df['latitude'].mean()
+    center_lon = plot_df['longitude'].mean()
+    
+    # Calculate zoom level based on coordinate spread
+    lat_range = plot_df['latitude'].max() - plot_df['latitude'].min()
+    lon_range = plot_df['longitude'].max() - plot_df['longitude'].min()
+    max_range = max(lat_range, lon_range)
+    
+    if max_range > 20:
+        zoom = 3
+    elif max_range > 10:
+        zoom = 4
+    elif max_range > 5:
+        zoom = 5
+    elif max_range > 2:
+        zoom = 6
+    else:
+        zoom = 7
+    
+    # Create the figure
+    fig = go.Figure()
+    
+    # Add traces for each disaster type
+    for disaster_type in disaster_types:
+        type_data = plot_df[plot_df['Disaster Type'] == disaster_type]
+        
+        # Create hover text
+        hover_text = []
+        for _, row in type_data.iterrows():
+            damage_text = f"${row['total_damage']:,.0f}" if row['total_damage'] > 0 else "Not available"
+            
+            # Limit location display to first 4 parts if it's a comma-separated list
+            location_parts = str(row['Location']).split(',')
+            if len(location_parts) > 4:
+                limited_location = ', '.join(location_parts[:4]) + '...'
+            else:
+                limited_location = row['Location']
+            
+            hover_text.append(
+                f"<b>{limited_location}</b><br>"
+                f"Type: {row['Disaster Type']}<br>"
+                f"Deaths: {row['deaths']:,}<br>"
+                f"Damage: {damage_text}"
+            )
+        
+        fig.add_trace(go.Scattermapbox(
+            lat=type_data['latitude'],
+            lon=type_data['longitude'],
+            mode='markers',
+            marker=dict(
+                size=type_data['marker_size'],
+                color=color_discrete_map[disaster_type],
+                sizemode='area',
+                opacity=0.8
+            ),
+            text=hover_text,
+            hovertemplate='%{text}<extra></extra>',
+            name=disaster_type
+        ))
+    
+    # Update layout with mapbox
+    fig.update_layout(
+        mapbox=dict(
+            style=mapbox_style,
+            center=dict(lat=center_lat, lon=center_lon),
+            zoom=zoom
+        ),
+        title=f'<br>'
+              f'<sub>Total Events: {len(plot_df)} | Total Deaths: {plot_df["deaths"].sum():,}</sub>',
+        showlegend=True,
+        legend=dict(
+            orientation="v",
+            yanchor="top",
+            y=0.99,
+            xanchor="left",
+            x=0.01,
+            bgcolor="rgba(255,255,255,0.8)"
+        ),
+        height=700,
+        margin=dict(r=0, t=60, l=0, b=0)
+    )
+    
+    return fig
+
 # Example usage:
 # fig = plot_disasters_on_map(disasters_df, cities_df, "United States", 2005, mapbox_style='open-street-map')
 # fig.show()
@@ -327,3 +486,10 @@ def get_disaster_summary(disasters_df, cities_df, country_name, year):
 # # 'stamen-terrain' (topographic)
 # # 'stamen-toner' (high contrast)
 # fig.show()
+# if __name__ == "__main__":
+#     data_path = os.path.join(root_path, "data", "Risk_Analysis", "final_risk_merged.csv")
+#     city_path = os.path.join(root_path, "data", "Risk_Analysis", "cities.csv")
+#     data = pd.read_csv(data_path)
+#     city = pd.read_csv(city_path)
+#     fig = plot_disasters_on_map(data, city, "India", 2010, min_deaths=1, mapbox_style='carto-darkmatter')
+#     fig.show()

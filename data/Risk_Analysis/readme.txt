@@ -32,3 +32,14 @@ Index(['WRI.Country', 'ISO3.Code', 'Year', 'W', 'E', 'V', 'S', 'C', 'A',
        'AI_04c_Norm', 'AI_04c_Base', 'AI_05a_Norm', 'AI_05a_Base',
        'AI_05b_Norm', 'AI_05b_Base'],
       dtype='object', length=248)
+
+
+ranked_data.csv : contains ranks of some metrics year wise among the countries that had disasters that year
+columns
+same as final_risk_merged.csv but with additional columns
+'rank_damages', 'rank_risk_y', 'rank_gdp', 'rank_hdi_y',
+       'rank_vulnerability'
+
+
+
+same as 
