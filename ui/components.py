@@ -4,6 +4,9 @@ from dash import html, dcc
 from .widgets import *
 from visualizations import *
 
+# --- Radar Chart Box Size Variables ---
+RADAR_BOX_WIDTH = "600px"   # Change this to control width
+RADAR_BOX_HEIGHT = "600px"  # Change this to control height
 
 
 # Topbar
@@ -174,25 +177,56 @@ def region_widgets(region):
             # Risk Profile Radar Chart (moved to second row)
             html.Div(
                 className="widget",
-                style={"gridColumn": "1 / 2", "gridRow": "4 / 5"},
+                style={
+                    "gridColumn": "1 / 2", "gridRow": "4 / 5",
+                    "width": RADAR_BOX_WIDTH,
+                    "height": RADAR_BOX_HEIGHT,
+                    "minWidth": RADAR_BOX_WIDTH,
+                    "minHeight": RADAR_BOX_HEIGHT,
+                    "maxWidth": RADAR_BOX_WIDTH,
+                    "maxHeight": RADAR_BOX_HEIGHT,
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-start",
+                    "background": "transparent"
+                },
                 children=[
+                    html.Div(
+                        style={"marginBottom": "8px"},
+                        children=[
+                            html.Label("Compare Countries:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                            dcc.Dropdown(
+                                id="multi-country-selector",
+                                multi=True,
+                                placeholder="Add countries for comparison...",
+                                style={"backgroundColor": "rgba(255,255,255,0.1)", "color": "white", "border": "1px solid #3498db"},
+                                className="selector-dropdown"
+                            ),
+                        ]
+                    ),
                     dcc.Graph(
                         id="country-risk-radar",
-                        config={"displayModeBar": False}
+                        config={"displayModeBar": False},
+                        style={
+                            "height": RADAR_BOX_HEIGHT,
+                            "width": RADAR_BOX_WIDTH,
+                            "backgroundColor": "transparent"
+                        }
                     )
                 ]
             ),
-            # Disaster Type Distribution Pie Chart
-            html.Div(
-                className="widget",
-                style={"gridColumn": "2 / 3", "gridRow": "4 / 5"},
-                children=[
-                    dcc.Graph(
-                        id="disaster-pie-chart",
-                        config={"displayModeBar": False}
-                    )
-                ]
-            ),
+            # # Disaster Type Distribution Pie Chart
+            # html.Div(
+            #     className="widget",
+            #     style={"gridColumn": "2 / 3", "gridRow": "4 / 5"},
+            #     children=[
+            #         dcc.Graph(
+            #             id="disaster-pie-chart",
+            #             config={"displayModeBar": False}
+            #         )
+            #     ]
+            # ),
             # Economic Impact Bubble Chart
             html.Div(
                 className="widget",

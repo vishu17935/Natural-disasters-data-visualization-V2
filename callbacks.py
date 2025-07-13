@@ -1,5 +1,5 @@
 # callbacks.py
-from dash import Input, Output, callback, html, dcc
+from dash import Input, Output, callback, html, dcc, State
 import pandas as pd
 from pathlib import Path
 from utils.data_loader import load_all_csvs
@@ -420,13 +420,13 @@ def initialize_vulnerability_radar(country_options):
     Output("country-risk-radar", "figure", allow_duplicate=True),
     Input("country-selector", "value"),
     Input("analysis-type-selector", "value"),
+    State("multi-country-selector", "value"),
     prevent_initial_call=True
 )
-def update_risk_radar(selected_country, analysis_type):
-    """Update the risk radar chart based on selected country and analysis type."""
-    if not selected_country or analysis_type != "risk":
+def update_risk_radar(selected_country, analysis_type, selected_countries):
+    """Update the risk radar chart based on selected country and analysis type, only if no multi-country selection."""
+    if (selected_countries and len(selected_countries) > 0) or not selected_country or analysis_type != "risk":
         return {}
-    
     try:
         from visualizations.tab4_risk_spider import country_risk_radar_yearly
         fig = country_risk_radar_yearly(risk_data, selected_country)
@@ -624,3 +624,40 @@ def update_parallel_plot_title(plot_type):
         "vulnerability_path": "Vulnerability Pathways"
     }
     return titles.get(plot_type, "Parallel Coordinates Plot")
+
+@callback(
+    Output("multi-country-selector", "options"),
+    Input("country-selector", "id")
+)
+def populate_multi_country_dropdown(trigger):
+    """Populate the multi-country dropdown with available countries from the risk dataset."""
+    if risk_data is None:
+        return []
+    if 'Country_x' in risk_data.columns:
+        countries = sorted(risk_data['Country_x'].dropna().unique())
+    else:
+        return []
+    options = [{"label": country, "value": country} for country in countries]
+    return options
+
+@callback(
+    Output("country-risk-radar", "figure", allow_duplicate=True),
+    Input("multi-country-selector", "value"),
+    Input("analysis-type-selector", "value"),
+    prevent_initial_call=True
+)
+def update_multi_country_risk_radar(selected_countries, analysis_type):
+    """Update the risk radar chart for multiple countries if selected, else fallback to single-country logic."""
+    if not selected_countries or analysis_type != "risk":
+        return {}
+    try:
+        from visualizations.tab4_risk_spider import multi_country_risk_radar_with_slider
+        # Limit to 4 countries for clarity
+        if isinstance(selected_countries, str):
+            selected_countries = [selected_countries]
+        selected_countries = selected_countries[:4]
+        fig = multi_country_risk_radar_with_slider(risk_data, selected_countries)
+        return fig
+    except Exception as e:
+        print(f"Error updating multi-country risk radar: {e}")
+        return {}

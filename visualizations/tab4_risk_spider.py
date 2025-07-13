@@ -135,10 +135,13 @@ def country_risk_radar_with_slider(df, country_name):
         font=dict(size=10, color="gray"),
         xanchor="center"
     )
-    
+    fig.update_layout(width=600, height=600,
+        paper_bgcolor='rgba(0,0,0,0)',   # Transparent outer background
+    plot_bgcolor='rgba(0,0,0,0)'
+    )
     return fig
 
-def multi_country_risk_radar_with_slider(df, countries_list, max_countries=3):
+def multi_country_risk_radar_with_slider(df, countries_list, max_countries=4):
     """
     Create a radar chart with year slider comparing multiple countries' risk dimensions over time.
     
@@ -278,27 +281,33 @@ def multi_country_risk_radar_with_slider(df, countries_list, max_countries=3):
                 tick0=0,
                 dtick=20,
                 showticklabels=True,
-                tickfont=dict(size=10),
+                tickfont=dict(size=10, color='white'),
                 gridcolor='rgba(128, 128, 128, 0.3)'
             ),
             angularaxis=dict(
-                tickfont=dict(size=11),
+                tickfont=dict(size=11, color='white'),
                 rotation=90,
                 direction='clockwise'
             )
         ),
         showlegend=True,
+        legend=dict(font=dict(color='white')),
         title=dict(
             text=f'Risk Dimensions Comparison ({available_years[0]})',
             x=0.5,
-            font=dict(size=16, family='Arial, sans-serif')
+            font=dict(size=16, family='Arial, sans-serif', color='white')
         ),
-        font=dict(family='Arial, sans-serif'),
-        width=800,
-        height=800,
+        font=dict(family='Arial, sans-serif', color='white'),
+        width=600,
+        height=600,
         margin=dict(l=80, r=80, t=120, b=80),
-        sliders=sliders
+        sliders=sliders,
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)'
     )
+    # Update annotation color if present
+    for ann in fig.layout.annotations or []:
+        ann.font.color = 'white'
     
     return fig
 
@@ -404,27 +413,33 @@ def country_risk_radar_yearly(df, country_name):
                 tick0=0,
                 dtick=20,
                 showticklabels=True,
-                tickfont=dict(size=10),
+                tickfont=dict(size=10, color='white'),
                 gridcolor='rgba(128, 128, 128, 0.3)'
             ),
             angularaxis=dict(
-                tickfont=dict(size=12),
+                tickfont=dict(size=12, color='white'),
                 rotation=90,
                 direction='clockwise'
             )
         ),
         showlegend=True,
+        legend=dict(font=dict(color='white')),
         title=dict(
             text=f'Risk Dimensions Profile: {country_name} ({int(available_years[0])})',
             x=0.5,
-            font=dict(size=16, family='Arial, sans-serif')
+            font=dict(size=16, family='Arial, sans-serif', color='white')
         ),
-        font=dict(family='Arial, sans-serif'),
-        width=700,
-        height=700,
+        font=dict(family='Arial, sans-serif', color='white'),
+        width=600,
+        height=600,
         margin=dict(l=80, r=80, t=120, b=80),
-        sliders=sliders
+        sliders=sliders,
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)'
     )
+    # Update annotation color if present
+    for ann in fig.layout.annotations or []:
+        ann.font.color = 'white'
     
     # Add annotations to explain the chart
     fig.add_annotation(
@@ -432,7 +447,7 @@ def country_risk_radar_yearly(df, country_name):
         xref="paper", yref="paper",
         x=0.5, y=-0.12,
         showarrow=False,
-        font=dict(size=10, color="gray"),
+        font=dict(size=10, color="white"),
         xanchor="center"
     )
     
