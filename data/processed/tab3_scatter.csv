@@ -1,0 +1,3517 @@
+Country,Continent,Year,GDP_per_capita,GDP_loss_percent
+Afghanistan,Asia,2002,1774.3087,0.00048929587
+Afghanistan,Asia,2006,1929.7239,0.0
+Afghanistan,Asia,2008,2191.5044,0.0
+Afghanistan,Asia,2011,2757.0525,0.7975244
+Afghanistan,Asia,2018,2902.392,0.0
+Afghanistan,Asia,2019,2927.245,0.0
+Afghanistan,Asia,2021,2144.1665,0.0
+Afghanistan,Asia,2003,1815.9282,0.0
+Afghanistan,Asia,2004,1776.9182,0.0
+Afghanistan,Asia,2005,1908.1147,0.08140885326
+Afghanistan,Asia,2007,2155.353,0.0
+Afghanistan,Asia,2009,2565.022,0.1610805
+Afghanistan,Asia,2010,2848.5862,0.0
+Afghanistan,Asia,2012,2985.319,0.0
+Afghanistan,Asia,2013,3046.5798,0.0
+Afghanistan,Asia,2014,3017.9426,0.014636196
+Afghanistan,Asia,2015,2967.6921,0.015678715
+Afghanistan,Asia,2016,2958.7854,0.0
+Afghanistan,Asia,2017,2952.999,0.0
+Afghanistan,Asia,2020,2769.6858,0.0
+Albania,Europe,1990,5407.3247,0.0
+Albania,Europe,1991,3916.6973,0.0
+Albania,Europe,1992,3657.312,1.0733316
+Albania,Europe,1995,5009.17,0.0
+Albania,Europe,1997,4929.311,0.0
+Albania,Europe,2002,7565.8213,0.4024776
+Albania,Europe,2004,8491.398,0.0024078994
+Albania,Europe,2005,9006.646,0.0
+Albania,Europe,2009,11553.821,0.0
+Albania,Europe,2010,12041.749,0.0
+Albania,Europe,2015,13306.443,0.0
+Albania,Europe,2016,13769.547,0.0
+Albania,Europe,2017,14306.299,0.06835781
+Albania,Europe,2018,14918.081,0.0
+Albania,Europe,2021,16353.809,0.0
+Albania,Europe,1998,5398.408,0.0
+Albania,Europe,2019,15290.777,4.8370886
+Albania,Europe,2007,10250.128,0.0
+Albania,Europe,2012,12577.756,0.0
+Albania,Europe,2022,17352.854,0.0
+Algeria,Africa,1992,11241.415,0.0018748776
+Algeria,Africa,1993,10743.706,0.0
+Algeria,Africa,1994,10414.035,0.0
+Algeria,Africa,1996,10808.879,0.0
+Algeria,Africa,1997,10725.968,0.0
+Algeria,Africa,1999,11292.037,0.12526348
+Algeria,Africa,2000,11558.221,0.0
+Algeria,Africa,2001,11742.595,0.54799825
+Algeria,Africa,2002,12213.126,0.0026426895
+Algeria,Africa,2003,12835.182,7.367693
+Algeria,Africa,2004,13226.765,0.0
+Algeria,Africa,2005,13738.496,0.0070311297
+Algeria,Africa,2006,13920.694,0.001025402
+Algeria,Africa,2007,14114.675,0.03190245
+Algeria,Africa,2008,14206.776,0.20350794
+Algeria,Africa,2009,14104.428,0.0
+Algeria,Africa,2011,14641.964,0.38947448
+Algeria,Africa,2012,14697.54,0.0
+Algeria,Africa,2015,15239.518,0.0
+Algeria,Africa,2018,15343.426,0.0
+Algeria,Africa,2021,14496.865,0.0
+Algeria,Africa,2014,15073.763,0.0
+Algeria,Africa,2020,14194.155,0.0
+Algeria,Africa,2017,15427.664,0.0
+Algeria,Africa,2019,15199.199,0.0
+Algeria,Africa,2022,14782.2,0.0
+Angola,Africa,1990,7391.7524,0.0
+Angola,Africa,1991,7218.4414,0.0
+Angola,Africa,1992,6578.0684,0.0
+Angola,Africa,1997,6015.187,0.0
+Angola,Africa,1998,6090.0957,0.0
+Angola,Africa,2001,6049.163,0.0
+Angola,Africa,2004,7074.026,0.0
+Angola,Africa,2005,7845.89,0.0
+Angola,Africa,2012,10051.34,0.0
+Angola,Africa,2013,10150.916,0.0
+Angola,Africa,2017,9042.117,0.0027140668
+Angola,Africa,2020,7556.968,0.0
+Angola,Africa,2021,7408.1265,0.0
+Angola,Africa,2022,7397.4863,0.0
+Angola,Africa,2000,6002.9893,0.10953388
+Angola,Africa,2002,6645.4775,0.0
+Angola,Africa,2003,6609.215,0.0
+Angola,Africa,2006,8435.455,0.0
+Angola,Africa,2007,9263.98,0.0
+Angola,Africa,2008,9916.909,0.0
+Angola,Africa,2009,9629.092,0.0
+Angola,Africa,2010,9672.839,0.0
+Angola,Africa,2011,9627.0205,0.0
+Angola,Africa,2015,9980.93,0.0
+Angola,Africa,2016,9381.81,0.0
+Angola,Africa,2018,8620.215,0.0
+Angola,Africa,2019,8274.543,0.0
+Antigua and Barbuda,America,1990,21078.785,0.0
+Antigua and Barbuda,America,1995,21643.99,60.629
+Antigua and Barbuda,America,1998,24000.938,13.73892
+Antigua and Barbuda,America,1999,24467.111,0.0
+Antigua and Barbuda,America,2008,32762.914,0.0
+Antigua and Barbuda,America,2010,25831.814,1.0968921
+Antigua and Barbuda,America,2017,27143.041,16.327578
+Argentina,America,2003,20005.139,0.89994299
+Argentina,America,2009,25747.197,0.0045048227
+Argentina,America,2018,27367.115,0.6478413
+Argentina,America,2019,26629.553,0.0
+Argentina,America,2020,23877.094,0.0025924162
+Argentina,America,2021,26300.273,0.0
+Argentina,America,1990,17007.285,0.0
+Argentina,America,1992,19476.283,0.22292264
+Argentina,America,1993,20791.346,0.482382264
+Argentina,America,1995,20819.5,0.0
+Argentina,America,1997,23172.158,0.0
+Argentina,America,1998,23783.102,0.36795667
+Argentina,America,2000,22281.38,0.105558075
+Argentina,America,2001,21066.459,0.2847075616
+Argentina,America,2002,18571.701,0.0
+Argentina,America,2004,21591.45,0.0
+Argentina,America,2006,24877.25,0.0
+Argentina,America,2007,26850.664,0.013911568
+Argentina,America,2008,27658.484,0.0
+Argentina,America,2012,28825.967,0.002197873
+Argentina,America,2013,29227.66,0.23585882235
+Argentina,America,2014,28200.814,0.011779913
+Argentina,America,2015,28669.207,0.002891975
+Argentina,America,2016,27802.105,0.17972052
+Argentina,America,2017,28334.904,0.0
+Argentina,America,2005,23262.408,0.0
+Argentina,America,2010,28056.258,0.0
+Argentina,America,1991,18295.61,0.0
+Argentina,America,2011,29425.76,0.019616788
+Argentina,America,1994,21711.844,0.0
+Argentina,America,1999,22714.512,0.0
+Argentina,America,2022,27627.963,0.122002736
+Armenia,Asia,2000,4589.0083,5.2313194
+Armenia,Asia,1997,3879.1794,2.5210850999999996
+Armenia,Asia,1998,4211.5127,0.0063367123
+Armenia,Asia,2004,7299.4,0.0
+Armenia,Asia,2013,12194.019,0.5394973
+Armenia,Asia,2018,15037.045,0.01462521
+Armenia,Asia,2019,16215.36,0.0
+Armenia,Asia,2020,15052.936,0.0
+Armenia,Asia,2014,12667.376,0.0
+Armenia,Asia,2016,13192.994,0.0
+Australia,Oceania,1991,35083.246,0.16227424852
+Australia,Oceania,1992,34841.23,0.128808866
+Australia,Oceania,1993,35930.12,0.15725407289999999
+Australia,Oceania,1994,37002.195,0.22113659800000002
+Australia,Oceania,1995,38014.33,0.194188063
+Australia,Oceania,2002,45920.18,0.5337718499999999
+Australia,Oceania,2006,49853.72,0.17134205500000002
+Australia,Oceania,2018,56600.438,0.0847290653
+Australia,Oceania,1990,35669.64,0.120383846
+Australia,Oceania,1996,39006.79,0.233176
+Australia,Oceania,1997,40097.0,0.0015379579
+Australia,Oceania,1998,41550.586,0.0960782
+Australia,Oceania,2000,44347.07,0.09971939199999999
+Australia,Oceania,2001,44667.926,0.0682221584
+Australia,Oceania,2003,46798.09,0.10048337
+Australia,Oceania,2004,48256.25,0.018302802
+Australia,Oceania,2005,49176.06,0.0201238223
+Australia,Oceania,2007,50799.26,0.163741264
+Australia,Oceania,2008,51577.074,0.23813753
+Australia,Oceania,2009,51481.25,0.16258200069999998
+Australia,Oceania,2010,51811.78,0.35213693
+Australia,Oceania,2011,52326.766,0.6175251942000001
+Australia,Oceania,2012,53435.18,0.037993092
+Australia,Oceania,2015,54867.773,0.202105552
+Australia,Oceania,2016,55507.977,0.052584468599999996
+Australia,Oceania,2019,56981.395,0.239530224
+Australia,Oceania,2020,56215.58,0.342709257
+Australia,Oceania,2021,57321.562,0.213914555
+Australia,Oceania,2022,58997.703,0.49889052
+Australia,Oceania,1999,43164.816,0.5636565
+Australia,Oceania,2013,53890.105,0.150002993
+Australia,Oceania,2014,54470.16,0.07660369099999999
+Australia,Oceania,2017,55846.03,0.241920513
+Austria,Europe,1991,44784.227,0.06329325699999999
+Austria,Europe,1995,47146.754,8.297437e-05
+Austria,Europe,1996,48126.39,0.002107473
+Austria,Europe,1997,49103.43,0.082240574
+Austria,Europe,1999,52570.1,0.033862786
+Austria,Europe,2002,55158.492,1.1217619453
+Austria,Europe,2005,57508.98,0.22145432
+Austria,Europe,2006,59096.01,0.0
+Austria,Europe,2009,59450.027,0.17423392
+Austria,Europe,2013,61524.96,0.2324549
+Austria,Europe,2016,62242.336,0.0
+Austria,Europe,2021,63576.242,0.0
+Austria,Europe,1998,50762.824,0.0
+Austria,Europe,1990,43728.62,0.15018317
+Austria,Europe,1993,45086.26,0.00052526605
+Austria,Europe,1994,45991.938,0.0009826308
+Austria,Europe,2000,54116.547,0.01013738
+Austria,Europe,2007,61128.55,0.10277873
+Austria,Europe,2008,61823.1,0.11572683
+Austria,Europe,2017,63216.0,0.028279651
+Austria,Europe,2019,65312.023,0.0
+Austria,Europe,2022,66294.72,0.0
+Austria,Europe,2003,55517.06,0.10675873
+Austria,Europe,2012,62044.215,0.0
+Azerbaijan,Asia,2000,5571.3096,2.08625108
+Azerbaijan,Asia,1995,4147.9746,0.67016053
+Azerbaijan,Asia,1997,4358.605,0.63093674
+Azerbaijan,Asia,2003,7218.4717,0.75586694
+Azerbaijan,Asia,2009,18901.887,0.0
+Azerbaijan,Asia,2010,19621.385,0.0
+Azerbaijan,Asia,1998,4749.1743,0.0
+Azerbaijan,Asia,1999,5056.0464,0.10914055
+Azerbaijan,Asia,2012,19545.072,0.0
+Bahamas,America,2013,31921.71,0.4328796
+Bahamas,America,1990,33062.547,0.0
+Bahamas,America,1992,29404.33,8.041171
+Bahamas,America,1995,30119.436,0.011665208
+Bahamas,America,1999,33648.02,5.856424
+Bahamas,America,2001,35062.17,3.60671
+Bahamas,America,2004,34607.742,17.117065
+Bahamas,America,2005,35355.188,0.0
+Bahamas,America,2007,35786.715,0.0
+Bahamas,America,2008,34488.008,0.0
+Bahamas,America,2011,32526.205,0.39720172
+Bahamas,America,2012,33167.605,0.0
+Bahamas,America,2015,32290.7,0.77101666
+Bahamas,America,2016,31756.84,5.106035
+Bahamas,America,2017,32442.723,0.016321868
+Bahamas,America,2019,32495.334,26.036282
+Bangladesh,Asia,2009,3942.1362,0.26347175
+Bangladesh,Asia,1990,2069.7822,0.01898834
+Bangladesh,Asia,1991,2101.3835,6.2343565199999995
+Bangladesh,Asia,1992,2174.3823,0.0
+Bangladesh,Asia,1993,2234.81,0.0
+Bangladesh,Asia,1994,2279.0942,0.37756902
+Bangladesh,Asia,1995,2351.7039,3.0978065999999997
+Bangladesh,Asia,1996,2413.543,0.021533864
+Bangladesh,Asia,1997,2475.5957,0.47466737
+Bangladesh,Asia,1998,2555.0613,8.602657
+Bangladesh,Asia,1999,2624.0654,0.0
+Bangladesh,Asia,2000,2712.935,0.93685967
+Bangladesh,Asia,2001,2803.5547,0.0
+Bangladesh,Asia,2002,2866.4346,0.0
+Bangladesh,Asia,2003,2958.915,0.0
+Bangladesh,Asia,2004,3071.838,4.1469212
+Bangladesh,Asia,2005,3231.6138,0.0
+Bangladesh,Asia,2006,3407.4272,0.0
+Bangladesh,Asia,2007,3608.9155,3.03221039
+Bangladesh,Asia,2008,3787.9382,0.0
+Bangladesh,Asia,2010,4125.464,0.0
+Bangladesh,Asia,2011,4352.4263,0.0
+Bangladesh,Asia,2012,4592.0483,0.0
+Bangladesh,Asia,2014,5068.6396,0.092546836
+Bangladesh,Asia,2015,5352.7114,0.043059572000000004
+Bangladesh,Asia,2016,5682.5356,0.282766627
+Bangladesh,Asia,2017,6005.707,0.21378376
+Bangladesh,Asia,2018,6392.5933,0.0
+Bangladesh,Asia,2019,6838.326,0.023000047500000002
+Bangladesh,Asia,2020,7015.1978,0.53489924
+Bangladesh,Asia,2021,7441.0693,0.0
+Bangladesh,Asia,2022,7888.164,0.1004995
+Bangladesh,Asia,2013,4822.726,0.013334176
+Barbados,America,2010,19253.408,0.0
+Barbados,America,2007,20899.99,0.0
+Barbados,America,1995,15925.521,0.0
+Barbados,America,2002,18404.15,0.0064381137
+Barbados,America,2004,18845.24,0.14515895
+Barbados,America,2017,18740.35,0.0
+Barbados,America,2021,15683.885,0.0
+Belarus,Europe,1993,10143.984,0.60913706
+Belarus,Europe,1996,8314.856,0.0
+Belarus,Europe,1999,10519.749,0.036084298
+Belarus,Europe,2018,26363.463,0.0
+Belarus,Europe,1997,9301.327,0.23353598
+Belarus,Europe,2007,20019.611,0.022086898
+Belarus,Europe,2000,11182.455,0.23789372
+Belarus,Europe,2006,18349.871,0.0
+Belarus,Europe,2012,25879.133,0.0
+Belarus,Europe,2013,26147.625,0.0
+Belarus,Europe,2014,26564.436,0.0
+Belarus,Europe,2017,25503.98,0.0
+Belgium,Europe,1993,43001.066,0.0075649093
+Belgium,Europe,1994,44252.105,0.0
+Belgium,Europe,1998,48166.227,0.00406145019
+Belgium,Europe,2002,52519.62,0.0019351073
+Belgium,Europe,2003,52843.062,0.0
+Belgium,Europe,2005,55453.184,0.0
+Belgium,Europe,2010,57385.035,0.082702272
+Belgium,Europe,2011,57737.16,0.018917305
+Belgium,Europe,2016,59080.15,0.0
+Belgium,Europe,2021,61873.965,0.33291784
+Belgium,Europe,1992,43588.645,0.042592768
+Belgium,Europe,1990,42487.688,0.4772764
+Belgium,Europe,1995,45212.62,0.03471914
+Belgium,Europe,1999,49758.45,0.019549597
+Belgium,Europe,2007,58143.42,0.0955572
+Belgium,Europe,2008,57943.715,0.0
+Belgium,Europe,2013,57408.477,0.0
+Belgium,Europe,2014,58163.266,0.0
+Belgium,Europe,2018,60565.98,0.0
+Belgium,Europe,2020,58500.633,0.0
+Belgium,Europe,2022,63974.246,0.0
+Belgium,Europe,2006,56494.69,0.0
+Belgium,Europe,2009,56383.56,0.0
+Belgium,Europe,2012,57504.03,0.0
+Belgium,Europe,2015,58679.684,0.0
+Belgium,Europe,2019,61711.113,0.0
+Belize,America,1990,8243.732,0.81548676
+Belize,America,1995,9958.204,0.061237615
+Belize,America,2008,12398.513,0.5598983
+Belize,America,2015,12339.48,0.0
+Belize,America,1998,9884.917,0.0053963587
+Belize,America,2000,11352.719,24.451056
+Belize,America,2001,11555.907,21.401764
+Belize,America,2005,12702.742,0.0
+Belize,America,2007,12962.467,0.87375677
+Belize,America,2010,11868.438,0.0
+Belize,America,2016,12062.798,0.0
+Belize,America,2020,10032.545,0.0
+Belize,America,2022,12569.818,3.5329351
+Benin,Africa,1991,2230.4604,0.0
+Benin,Africa,1994,2215.3662,0.0
+Benin,Africa,1995,2300.141,0.14288169
+Benin,Africa,1996,2337.6304,0.0
+Benin,Africa,1997,2399.786,0.0
+Benin,Africa,1998,2419.1,0.0
+Benin,Africa,1999,2470.685,0.0058465316
+Benin,Africa,2007,2729.1375,0.0
+Benin,Africa,2008,2777.6196,0.0
+Benin,Africa,2009,2758.0725,0.0
+Benin,Africa,2010,2733.574,0.0
+Benin,Africa,2011,2732.0125,0.0
+Benin,Africa,2012,2779.7266,0.0
+Benin,Africa,2013,2893.0466,0.0
+Benin,Africa,2020,3317.8596,0.0
+Benin,Africa,2021,3464.2886,0.0
+Benin,Africa,2022,3588.3352,0.0
+Bermuda,America,2003,104798.34,7.165848
+Bhutan,Asia,1994,4042.4941,0.0
+Bhutan,Asia,2000,5287.574,0.0
+Bhutan,Asia,2004,6517.997,0.0
+Bhutan,Asia,2021,13458.8125,0.0
+Bhutan,Asia,2009,9019.118,0.0
+Bhutan,Asia,2011,10714.687,0.0
+Bhutan,Asia,1999,5241.3667,0.87650937
+Bolivia,America,1990,5124.488,0.0
+Bolivia,America,1994,5521.66,0.0
+Bolivia,America,2000,6146.0293,0.0
+Bolivia,America,2004,6407.838,0.007836141
+Bolivia,America,2005,6579.3125,0.0
+Bolivia,America,2008,7272.166,2.2489731
+Bolivia,America,2009,7392.1626,0.0
+Bolivia,America,2010,7571.678,0.508913
+Bolivia,America,2013,8524.032,0.008154122
+Bolivia,America,2014,8851.712,0.6061306
+Bolivia,America,2016,9390.791,1.3258252
+Bolivia,America,1992,5261.6616,10.6310055
+Bolivia,America,1997,5989.4146,0.8831986
+Bolivia,America,1999,6099.5117,0.0
+Bolivia,America,2001,6144.9785,1.4862095
+Bolivia,America,2002,6193.2637,1.2649446
+Bolivia,America,2003,6255.5156,0.003866426
+Bolivia,America,2006,6778.385,0.3056276
+Bolivia,America,2007,6967.57,1.638706
+Bolivia,America,2011,7837.493,0.08346143
+Bolivia,America,2012,8108.205,0.0
+Bolivia,America,2015,9141.929,0.0
+Bolivia,America,2018,9907.0625,0.0
+Bolivia,America,2019,9985.23,0.0
+Bolivia,America,2020,9000.976,0.027300144
+Bolivia,America,2021,9454.198,0.0
+Bolivia,America,2022,9681.707,0.0
+Bolivia,America,1998,6180.55,0.0
+Bolivia,America,1996,5810.6743,0.0
+Bosnia and Herzegovina,Europe,2000,7938.5225,2.8377595
+Bosnia and Herzegovina,Europe,2003,8830.109,1.6472731
+Bosnia and Herzegovina,Europe,2001,8092.636,0.0
+Bosnia and Herzegovina,Europe,2004,9473.74,0.0
+Bosnia and Herzegovina,Europe,2005,9949.858,0.0
+Bosnia and Herzegovina,Europe,2009,11989.797,0.0
+Bosnia and Herzegovina,Europe,2010,12310.37,0.5065114
+Bosnia and Herzegovina,Europe,2014,13644.516,2.3524234
+Bosnia and Herzegovina,Europe,2015,14420.487,0.0
+Bosnia and Herzegovina,Europe,2019,17269.283,0.0
+Bosnia and Herzegovina,Europe,2020,16983.043,0.0
+Bosnia and Herzegovina,Europe,2021,18544.076,0.0
+Bosnia and Herzegovina,Europe,2022,19569.77,0.10623559
+Bosnia and Herzegovina,Europe,1999,7584.5073,0.0
+Bosnia and Herzegovina,Europe,2007,11332.676,0.0
+Bosnia and Herzegovina,Europe,2012,12801.112,0.0
+Botswana,Africa,1992,11008.704,0.0
+Botswana,Africa,2015,15994.997,0.32518524
+Botswana,Africa,2019,18106.018,0.0
+Botswana,Africa,1995,11457.724,0.0
+Botswana,Africa,2000,13185.845,0.086380705
+Botswana,Africa,2004,13984.87,0.0
+Botswana,Africa,2009,13489.979,0.0
+Botswana,Africa,2011,15237.111,0.0
+Botswana,Africa,2013,16369.827,0.0
+Botswana,Africa,2017,17352.93,0.0
+Botswana,Africa,2018,17824.951,0.0
+Brazil,America,1994,13202.931,0.09977486099999999
+Brazil,America,1998,13737.703,0.01035322
+Brazil,America,1999,13602.414,0.011603277
+Brazil,America,2001,14016.132,0.008035949
+Brazil,America,2002,14265.905,0.002157729
+Brazil,America,2004,14911.261,0.14345576799999998
+Brazil,America,2005,15221.014,0.13764313
+Brazil,America,2007,16440.584,0.008947012
+Brazil,America,2010,18062.158,0.042646862
+Brazil,America,2012,18832.219,0.043617988600000004
+Brazil,America,2013,19241.506,0.043615513
+Brazil,America,2014,19183.172,0.0805698315
+Brazil,America,2015,18357.068,0.09261650945000001
+Brazil,America,2016,17620.928,0.104121778
+Brazil,America,2020,17327.516,0.2438847214
+Brazil,America,2021,18075.705,0.20835642699999998
+Brazil,America,2022,18554.047,0.273262655
+Brazil,America,1990,12633.288,0.0
+Brazil,America,1991,12546.561,0.0004909929
+Brazil,America,1992,12271.979,0.0066053853
+Brazil,America,1995,13550.439,0.00038994814
+Brazil,America,1996,13641.63,0.0
+Brazil,America,1997,13896.625,0.0
+Brazil,America,2000,14005.348,0.011442551
+Brazil,America,2003,14259.366,0.020773191
+Brazil,America,2006,15657.4795,0.0
+Brazil,America,2008,17113.367,0.06545371
+Brazil,America,2009,16939.441,0.03629282064
+Brazil,America,2011,18627.81,0.03826224
+Brazil,America,2017,17724.48,0.0048461
+Brazil,America,2018,17917.75,0.002764832
+Brazil,America,2019,18018.621,0.0
+Brunei,Asia,1998,97171.64,0.04936879
+Bulgaria,Europe,2000,12658.809,0.13324786272
+Bulgaria,Europe,2001,13407.091,0.0
+Bulgaria,Europe,1997,12513.26,0.0
+Bulgaria,Europe,1998,13074.357,0.0
+Bulgaria,Europe,2002,14505.831,0.0060964297
+Bulgaria,Europe,2005,17811.666,1.5300319
+Bulgaria,Europe,2006,19168.354,0.0
+Bulgaria,Europe,2007,20594.764,0.0055229454
+Bulgaria,Europe,2010,21888.504,0.0
+Bulgaria,Europe,2012,22789.791,0.008104902
+Bulgaria,Europe,2014,23140.871,1.630574
+Bulgaria,Europe,2015,24080.256,0.011414628
+Bulgaria,Europe,2018,26709.322,0.0
+Bulgaria,Europe,2021,29536.678,0.0
+Bulgaria,Europe,2022,31813.936,0.05202213
+Bulgaria,Europe,1990,15073.091,0.0
+Bulgaria,Europe,1993,12973.122,0.0
+Bulgaria,Europe,1999,12043.958,0.0
+Bulgaria,Europe,2008,22011.092,0.0
+Burkina Faso,Africa,1990,1107.856,0.0
+Burkina Faso,Africa,1995,1183.5286,0.0
+Burkina Faso,Africa,1996,1280.696,0.0
+Burkina Faso,Africa,1998,1385.0931,0.0
+Burkina Faso,Africa,2001,1477.2849,0.0
+Burkina Faso,Africa,2011,1939.8666,0.0
+Burkina Faso,Africa,2012,2003.6647,0.0
+Burkina Faso,Africa,2014,2083.1985,0.0
+Burkina Faso,Africa,2020,2380.9316,0.0
+Burkina Faso,Africa,2022,2466.0532,0.0
+Burkina Faso,Africa,1994,1148.6072,0.0
+Burkina Faso,Africa,1999,1444.5669,0.0
+Burkina Faso,Africa,2003,1561.8331,0.0
+Burkina Faso,Africa,2006,1714.7604,0.0
+Burkina Faso,Africa,2007,1731.9304,0.0
+Burkina Faso,Africa,2008,1779.3271,0.0
+Burkina Faso,Africa,2009,1779.323,1.5871845
+Burkina Faso,Africa,2010,1873.9714,0.0017409162
+Burkina Faso,Africa,2013,2057.064,0.0
+Burkina Faso,Africa,2015,2101.7026,0.26199782
+Burkina Faso,Africa,2016,2162.7258,0.0
+Burkina Faso,Africa,2017,2232.2878,0.0
+Burundi,Africa,1999,1017.4978,0.0
+Burundi,Africa,2000,988.03687,0.0
+Burundi,Africa,2001,983.39685,0.0
+Burundi,Africa,2003,955.6692,0.0
+Burundi,Africa,2004,965.2041,0.0
+Burundi,Africa,2005,938.3816,0.0
+Burundi,Africa,2006,954.19086,0.0
+Burundi,Africa,2008,957.22266,0.0
+Burundi,Africa,2009,944.62994,0.0
+Burundi,Africa,2010,947.6214,0.0
+Burundi,Africa,2011,951.1885,0.0
+Burundi,Africa,2002,998.5613,0.0
+Burundi,Africa,2007,951.2901,0.0
+Burundi,Africa,2014,977.76587,0.07391575
+Burundi,Africa,2015,918.5572,0.27470592
+Burundi,Africa,2016,897.45905,0.16914879
+Burundi,Africa,2018,868.5555,0.0
+Burundi,Africa,2019,855.7327,0.0
+Burundi,Africa,2020,833.9202,0.0
+Burundi,Africa,2021,836.6656,0.0
+Burundi,Africa,2017,880.99347,0.0
+Cambodia,Asia,1994,1650.391,0.8112494
+Cambodia,Asia,1995,1672.7393,1.1224071
+Cambodia,Asia,1996,1643.0157,1.14723841
+Cambodia,Asia,2001,2032.0809,0.37650597
+Cambodia,Asia,2002,2126.3416,0.8893498515
+Cambodia,Asia,2005,2781.8904,0.0
+Cambodia,Asia,2016,5283.7295,0.0
+Cambodia,Asia,1999,1775.4124,0.014215682
+Cambodia,Asia,2000,1922.0317,4.378725
+Cambodia,Asia,2004,2491.3093,0.0
+Cambodia,Asia,2006,3041.1047,0.0
+Cambodia,Asia,2007,3308.1575,0.011575098
+Cambodia,Asia,2010,3711.5376,0.6226498
+Cambodia,Asia,2011,3921.979,4.0609403
+Cambodia,Asia,2012,4159.1636,0.0
+Cambodia,Asia,2013,4419.399,3.2834272
+Cambodia,Asia,2014,4702.7305,0.011974175
+Cambodia,Asia,2015,4968.5728,0.0
+Cambodia,Asia,2018,6050.591,0.0
+Cambodia,Asia,2019,6448.885,0.0
+Cambodia,Asia,2021,6225.5327,0.0
+Cambodia,Asia,2022,6456.7383,0.0
+Cambodia,Asia,1997,1595.1713,0.00029040952
+Cambodia,Asia,2009,3587.609,0.0
+Cambodia,Asia,2020,6128.782,0.38650632
+Cameroon,Africa,1990,4517.6187,0.0
+Cameroon,Africa,1991,4220.653,0.0
+Cameroon,Africa,2001,3884.873,0.0
+Cameroon,Africa,2005,4199.7227,0.0
+Cameroon,Africa,2012,4382.1113,0.006632386
+Cameroon,Africa,2022,4843.6504,0.034368932
+Cameroon,Africa,1994,3522.7488,0.0
+Cameroon,Africa,1999,3780.0623,0.0
+Cameroon,Africa,2000,3822.9443,0.0
+Cameroon,Africa,2007,4302.619,0.0
+Cameroon,Africa,2008,4300.2666,0.0
+Cameroon,Africa,2010,4286.583,0.0
+Cameroon,Africa,2013,4473.5723,0.0
+Cameroon,Africa,2014,4588.4863,0.0
+Cameroon,Africa,2015,4698.667,0.0
+Cameroon,Africa,2017,4797.9756,0.0
+Cameroon,Africa,2020,4763.482,0.0
+Cameroon,Africa,2003,4054.7812,0.0
+Cameroon,Africa,2019,4882.3555,0.0
+Canada,America,1990,39863.066,0.0014259936
+Canada,America,1993,39023.324,0.27448305
+Canada,America,1995,40988.4,0.043369121
+Canada,America,1996,41247.254,0.115713727711
+Canada,America,1997,42587.367,0.0198477218
+Canada,America,1998,43879.566,0.23659305
+Canada,America,2002,48943.543,0.0
+Canada,America,2003,49381.594,0.0770484267
+Canada,America,2004,50436.293,0.029220108
+Canada,America,2005,51564.844,0.030431965
+Canada,America,2006,52391.38,0.0
+Canada,America,2007,52948.9,0.0
+Canada,America,2008,52899.477,0.0
+Canada,America,2009,50772.87,0.036373552
+Canada,America,2011,52869.387,0.128253274
+Canada,America,2012,53217.715,0.05928789340000001
+Canada,America,2013,53884.844,0.395863221
+Canada,America,2014,54880.86,0.0071438467
+Canada,America,2016,54765.305,0.261781
+Canada,America,2017,55756.26,0.01212661
+Canada,America,2018,56470.46,0.018836984
+Canada,America,2019,56713.09,0.061649624
+Canada,America,2020,53274.91,0.15099492399999997
+Canada,America,2021,55781.7,0.1049036688
+Canada,America,2022,56872.605,0.0099468729
+Canada,America,1991,38547.465,0.08162896
+Canada,America,1994,40332.875,0.000517291
+Canada,America,1999,45761.93,1.4740301e-05
+Canada,America,2000,47667.434,0.0017454973
+Canada,America,2001,48036.625,0.0
+Canada,America,2010,51763.676,0.0
+Canada,America,1992,38433.09,0.089267715
+Canada,America,2015,54819.188,0.0
+Cape Verde,Africa,1992,1984.6807,0.0
+Cape Verde,Africa,1998,3657.381,0.0
+Cape Verde,Africa,2002,4710.241,0.0
+Cape Verde,Africa,2017,8234.56,0.0
+Cape Verde,Africa,2022,8850.106,0.0
+Cape Verde,Africa,2009,6994.574,0.0
+Cape Verde,Africa,2020,7207.8687,0.0
+Cape Verde,Africa,2015,7560.1367,0.062862255
+Cape Verde,Africa,1995,2763.3972,0.0
+Cape Verde,Africa,2014,7491.022,0.0
+Cayman Islands,America,2008,89338.29,0.0
+Central African Republic,Africa,2022,1137.3473,0.0
+Central African Republic,Africa,1995,1334.1033,0.0
+Central African Republic,Africa,1996,1247.9688,0.0
+Central African Republic,Africa,1998,1302.7515,0.0
+Central African Republic,Africa,1999,1313.2357,0.0
+Central African Republic,Africa,2003,1191.8732,0.0
+Central African Republic,Africa,2004,1236.2854,0.0
+Central African Republic,Africa,2005,1219.594,0.0
+Central African Republic,Africa,2007,1284.5529,0.0
+Central African Republic,Africa,2008,1283.2728,0.0
+Central African Republic,Africa,2009,1402.6816,0.0
+Central African Republic,Africa,2010,1479.4137,0.0
+Central African Republic,Africa,2011,1517.1484,0.0
+Central African Republic,Africa,2013,996.89636,0.0
+Central African Republic,Africa,2017,1103.8661,0.0
+Central African Republic,Africa,2019,1145.0956,0.0
+Central African Republic,Africa,2021,1128.5524,0.0
+Central African Republic,Africa,2001,1272.857,0.0
+Central African Republic,Africa,2012,1577.9806,0.0
+Central African Republic,Africa,2015,1043.9218,0.0
+Central African Republic,Africa,2002,1290.3832,0.0
+Chad,Africa,1993,1103.8918,0.0
+Chad,Africa,1997,1148.7723,0.0
+Chad,Africa,2001,1176.5989,0.058450703
+Chad,Africa,2009,1897.3331,0.0
+Chad,Africa,2010,2081.1394,0.0
+Chad,Africa,2012,2113.6475,0.080857985
+Chad,Africa,2013,2155.7854,0.0
+Chad,Africa,2017,1887.5029,0.0
+Chad,Africa,2022,1688.4602,0.0
+Chad,Africa,1991,1295.3542,0.0
+Chad,Africa,1995,1150.9735,0.0
+Chad,Africa,1998,1187.0807,0.0
+Chad,Africa,1999,1138.274,0.0
+Chad,Africa,2006,1900.364,0.0
+Chad,Africa,2007,1896.081,0.0
+Chad,Africa,2008,1886.7716,0.0
+Chad,Africa,2019,1868.0195,0.0
+Chad,Africa,2020,1780.563,0.0
+Chad,Africa,2021,1700.167,0.0
+Chile,America,1991,11731.046,0.583942553
+Chile,America,1990,11064.255,0.0
+Chile,America,1993,13466.777,0.068983175
+Chile,America,1995,14956.858,0.015875862
+Chile,America,1997,16689.799,0.26871495
+Chile,America,2000,17531.46,0.051059648
+Chile,America,2001,17876.613,0.012434554
+Chile,America,2002,18246.645,0.39849684
+Chile,America,2004,19969.033,0.0
+Chile,America,2005,20925.916,0.0040885033
+Chile,America,2006,21976.297,0.0
+Chile,America,2008,23518.086,0.012785264
+Chile,America,2012,26679.916,0.163443007
+Chile,America,2014,27514.764,0.051625632
+Chile,America,2015,27821.197,1.19612114
+Chile,America,2016,27968.604,0.040105097
+Chile,America,2017,27902.846,0.19988828290000002
+Chile,America,2019,28228.5,0.0
+Chile,America,2021,29105.102,0.055278085
+Chile,America,2007,22886.965,0.057974014
+Chile,America,2010,24125.287,13.821624
+Chile,America,1992,12832.425,0.26115566
+Chile,America,2011,25375.229,0.026520003
+Chile,America,2013,27300.996,0.36049673
+Chile,America,1999,16902.092,0.37047482
+Chile,America,2003,18909.547,0.0
+Chile,America,2022,29557.393,0.0
+China,Asia,1991,1773.6394,2.12151208
+China,Asia,1992,2001.2543,0.36697439579999996
+China,Asia,1993,2253.052,1.2086786294
+China,Asia,1994,2518.1548,4.15388836
+China,Asia,1995,2763.7998,0.9874186250000001
+China,Asia,1997,3250.6145,0.6658056188
+China,Asia,1999,3705.9773,0.9257772293000001
+China,Asia,2000,3989.062,0.12269018305999999
+China,Asia,2001,4290.3022,0.33216343210000004
+China,Asia,2002,4650.897,0.418671118
+China,Asia,2003,5085.978,0.985888258
+China,Asia,2005,6165.1836,0.51719055
+China,Asia,2006,6910.758,0.45287624162
+China,Asia,2008,8566.965,2.4185853589999997
+China,Asia,2009,9325.65,0.1354367592
+China,Asia,2010,10267.806,0.376957932
+China,Asia,2011,11187.166,0.18558363600000002
+China,Asia,2013,12830.37,0.37039869045
+China,Asia,2014,13696.518,0.27737699
+China,Asia,2015,14575.935,0.16699741806
+China,Asia,2016,15485.213,0.39986119109999996
+China,Asia,2017,16461.07,0.13390936135099998
+China,Asia,2021,20406.73,0.1434110033
+China,Asia,2022,21011.617,0.08907113380000001
+China,Asia,1990,1645.579,0.74529658
+China,Asia,1996,3006.3628,2.481333366
+China,Asia,1998,3472.1785,3.234194326
+China,Asia,2004,5567.1904,0.2213152264
+China,Asia,2007,7853.096,0.224731303
+China,Asia,2012,11985.317,0.2315295856
+China,Asia,2018,17490.166,0.11028624263
+China,Asia,2019,18465.299,0.1305745243
+China,Asia,2020,18833.785,0.157219509754
+Colombia,America,1998,11550.729,0.0
+Colombia,America,2015,17128.107,0.0
+Colombia,America,2016,17313.287,0.0
+Colombia,America,1990,10181.133,0.0
+Colombia,America,1993,10725.18,0.0
+Colombia,America,1994,11127.203,0.0029373788
+Colombia,America,1995,11484.666,0.0
+Colombia,America,1996,11509.236,0.0
+Colombia,America,1997,11692.899,0.0028127683
+Colombia,America,1999,10874.447,2.153328192744
+Colombia,America,2000,11010.671,0.0
+Colombia,America,2001,11020.81,0.0
+Colombia,America,2002,11124.361,0.0
+Colombia,America,2003,11387.211,0.0
+Colombia,America,2004,11819.602,0.0
+Colombia,America,2005,12218.054,0.006868107
+Colombia,America,2006,12867.045,0.0
+Colombia,America,2007,13561.154,0.0
+Colombia,America,2008,13838.885,0.0041236407
+Colombia,America,2009,13834.497,0.0
+Colombia,America,2010,14293.021,0.28048012
+Colombia,America,2011,15123.193,0.75124866
+Colombia,America,2012,15558.091,0.02751617
+Colombia,America,2013,16202.396,0.0015702954000000001
+Colombia,America,2014,16780.871,0.0020984109
+Colombia,America,2017,17295.764,0.0333475633
+Colombia,America,2018,17416.014,0.0
+Colombia,America,2019,17652.896,0.0
+Colombia,America,2020,16150.725,0.05922614600000001
+Colombia,America,2021,17700.06,0.0
+Colombia,America,2022,18788.406,0.0032011908
+Colombia,America,1991,10178.37,0.00080583437
+Colombia,America,1992,10382.358,0.0
+Comoros,Africa,2009,3165.7136,0.0
+Comoros,Africa,2012,3324.3396,0.4922018
+Comoros,Africa,2014,3397.0925,0.0
+Comoros,Africa,2003,3064.0566,0.0
+Comoros,Africa,2019,3516.1267,0.0
+Comoros,Africa,1991,2780.407,0.0
+Comoros,Africa,2005,3087.5166,0.0
+Comoros,Africa,2006,3105.9568,0.0
+Congo,Africa,1994,7617.6074,0.0
+Congo,Africa,1998,7711.6323,0.0030264459
+Congo,Africa,1999,7312.3267,0.0
+Congo,Africa,2002,7729.3887,0.0
+Congo,Africa,2003,7577.4565,0.0
+Congo,Africa,2005,7876.118,0.0
+Congo,Africa,2006,8192.58,0.0
+Congo,Africa,2007,7375.8247,0.0
+Congo,Africa,2012,9079.687,0.0
+Congo,Africa,2019,6939.369,0.0
+Congo,Africa,2020,6350.5093,0.0
+Congo,Africa,2021,6263.2114,0.0
+Congo,Africa,2022,6205.105,0.0
+Costa Rica,America,1994,12534.741,0.038143236999999997
+Costa Rica,America,1998,13643.552,0.8337318699999999
+Costa Rica,America,2015,21510.977,0.0
+Costa Rica,America,2019,23646.408,0.0
+Costa Rica,America,1991,11051.724,1.3896075
+Costa Rica,America,1993,12290.831,0.0
+Costa Rica,America,1996,12617.898,3.8532594
+Costa Rica,America,1999,13926.79,0.007015148
+Costa Rica,America,2001,14422.2295,0.0
+Costa Rica,America,2002,14670.719,0.006031792
+Costa Rica,America,2003,15070.831,0.0
+Costa Rica,America,2004,15507.987,0.0
+Costa Rica,America,2005,15893.249,0.2245437
+Costa Rica,America,2007,17957.494,0.297567
+Costa Rica,America,2008,18555.0,0.07142452
+Costa Rica,America,2010,18885.848,0.0
+Costa Rica,America,2011,19487.002,0.0
+Costa Rica,America,2012,20201.389,0.09527508
+Costa Rica,America,2018,23282.604,0.0
+Costa Rica,America,2021,24140.434,0.0
+Costa Rica,America,1990,11085.452,0.3414052
+Costa Rica,America,2009,18148.764,0.65049714
+Costa Rica,America,1995,12745.017,0.054410752
+Costa Rica,America,2016,22189.879,0.0
+Costa Rica,America,2017,22895.232,0.30570406
+Costa Rica,America,2020,22479.59,0.0
+Costa Rica,America,2022,25131.025,0.0
+Costa Rica,America,1992,11766.9795,0.0
+Costa Rica,America,2000,14187.716,0.0
+Cote d'Ivoire,Africa,1996,4807.4243,0.0
+Cote d'Ivoire,Africa,2007,3999.691,0.0
+Cote d'Ivoire,Africa,2008,4096.7236,0.0
+Cote d'Ivoire,Africa,2010,4338.6523,0.0
+Cote d'Ivoire,Africa,2014,4907.5747,0.0
+Cote d'Ivoire,Africa,2015,5110.8623,0.0
+Cote d'Ivoire,Africa,2016,5320.8467,0.0
+Cote d'Ivoire,Africa,2017,5556.114,0.0
+Cote d'Ivoire,Africa,2018,5670.2,0.0
+Cote d'Ivoire,Africa,2019,5894.879,0.0
+Cote d'Ivoire,Africa,2020,5787.8154,0.0
+Cote d'Ivoire,Africa,2022,6261.533,0.0
+Cote d'Ivoire,Africa,2009,4151.0537,0.0
+Croatia,Europe,2003,25462.967,0.992771712
+Croatia,Europe,2000,21293.104,1.164776
+Croatia,Europe,2001,22816.822,0.0
+Croatia,Europe,2005,27629.336,0.0
+Croatia,Europe,2006,29026.482,0.0
+Croatia,Europe,2010,28691.814,0.13600948
+Croatia,Europe,2012,28248.32,0.0
+Croatia,Europe,2014,28448.125,0.0
+Croatia,Europe,2015,29458.7,0.0
+Croatia,Europe,2018,33715.938,0.0
+Croatia,Europe,2019,35107.934,0.0
+Croatia,Europe,2022,39844.137,0.0
+Croatia,Europe,1996,18841.887,0.0
+Croatia,Europe,2020,32479.234,22.547428
+Croatia,Europe,2017,32337.545,0.2871837
+Croatia,Europe,1997,20101.879,0.0
+Croatia,Europe,2007,30498.662,0.0
+Cyprus,Asia,1991,27799.176,0.0
+Cyprus,Asia,2000,36973.2,0.0
+Cyprus,Asia,1995,32133.318,0.043692157
+Cyprus,Asia,2003,39528.176,0.06874116
+Cyprus,Asia,2004,40963.37,0.0
+Cyprus,Asia,1998,33964.215,0.0
+Cyprus,Asia,2007,44856.836,0.0
+Cyprus,Asia,2022,52882.285,0.0
+Cyprus,Asia,2021,49929.84,0.15941435
+Czechia,Europe,1996,29311.285,0.05342214
+Czechia,Europe,1997,29168.053,2.9752257
+Czechia,Europe,1998,29080.918,0.07783566
+Czechia,Europe,2000,30781.717,0.12939087
+Czechia,Europe,2002,32342.531,2.944182084
+Czechia,Europe,2005,37171.176,0.0
+Czechia,Europe,2006,39525.906,0.0
+Czechia,Europe,2009,39932.04,0.07231206
+Czechia,Europe,2010,40896.73,0.16624102
+Czechia,Europe,2013,41127.027,0.39140683
+Czechia,Europe,2021,49995.703,0.24876574
+Czechia,Europe,2007,41452.812,0.07887107
+Czechia,Europe,2008,42184.336,0.021113396
+Czechia,Europe,2017,47256.684,0.0013264484
+Czechia,Europe,2020,47196.45,0.0
+Czechia,Europe,2022,50617.7,0.0
+Czechia,Europe,2003,33419.668,0.0
+Czechia,Europe,2012,41157.88,0.0
+Czechia,Europe,2018,48431.953,0.0
+Democratic Republic of Congo,Africa,2022,1385.4647,0.0
+Democratic Republic of Congo,Africa,1990,2172.0017,0.0
+Democratic Republic of Congo,Africa,1994,1273.9946,0.0
+Democratic Republic of Congo,Africa,1997,1109.8584,0.0
+Democratic Republic of Congo,Africa,1999,983.60223,0.0
+Democratic Republic of Congo,Africa,2001,841.03564,0.0
+Democratic Republic of Congo,Africa,2002,839.76624,0.10311595
+Democratic Republic of Congo,Africa,2003,861.0816,0.0
+Democratic Republic of Congo,Africa,2006,938.04114,0.0
+Democratic Republic of Congo,Africa,2007,967.05414,0.0
+Democratic Republic of Congo,Africa,2008,996.74414,0.035374053
+Democratic Republic of Congo,Africa,2009,993.9978,0.0
+Democratic Republic of Congo,Africa,2010,1031.2501,0.0
+Democratic Republic of Congo,Africa,2011,1066.5795,0.0
+Democratic Republic of Congo,Africa,2012,1104.6641,0.0
+Democratic Republic of Congo,Africa,2014,1225.7021,0.04177221
+Democratic Republic of Congo,Africa,2015,1267.9055,0.0
+Democratic Republic of Congo,Africa,2016,1253.1582,0.0
+Democratic Republic of Congo,Africa,2017,1253.1874,0.0
+Democratic Republic of Congo,Africa,2018,1282.4823,0.0
+Democratic Republic of Congo,Africa,2019,1296.9476,0.0
+Democratic Republic of Congo,Africa,2020,1277.6328,0.0
+Democratic Republic of Congo,Africa,1992,1664.7537,0.0
+Democratic Republic of Congo,Africa,2005,918.53485,0.0
+Democratic Republic of Congo,Africa,2021,1313.6182,0.0
+Denmark,Europe,1992,47574.676,0.49157816
+Denmark,Europe,1990,46233.273,0.13743488
+Denmark,Europe,1999,56055.12,1.4637351
+Denmark,Europe,2002,58369.234,0.0
+Denmark,Europe,2005,61181.082,0.49155408
+Denmark,Europe,2007,63649.715,0.03130641
+Denmark,Europe,2010,60233.363,0.0
+Denmark,Europe,2013,61128.395,0.0
+Denmark,Europe,2022,70865.44,0.0
+Djibouti,Africa,2022,6083.6436,0.0
+Djibouti,Africa,2019,5784.448,0.0
+Djibouti,Africa,2020,5773.2075,0.0
+Djibouti,Africa,2018,5566.581,0.0
+Dominica,America,2004,13737.352,0.0
+Dominica,America,1995,11359.1045,71.0325
+Dominica,America,1999,12571.752,0.0
+Dominica,America,2007,15346.8545,4.7463765
+Dominica,America,2011,16271.469,0.0
+Dominica,America,2015,15926.805,89.28739
+Dominica,America,2017,15710.711,279.16687
+Dominican Republic,America,1991,7202.2793,0.0
+Dominican Republic,America,1993,8266.622,0.0
+Dominican Republic,America,1996,8981.282,0.0
+Dominican Republic,America,2002,11242.072,0.0018424729
+Dominican Republic,America,2003,10932.235,0.20894103
+Dominican Republic,America,2004,11060.16,1.3305029
+Dominican Republic,America,2005,11945.315,0.0
+Dominican Republic,America,2007,13666.6875,0.37006325
+Dominican Republic,America,2009,13886.884,0.108582325
+Dominican Republic,America,2010,14853.634,0.0
+Dominican Republic,America,2011,15125.839,0.0516976
+Dominican Republic,America,2012,15344.334,0.04943843
+Dominican Republic,America,2013,15897.563,0.00016272573
+Dominican Republic,America,2014,16817.645,0.0
+Dominican Republic,America,2015,17777.012,0.0
+Dominican Republic,America,2016,18751.287,0.0
+Dominican Republic,America,2018,20547.658,0.0
+Dominican Republic,America,2022,22757.389,0.0
+Dominican Republic,America,1995,8630.226,0.0
+Dominican Republic,America,1998,10087.484,9.1430435
+Dominican Republic,America,2001,10921.261,3.9059716e-05
+Dominican Republic,America,2008,13932.234,0.0
+Dominican Republic,America,2017,19414.002,0.07875192
+Dominican Republic,America,2020,19721.32,0.20927227
+Dominican Republic,America,2021,21912.26,0.0
+East Timor,Asia,2007,3256.6553,0.0
+East Timor,Asia,2016,4515.541,0.0
+East Timor,Asia,2001,4038.5696,0.0
+East Timor,Asia,2003,3265.032,0.0
+East Timor,Asia,2004,3235.0605,0.0
+East Timor,Asia,2008,3530.9749,0.0
+East Timor,Asia,2020,6595.0547,0.9248045
+East Timor,Asia,2015,4467.917,0.25075147
+East Timor,Asia,2006,3039.032,0.0
+East Timor,Asia,2021,6824.7925,0.0
+Ecuador,America,1997,9727.282,0.48643118
+Ecuador,America,2009,11389.495,0.00038936056
+Ecuador,America,2010,11651.343,0.0020941203
+Ecuador,America,2013,13672.307,0.0
+Ecuador,America,1992,9279.9375,0.110532425
+Ecuador,America,1998,9864.597,0.4789203
+Ecuador,America,2000,9171.751,0.0
+Ecuador,America,2001,9393.543,0.04485391
+Ecuador,America,2002,9685.621,0.0560441
+Ecuador,America,2003,9790.751,0.0
+Ecuador,America,2006,10920.035,0.326481465
+Ecuador,America,2008,11460.405,1.6191019
+Ecuador,America,2011,12433.759,0.0
+Ecuador,America,2012,12945.077,0.0
+Ecuador,America,2015,13864.487,0.0
+Ecuador,America,2016,13569.797,2.0112532340000002
+Ecuador,America,2019,13853.421,0.0
+Ecuador,America,2020,12425.018,0.0
+Ecuador,America,2021,13539.711,0.0
+Ecuador,America,2022,14263.204,0.046067137
+Ecuador,America,1990,9093.611,0.0
+Ecuador,America,1995,9513.455,0.0
+Ecuador,America,1996,9497.573,0.027748715
+Ecuador,America,2014,14047.491,0.0
+Ecuador,America,1999,9231.593,0.0
+Ecuador,America,1994,9482.492,0.0
+Ecuador,America,1993,9272.89,2.6400943
+Egypt,Africa,1991,7876.5527,0.0
+Egypt,Africa,1994,8221.047,0.26976
+Egypt,Africa,1995,8423.578,0.0
+Egypt,Africa,1996,8662.331,0.0
+Egypt,Africa,1997,8950.654,0.0025498308
+Egypt,Africa,2002,10143.506,0.0
+Egypt,Africa,2010,13128.988,0.0
+Egypt,Africa,2020,15309.236,0.01980106
+Egypt,Africa,2021,15579.016,0.0
+Egypt,Africa,1992,8034.5625,2.8669734
+Egypt,Africa,2004,10451.821,0.0
+Egypt,Africa,2015,13425.912,0.030361308
+Egypt,Africa,2016,13727.32,0.007520115
+Egypt,Africa,2000,9981.628,0.0
+Egypt,Africa,1993,8079.0547,0.0
+Egypt,Africa,2008,12391.585,0.0
+El Salvador,America,1994,6795.506,0.013021878
+El Salvador,America,1998,7381.1147,5.1030157
+El Salvador,America,2001,7580.323,15.2321998
+El Salvador,America,2009,8494.498,5.48813127
+El Salvador,America,2015,9646.154,0.18304154
+El Salvador,America,2016,9863.761,0.23602691
+El Salvador,America,2018,10297.203,0.10009685
+El Salvador,America,2019,10543.938,0.040749565
+El Salvador,America,1992,6275.1875,0.0
+El Salvador,America,1995,7057.9204,0.0
+El Salvador,America,1999,7498.4673,0.013292926
+El Salvador,America,2000,7545.4478,0.0
+El Salvador,America,2002,7675.671,0.0
+El Salvador,America,2005,8050.5347,2.420057
+El Salvador,America,2007,8548.835,0.0
+El Salvador,America,2008,8704.806,0.0
+El Salvador,America,2011,8943.062,4.9300475
+El Salvador,America,2021,10809.714,0.0
+El Salvador,America,2006,8404.247,0.0
+El Salvador,America,1996,7062.3003,0.00010431523
+El Salvador,America,1997,7234.9443,0.0
+El Salvador,America,2010,8648.93,0.10841331
+El Salvador,America,2017,10064.794,0.0
+El Salvador,America,2020,9692.449,0.8824681
+El Salvador,America,2022,11068.922,0.052325852
+El Salvador,America,2013,9327.564,0.0
+El Salvador,America,1993,6553.0723,0.0
+Estonia,Europe,2005,31032.965,0.92154205
+Estonia,Europe,2006,34264.023,0.0
+Estonia,Europe,2012,34741.37,0.0
+Estonia,Europe,2018,42030.55,0.0
+Estonia,Europe,2022,44492.12,0.0
+Eswatini,Africa,1990,5528.906,0.005043088
+Eswatini,Africa,1991,5404.696,0.029094508
+Eswatini,Africa,1992,5370.7407,0.026181702
+Eswatini,Africa,1993,5378.4907,0.024784453
+Eswatini,Africa,1994,5508.213,0.023699949
+Eswatini,Africa,1995,5778.655,0.0198528
+Eswatini,Africa,2001,6204.918,0.0
+Eswatini,Africa,2002,6425.4883,0.0
+Eswatini,Africa,2003,6629.388,0.0
+Eswatini,Africa,2004,6828.2856,0.0
+Eswatini,Africa,2007,7882.985,0.0
+Eswatini,Africa,2016,9497.017,0.0
+Eswatini,Africa,2017,9658.128,0.0
+Eswatini,Africa,2019,10027.652,0.0
+Eswatini,Africa,2000,6197.05,0.0028767146
+Eswatini,Africa,2008,7894.2983,0.0
+Eswatini,Africa,2014,9155.867,0.0
+Eswatini,Africa,2005,7198.571,0.0
+Eswatini,Africa,2006,7591.8296,0.0
+Eswatini,Africa,2021,9846.207,0.0
+Eswatini,Africa,2022,9740.065,0.0
+Ethiopia,Africa,1990,874.34686,0.0
+Ethiopia,Africa,1991,777.5235,0.0
+Ethiopia,Africa,1992,680.8347,0.0
+Ethiopia,Africa,1993,743.70844,0.0
+Ethiopia,Africa,1994,741.1766,0.05051999
+Ethiopia,Africa,1997,826.0052,0.0
+Ethiopia,Africa,1998,772.7866,0.19953428
+Ethiopia,Africa,1999,787.67957,0.03506114
+Ethiopia,Africa,2000,810.2707,0.0
+Ethiopia,Africa,2003,795.7721,0.0
+Ethiopia,Africa,2004,877.11444,0.0
+Ethiopia,Africa,2005,952.1156,0.049995407
+Ethiopia,Africa,2006,1024.7291,0.020941228
+Ethiopia,Africa,2008,1193.7472,0.0
+Ethiopia,Africa,2009,1262.4639,0.0
+Ethiopia,Africa,2010,1381.1904,0.0
+Ethiopia,Africa,2011,1492.5339,0.0
+Ethiopia,Africa,2012,1576.7687,0.0
+Ethiopia,Africa,2015,1957.4144,0.43493417
+Ethiopia,Africa,2016,2084.8403,1.1312212
+Ethiopia,Africa,2017,2222.8281,0.34073058
+Ethiopia,Africa,2021,2588.413,0.0
+Ethiopia,Africa,2022,2655.578,0.43455458
+Ethiopia,Africa,1995,760.2643,0.0065240213
+Ethiopia,Africa,1996,826.99164,0.0
+Ethiopia,Africa,2001,851.31335,0.0
+Ethiopia,Africa,2002,838.298,0.0
+Ethiopia,Africa,2007,1109.1432,0.0
+Ethiopia,Africa,2013,1696.8651,0.004617166
+Ethiopia,Africa,2019,2437.9702,0.0
+Ethiopia,Africa,2020,2516.5488,0.0
+Ethiopia,Africa,2018,2311.165,4.2720236e-05
+European Union (27),not found,1990,33814.516,0.2070993326
+European Union (27),not found,1991,33974.5,0.0264874424
+European Union (27),not found,1992,34076.69,0.0450528786
+European Union (27),not found,1993,33772.73,0.055490032999999994
+European Union (27),not found,1994,34599.66,0.16933395999999998
+European Union (27),not found,1995,35526.336,0.061089216273
+European Union (27),not found,1997,37067.457,0.15020094889
+European Union (27),not found,1999,39140.02,0.32965721224
+European Union (27),not found,2000,40630.65,0.12724577506
+European Union (27),not found,2001,41487.8,0.02202509158
+European Union (27),not found,2002,41908.22,0.273573469
+European Union (27),not found,2003,42223.215,0.179180053
+European Union (27),not found,2004,43237.56,0.010752400981
+European Union (27),not found,2005,44002.1,0.10987270989999999
+European Union (27),not found,2006,45493.324,0.007081395357
+European Union (27),not found,2012,46404.094,0.12162614244600001
+European Union (27),not found,2017,50189.586,0.03662377993
+European Union (27),not found,2018,51234.98,0.01997989914
+European Union (27),not found,2022,54276.836,0.0097845619
+European Union (27),not found,1996,36193.895,0.008993498550000001
+European Union (27),not found,1998,38101.996,0.0239209424
+European Union (27),not found,2007,46842.914,0.06820193769999999
+European Union (27),not found,2008,47102.34,0.022448074600000003
+European Union (27),not found,2009,44997.508,0.059304742300000005
+European Union (27),not found,2010,45840.215,0.103758555
+European Union (27),not found,2011,46822.12,0.00741513885
+European Union (27),not found,2013,46263.184,0.1372015
+European Union (27),not found,2014,46935.043,0.022567023000000002
+European Union (27),not found,2015,47967.6,0.0153080235
+European Union (27),not found,2016,48823.46,0.0792525471
+European Union (27),not found,2019,52228.02,0.0189442303
+European Union (27),not found,2020,49260.434,0.0949433321
+European Union (27),not found,2021,52528.516,0.30130141765
+Fiji,Oceania,1998,9013.452,0.0
+Fiji,Oceania,2015,12131.092,0.0
+Fiji,Oceania,2000,9426.113,0.0
+Fiji,Oceania,2004,10148.878,0.14770621
+Fiji,Oceania,2006,10222.198,0.016253263
+Fiji,Oceania,2007,10050.951,1.1145202650000001
+Fiji,Oceania,2009,9910.175,1.96985
+Fiji,Oceania,2012,10537.692,2.45214786
+Fiji,Oceania,1990,8126.8906,0.7479333
+Fiji,Oceania,1992,8261.304,0.104410626
+Fiji,Oceania,1993,8383.651,6.112091
+Fiji,Oceania,1997,9008.645,1.2917293
+Fiji,Oceania,1999,9693.8125,0.18074217
+Fiji,Oceania,2001,9516.328,0.0
+Fiji,Oceania,2003,9727.956,1.3040686
+Fiji,Oceania,2008,10092.18,0.85150206
+Fiji,Oceania,2010,10167.35,1.2555703
+Fiji,Oceania,2016,12419.825,12.169858
+Fiji,Oceania,2018,13612.952,1.0749942
+Fiji,Oceania,2019,13567.474,0.0
+Fiji,Oceania,2020,11254.97,0.31855854
+Fiji,Oceania,2021,10685.197,0.23228633
+Fiji,Oceania,2022,12762.347,0.5020101
+Finland,Europe,2005,53234.348,0.0
+Finland,Europe,1990,39167.863,0.0070702187
+Finland,Europe,2022,58024.477,0.0
+France,Europe,1991,39963.926,0.060822036
+France,Europe,1997,42980.344,0.00068828574
+France,Europe,2022,55106.332,0.0
+France,Europe,1992,40368.258,0.028541543
+France,Europe,1993,40048.766,0.08693577699999999
+France,Europe,1994,40850.113,0.00717369
+France,Europe,1996,42070.8,0.000374297401
+France,Europe,1999,45570.03,0.8378779965
+France,Europe,2000,47132.484,0.0
+France,Europe,2001,47678.906,0.0096068885
+France,Europe,2002,47838.926,0.07932546409
+France,Europe,2003,47962.285,0.319864834696
+France,Europe,2005,49528.996,0.00045517748
+France,Europe,2010,50424.957,0.21661977500000001
+France,Europe,2011,51405.387,0.0
+France,Europe,2013,51385.727,0.02329405
+France,Europe,2014,51652.617,0.0169820033
+France,Europe,2015,52018.332,0.03788145
+France,Europe,2016,52327.45,0.09704952
+France,Europe,2017,53262.957,0.021193372
+France,Europe,2018,53945.88,0.032676964
+France,Europe,2019,54856.867,0.015207758
+France,Europe,2020,50610.633,0.038528094000000006
+France,Europe,2021,53901.11,0.1903454776
+France,Europe,1990,39674.426,0.15049091
+France,Europe,1995,41639.71,0.043720085
+France,Europe,1998,44299.83,0.009979318
+France,Europe,2004,48977.824,0.0
+France,Europe,2006,50520.227,0.0
+France,Europe,2007,51479.387,0.009396408
+France,Europe,2008,51387.543,0.0027300923
+France,Europe,2009,49680.383,0.11847958
+France,Europe,2012,51251.375,0.0
+Gabon,Africa,2012,19450.402,0.0
+Gabon,Africa,2009,17911.146,0.0
+Gabon,Africa,2010,18530.576,0.0
+Gabon,Africa,2011,19153.088,0.0
+Gambia,Africa,2002,2578.5571,0.0
+Gambia,Africa,2012,2574.935,0.0
+Gambia,Africa,2015,2495.9575,0.0
+Gambia,Africa,1996,2439.0454,0.0
+Gambia,Africa,1999,2589.9778,0.0
+Gambia,Africa,2001,2737.696,0.0
+Gambia,Africa,2007,2567.1572,0.0
+Gambia,Africa,2008,2649.611,0.0
+Gambia,Africa,2009,2745.3254,0.0
+Gambia,Africa,2010,2824.2126,0.0
+Gambia,Africa,2013,2572.4473,0.0
+Gambia,Africa,2017,2533.1868,0.0
+Gambia,Africa,2022,2863.1804,0.0
+Gambia,Africa,2003,2682.48,0.0
+Gambia,Africa,2004,2794.1936,0.0
+Gambia,Africa,2019,2750.8213,0.0
+Gambia,Africa,2021,2777.7961,0.0
+Georgia,Asia,2000,5706.2725,1.932096
+Georgia,Asia,2001,6074.0864,4.3773346
+Georgia,Asia,1995,3762.8115,0.08166998
+Georgia,Asia,1997,4951.813,0.8403313
+Georgia,Asia,2004,7693.915,0.042065296
+Georgia,Asia,2005,8485.587,0.0
+Georgia,Asia,2006,9337.989,0.0
+Georgia,Asia,2011,12288.683,0.0
+Georgia,Asia,2012,13193.96,0.570083143
+Georgia,Asia,2013,13913.002,0.0
+Georgia,Asia,2014,14475.313,0.0
+Georgia,Asia,2015,14936.844,0.15380836
+Georgia,Asia,2018,17228.68,0.0
+Georgia,Asia,2019,18186.88,0.0
+Georgia,Asia,2020,17031.145,0.0
+Georgia,Asia,2021,18915.654,0.0
+Georgia,Asia,2022,20966.527,0.0
+Georgia,Asia,1991,10120.163,0.0
+Georgia,Asia,1992,5533.211,0.0
+Georgia,Asia,2002,6464.325,10.306951
+Georgia,Asia,2009,10553.09,0.0
+Germany,Europe,1992,45063.812,0.0037577905
+Germany,Europe,1993,44332.805,0.048761086999999995
+Germany,Europe,1994,45326.895,0.065244973
+Germany,Europe,1997,47004.9,0.01627494
+Germany,Europe,1999,48973.36,0.09960293894000001
+Germany,Europe,2002,50849.594,0.65672846
+Germany,Europe,2005,51633.188,0.027749831000000003
+Germany,Europe,2006,53684.547,0.0
+Germany,Europe,2007,55309.996,0.16055684
+Germany,Europe,2009,52952.93,0.0020520269
+Germany,Europe,2010,55233.316,0.029414639
+Germany,Europe,2011,58381.22,0.0
+Germany,Europe,2013,58614.05,0.47404730000000006
+Germany,Europe,2016,60984.477,0.057639323
+Germany,Europe,2017,62407.164,0.024357539
+Germany,Europe,2021,62950.047,0.93490624
+Germany,Europe,2004,51150.836,0.0050455629999999994
+Germany,Europe,1990,42657.652,0.25061083
+Germany,Europe,1991,44511.223,0.0002675306
+Germany,Europe,1995,45874.223,0.02048115
+Germany,Europe,1996,46216.492,2.0022067e-05
+Germany,Europe,1998,47982.93,0.006699447
+Germany,Europe,2001,51051.715,0.015417894
+Germany,Europe,2003,50552.133,0.077948851
+Germany,Europe,2008,55919.77,0.07209104
+Germany,Europe,2014,59636.555,0.0102851745
+Germany,Europe,2018,62914.547,0.014806476
+Germany,Europe,2019,63392.95,0.0
+Germany,Europe,2020,60747.273,0.0
+Germany,Europe,2022,63353.94,0.025062183
+Germany,Europe,2012,58548.1,0.0
+Ghana,Africa,1991,2859.827,0.0
+Ghana,Africa,1995,3039.6887,0.19336726
+Ghana,Africa,1999,3290.2686,0.27208734
+Ghana,Africa,2001,3369.507,0.0
+Ghana,Africa,2002,3425.6182,0.0
+Ghana,Africa,2007,3923.1257,0.0
+Ghana,Africa,2008,4174.7812,0.0
+Ghana,Africa,2009,4269.16,0.0
+Ghana,Africa,2010,4495.689,0.0
+Ghana,Africa,2011,5005.367,0.0
+Ghana,Africa,2013,5593.775,0.0
+Ghana,Africa,2015,5607.366,0.024288543
+Ghana,Africa,2016,5666.078,0.0
+Ghana,Africa,2017,5993.631,0.0
+Ghana,Africa,2018,6234.512,0.0
+Ghana,Africa,2019,6508.2466,0.0
+Ghana,Africa,2020,6412.6855,0.0
+Ghana,Africa,2021,6607.503,0.0
+Ghana,Africa,2022,6729.2744,0.0
+Greece,Europe,1990,26953.523,1.0215434
+Greece,Europe,1994,27242.004,0.37538013
+Greece,Europe,1997,28808.01,0.11176494
+Greece,Europe,1998,29633.436,0.46736035
+Greece,Europe,2000,31430.03,0.002299595
+Greece,Europe,2001,32721.102,0.0
+Greece,Europe,2002,34128.145,0.0
+Greece,Europe,2003,36020.43,0.29648644
+Greece,Europe,2006,40539.12,0.0020687508
+Greece,Europe,2007,41854.016,0.5487565
+Greece,Europe,2010,37618.684,0.0
+Greece,Europe,2012,31293.428,0.0
+Greece,Europe,2014,31256.527,0.2667141
+Greece,Europe,2015,31391.312,0.0
+Greece,Europe,2016,31512.123,0.028993288
+Greece,Europe,2017,32039.643,0.0
+Greece,Europe,2020,30529.26,0.01591678
+Greece,Europe,1993,26841.91,0.0
+Greece,Europe,1995,27684.367,0.63757336
+Greece,Europe,1996,27943.684,0.0
+Greece,Europe,1999,30304.89,2.9455314
+Greece,Europe,2008,41767.047,0.0
+Greece,Europe,2021,33577.51,0.288818342
+Greece,Europe,2004,37863.76,0.14110017
+Greece,Europe,2019,33549.066,0.0
+Greece,Europe,1991,27457.51,0.0
+Greece,Europe,2022,35956.25,0.0
+Greece,Europe,2009,39941.355,0.0
+Greece,Europe,2018,32767.568,0.0
+Grenada,America,2010,13363.092,0.0
+Grenada,America,1990,8889.363,0.0
+Grenada,America,1999,11165.327,1.1410567
+Grenada,America,2002,11684.859,0.0
+Grenada,America,2004,12601.071,148.38464
+Guatemala,America,1994,8021.068,0.07702242
+Guatemala,America,2001,8774.205,0.07688036615
+Guatemala,America,2009,9744.097,0.0
+Guatemala,America,2012,10130.351,0.4234389
+Guatemala,America,2014,10557.234,0.017351924
+Guatemala,America,2015,10789.71,0.046550563
+Guatemala,America,2016,10876.375,0.03635479
+Guatemala,America,2018,11196.265,0.04288194
+Guatemala,America,2019,11470.364,0.017136164
+Guatemala,America,1995,8198.196,0.0
+Guatemala,America,1999,8671.441,0.0054589882
+Guatemala,America,2000,8773.454,0.0
+Guatemala,America,2002,8904.632,0.00048913615
+Guatemala,America,2005,9102.888,3.6899738
+Guatemala,America,2007,9776.204,0.0
+Guatemala,America,2008,9893.012,0.0
+Guatemala,America,2010,9828.435,2.8271797999999997
+Guatemala,America,2011,10035.577,0.13207823
+Guatemala,America,2017,11009.287,0.0
+Guatemala,America,2020,11101.01,0.49668545
+Guatemala,America,2021,11828.33,0.0
+Guatemala,America,2022,12153.03,0.21472931
+Guatemala,America,1991,7664.832,0.0
+Guatemala,America,2013,10301.421,0.003773838
+Guatemala,America,1996,8224.925,0.0031898262
+Guatemala,America,1998,8562.963,3.8565662
+Guatemala,America,2006,9389.266,0.0
+Guatemala,America,1992,7824.98,0.0
+Guatemala,America,2003,8929.258,0.0
+Guinea,Africa,1998,2311.3274,0.0
+Guinea,Africa,1993,2115.8665,0.0
+Guinea,Africa,2001,2412.7517,0.0
+Guinea,Africa,2006,2478.6133,0.0
+Guinea,Africa,2007,2587.005,0.0
+Guinea,Africa,2008,2629.5398,0.0
+Guinea,Africa,2009,2537.3064,0.0
+Guinea,Africa,2010,2594.8306,0.0
+Guinea,Africa,2011,2673.4087,0.0
+Guinea,Africa,2013,2802.56,0.0
+Guinea,Africa,2015,2869.8516,0.0
+Guinea,Africa,2017,3332.7659,0.0
+Guinea,Africa,2020,3630.9934,0.0
+Guinea,Africa,2021,3738.8052,0.0
+Guinea,Africa,2022,3792.0107,0.0
+Guinea,Africa,2000,2358.2876,0.0
+Guinea,Africa,2004,2477.503,0.0
+Guinea-Bissau,Africa,2002,1997.1658,0.0
+Guinea-Bissau,Africa,2006,2007.9801,0.0
+Guinea-Bissau,Africa,2003,1946.9105,0.0
+Guinea-Bissau,Africa,2004,1924.8354,0.0
+Guinea-Bissau,Africa,2008,2047.3204,0.0
+Guinea-Bissau,Africa,2010,2104.291,0.0
+Guinea-Bissau,Africa,1993,1909.1471,0.0
+Guinea-Bissau,Africa,2018,2307.8696,0.0
+Guinea-Bissau,Africa,1998,1690.4672,0.0
+Guyana,America,1997,8064.567,1.297423
+Guyana,America,1998,7915.2295,2.6870644
+Guyana,America,2010,10374.395,0.4282078
+Guyana,America,1996,7612.304,0.0
+Guyana,America,2005,8256.525,56.383923
+Guyana,America,2006,8702.331,7.101383
+Guyana,America,2008,9546.708,0.0
+Guyana,America,2015,12040.082,0.0
+Guyana,America,2017,12801.641,0.0
+Guyana,America,2021,22865.932,0.0
+Guyana,America,2022,37068.195,0.0
+Haiti,America,1992,3656.5833,0.0
+Haiti,America,1993,3390.8813,0.0
+Haiti,America,2003,3216.8018,0.0
+Haiti,America,2004,3120.844,0.8378015
+Haiti,America,2014,3423.653,0.008352635
+Haiti,America,2015,3422.0974,0.004948514
+Haiti,America,2016,3435.7312,14.743747971
+Haiti,America,2017,3474.347,0.07726032
+Haiti,America,1996,3226.6687,0.00343936
+Haiti,America,1999,3288.6855,0.0
+Haiti,America,2000,3256.6294,0.0
+Haiti,America,2001,3186.834,0.00031585744
+Haiti,America,2002,3163.5898,0.016113836
+Haiti,America,2005,3163.1138,0.7183346
+Haiti,America,2006,3164.8237,0.0
+Haiti,America,2007,3258.3665,0.0
+Haiti,America,2009,3426.3892,0.0
+Haiti,America,2010,3195.2483,67.457535
+Haiti,America,2011,3320.347,0.0
+Haiti,America,2012,3285.7075,1.8528075
+Haiti,America,2013,3376.64,0.0
+Haiti,America,2019,3381.5847,0.0
+Haiti,America,2021,3134.9502,7.7599216
+Haiti,America,2022,3047.6519,0.0
+Haiti,America,2018,3485.6968,0.0
+Haiti,America,1990,3946.3657,0.0
+Haiti,America,1994,2928.675,2.3067315
+Haiti,America,1998,3261.5867,4.833637
+Haiti,America,2008,3289.7053,0.0
+Haiti,America,2020,3229.4756,0.0
+High-income countries,not found,1990,35231.47,0.13409572496
+High-income countries,not found,1991,35117.117,0.106150275596
+High-income countries,not found,1992,34992.938,0.1909625517
+High-income countries,not found,1993,34918.574,0.1313850666
+High-income countries,not found,1994,35431.207,0.19385675853
+High-income countries,not found,1995,36111.168,0.489200830716
+High-income countries,not found,1997,37872.074,0.088979653842
+High-income countries,not found,1998,38536.344,0.120009384158
+High-income countries,not found,1999,39705.566,0.2448326962
+High-income countries,not found,2000,41290.547,0.11883308299999999
+High-income countries,not found,2001,41818.96,0.053118764763
+High-income countries,not found,2002,42360.01,0.1435574661
+High-income countries,not found,2003,43217.33,0.1382868892
+High-income countries,not found,2004,44617.598,0.305595496444
+High-income countries,not found,2005,45797.785,0.46865748049999995
+High-income countries,not found,2006,47186.465,0.02959226124
+High-income countries,not found,2007,48420.777,0.11196900210399999
+High-income countries,not found,2008,48606.367,0.13987063749
+High-income countries,not found,2009,46576.004,0.06215565326
+High-income countries,not found,2010,47838.98,0.146855210184
+High-income countries,not found,2011,48748.742,0.6131371746000001
+High-income countries,not found,2012,49202.797,0.25065989058
+High-income countries,not found,2013,49657.992,0.10256921983
+High-income countries,not found,2014,50410.76,0.058463369084999994
+High-income countries,not found,2015,51170.426,0.078225203
+High-income countries,not found,2017,52836.758,0.5465587466899999
+High-income countries,not found,2018,53950.21,0.1891387788
+High-income countries,not found,2019,54823.668,0.10995816809
+High-income countries,not found,2020,52431.0,0.19980972917
+High-income countries,not found,2021,55581.68,0.34902195674
+High-income countries,not found,2022,56887.207,0.28046152280000003
+High-income countries,not found,1996,36850.14,0.038949683644
+High-income countries,not found,2016,51777.01,0.25381727242
+Honduras,America,1994,4325.2285,0.21541137
+Honduras,America,1997,4497.236,0.0
+Honduras,America,1998,4536.912,59.588394
+Honduras,America,2000,4579.6895,0.0
+Honduras,America,2001,4578.9478,0.06534955
+Honduras,America,2002,4627.023,1.2725471
+Honduras,America,2003,4714.867,0.2430018
+Honduras,America,2004,4885.343,0.0
+Honduras,America,2009,5313.756,0.6855186
+Honduras,America,2010,5396.0723,0.56820536
+Honduras,America,2011,5488.4336,0.0
+Honduras,America,2012,5600.608,0.0
+Honduras,America,2014,5705.1626,0.007086263
+Honduras,America,2015,5812.5347,0.0
+Honduras,America,2018,6219.28,0.0
+Honduras,America,2019,6264.019,0.0
+Honduras,America,1990,4427.04,2.031278
+Honduras,America,1993,4440.229,2.3199978
+Honduras,America,1995,4464.5796,0.07480208
+Honduras,America,1996,4421.521,0.6231988239999999
+Honduras,America,1999,4386.7114,0.023384444
+Honduras,America,2005,5056.6753,1.183764
+Honduras,America,2006,5263.1504,0.073277004
+Honduras,America,2007,5461.9014,0.05322274
+Honduras,America,2008,5566.7065,0.0
+Honduras,America,2016,5926.49,0.0
+Honduras,America,2017,6099.6074,0.0
+Honduras,America,2020,5603.264,0.0
+Honduras,America,2022,6352.587,0.0
+Honduras,America,2021,6202.981,0.0
+Hong Kong,Asia,1992,34895.906,0.258649197
+Hong Kong,Asia,1994,37767.316,0.027243588
+Hong Kong,Asia,1997,39402.688,0.0056384667
+Hong Kong,Asia,2005,47938.902,0.0
+Hong Kong,Asia,1991,33124.832,0.011241008
+Hong Kong,Asia,1993,36428.67,0.16842783579999998
+Hong Kong,Asia,1999,37339.99,0.0
+Hong Kong,Asia,2003,41570.62,0.0
+Hong Kong,Asia,2008,54630.363,0.00017329541
+Hong Kong,Asia,2009,53172.297,0.0
+Hong Kong,Asia,2010,56355.41,0.0
+Hong Kong,Asia,2017,65662.81,0.22137684
+Hong Kong,Asia,2018,66993.93,0.0
+Hong Kong,Asia,2021,65884.94,0.0
+Hungary,Europe,1992,18326.816,0.9914645
+Hungary,Europe,2003,25536.309,0.117253825
+Hungary,Europe,1996,19160.705,0.0
+Hungary,Europe,1997,19802.805,0.021143012
+Hungary,Europe,1999,21316.68,0.5978801
+Hungary,Europe,2000,22329.424,0.11648
+Hungary,Europe,2001,23292.512,0.009302327
+Hungary,Europe,2002,24466.445,0.044372845
+Hungary,Europe,2004,26873.748,0.0
+Hungary,Europe,2005,28083.578,0.042398646
+Hungary,Europe,2006,29237.266,0.008641875
+Hungary,Europe,2010,28156.037,0.3328911
+Hungary,Europe,2013,29145.291,0.0
+Hungary,Europe,2014,30460.725,0.0
+Hungary,Europe,2016,32457.826,0.0
+Hungary,Europe,2017,33934.516,0.0
+Hungary,Europe,2019,37557.926,0.0
+Hungary,Europe,2007,29363.816,0.0
+Hungary,Europe,2008,29710.59,0.0
+Hungary,Europe,2012,28550.514,0.0
+Hungary,Europe,2018,35799.562,0.0
+Hungary,Europe,2022,40693.96,0.0
+Iceland,Europe,2000,47997.566,0.2659085
+Iceland,Europe,1996,40466.54,0.22218983
+Iceland,Europe,2010,54847.63,0.0
+Iceland,Europe,1995,38908.61,0.08126471
+India,Asia,1993,2307.6072,2.821383144
+India,Asia,1996,2680.2788,0.569279164
+India,Asia,2000,3099.503,0.24768762
+India,Asia,2001,3188.8103,0.683969386
+India,Asia,2002,3250.6956,0.186801145434
+India,Asia,2009,4731.362,0.20374279
+India,Asia,2015,6488.146,0.25893602499999996
+India,Asia,2016,6940.626,0.177621471
+India,Asia,2018,7714.34,0.201702782
+India,Asia,2019,7930.0913,0.439662443
+India,Asia,1990,2203.147,0.9012427
+India,Asia,1991,2178.686,0.117731846
+India,Asia,1992,2249.698,0.10719686
+India,Asia,1994,2411.4626,0.059307815300000004
+India,Asia,1995,2542.422,0.08689085099999999
+India,Asia,1997,2734.521,0.062952735
+India,Asia,1998,2847.9624,0.23913536
+India,Asia,1999,3041.4827,0.65263008085
+India,Asia,2003,3445.926,0.100872261
+India,Asia,2004,3656.1262,0.5356846900000001
+India,Asia,2005,3881.966,0.8825161149999999
+India,Asia,2006,4129.7783,0.36053863
+India,Asia,2007,4379.696,0.030914748
+India,Asia,2008,4450.39,0.0141797224
+India,Asia,2010,5059.2827,0.12825137
+India,Asia,2011,5249.5493,0.111495736
+India,Asia,2012,5460.4375,0.013350568
+India,Asia,2013,5732.2417,0.1280467147
+India,Asia,2014,6079.8438,1.15073785
+India,Asia,2017,7326.607,0.079842374
+India,Asia,2020,7399.531,0.9892965199999999
+India,Asia,2021,8050.0186,0.247912367
+India,Asia,2022,8544.688,0.12292758
+Indonesia,Asia,1997,6897.0024,3.7493105917
+Indonesia,Asia,2003,6599.092,0.00211310984
+Indonesia,Asia,2015,10893.662,0.143462151
+Indonesia,Asia,1990,4873.0537,0.0140379667
+Indonesia,Asia,1991,5118.468,0.0403011442
+Indonesia,Asia,1992,5357.376,0.08232640100000001
+Indonesia,Asia,1993,5609.152,0.012215305
+Indonesia,Asia,1994,5931.235,0.11075732199999999
+Indonesia,Asia,1995,6312.9346,0.016688762
+Indonesia,Asia,1996,6695.4097,0.25706888699999997
+Indonesia,Asia,1998,5897.6855,1.57157666
+Indonesia,Asia,1999,5855.658,0.0040713892
+Indonesia,Asia,2000,6056.382,0.145799611
+Indonesia,Asia,2001,6190.5195,0.01246518
+Indonesia,Asia,2002,6381.9497,0.17969891
+Indonesia,Asia,2004,6843.5464,1.7844400646
+Indonesia,Asia,2005,7140.8545,0.0017490552
+Indonesia,Asia,2006,7434.488,0.909081476
+Indonesia,Asia,2007,7802.464,0.38661159
+Indonesia,Asia,2008,8165.0615,0.00033965165
+Indonesia,Asia,2009,8435.456,0.44134876
+Indonesia,Asia,2010,8848.225,0.010329838
+Indonesia,Asia,2011,9274.97,0.00065511785
+Indonesia,Asia,2012,9708.612,0.0001089479
+Indonesia,Asia,2013,10121.814,0.343662148
+Indonesia,Asia,2014,10504.387,0.125054052
+Indonesia,Asia,2016,11319.663,0.0250032904
+Indonesia,Asia,2017,11772.574,0.0033477131
+Indonesia,Asia,2018,12262.231,0.249838921
+Indonesia,Asia,2019,12757.785,0.037351448
+Indonesia,Asia,2020,12388.545,0.08774805
+Indonesia,Asia,2021,12757.074,0.07827186979999999
+Indonesia,Asia,2022,13334.294,0.010310058
+Iran,Asia,1999,10459.124,0.830127668
+Iran,Asia,2000,10908.293,1.097999267
+Iran,Asia,2001,10998.129,1.02806529
+Iran,Asia,2021,14951.895,0.048733365
+Iran,Asia,2022,15331.333,0.08319362699999999
+Iran,Asia,1990,9046.585,6.65770564
+Iran,Asia,1993,9867.293,1.947331965
+Iran,Asia,1994,9681.262,0.19960618540000002
+Iran,Asia,1995,9804.55,0.09946149
+Iran,Asia,1996,10315.138,0.041717908
+Iran,Asia,1997,10329.857,0.202775375
+Iran,Asia,1998,10400.861,0.134661
+Iran,Asia,2002,11788.8955,0.28225819
+Iran,Asia,2003,12666.201,0.34029426923
+Iran,Asia,2004,12935.786,0.08694854692
+Iran,Asia,2005,13056.25,0.035327554
+Iran,Asia,2006,13416.842,0.021878421000000002
+Iran,Asia,2007,14275.749,0.006287841
+Iran,Asia,2008,14138.801,0.0
+Iran,Asia,2012,14202.551,0.07763547
+Iran,Asia,2014,14299.571,0.020417790999999998
+Iran,Asia,2015,13905.192,0.15580104
+Iran,Asia,2017,15108.109,0.2322092
+Iran,Asia,2018,14642.498,0.056416302200000004
+Iran,Asia,2019,14040.665,0.941302436
+Iran,Asia,2020,14397.153,0.98358405
+Iran,Asia,2009,14104.979,0.0
+Iran,Asia,2010,14737.156,0.0
+Iran,Asia,2013,13804.791,0.12175928
+Iran,Asia,2016,14915.594,0.0
+Iraq,Asia,1998,9871.734,0.0
+Iraq,Asia,1999,11237.854,0.0
+Iraq,Asia,2000,12702.164,0.0
+Iraq,Asia,2001,12529.608,0.0
+Iraq,Asia,2021,12731.754,0.006740764
+Iraq,Asia,2022,13393.675,0.0
+Iraq,Asia,2004,10210.563,0.0
+Iraq,Asia,2006,10568.914,0.0019956972
+Iraq,Asia,2008,11511.938,0.0
+Iraq,Asia,2009,11470.518,0.0
+Iraq,Asia,2011,12267.585,0.0
+Iraq,Asia,2012,13357.015,0.0
+Iraq,Asia,2013,13712.932,0.0
+Iraq,Asia,2015,13516.027,0.0
+Iraq,Asia,2018,14456.235,0.0
+Iraq,Asia,2019,14910.225,0.0
+Iraq,Asia,2020,12827.635,0.0552718
+Iraq,Asia,1991,3819.1619,0.0
+Iraq,Asia,2017,14417.631,0.0
+Ireland,Europe,1993,31296.543,0.0724949
+Ireland,Europe,2002,57709.8,0.0
+Ireland,Europe,2009,58327.254,0.0
+Ireland,Europe,2011,59698.258,0.13588625
+Ireland,Europe,2017,87863.664,0.0
+Ireland,Europe,1990,29444.564,0.22309825
+Ireland,Europe,1991,29840.682,0.0080341445
+Ireland,Europe,1996,38308.44,0.0013194216
+Ireland,Europe,1998,45322.21,5.5432734e-05
+Ireland,Europe,1999,49533.04,0.10111841
+Ireland,Europe,2000,53473.297,0.09979282
+Ireland,Europe,2004,61327.246,0.0
+Ireland,Europe,2005,63449.746,0.0
+Ireland,Europe,2014,65328.8,0.0
+Ireland,Europe,2015,80644.28,0.0
+Ireland,Europe,2018,93328.98,0.0
+Ireland,Europe,2021,118102.766,0.0
+Ireland,Europe,2022,124991.3,0.0
+Israel,Asia,1999,31357.39,0.062022973
+Israel,Asia,1997,30607.72,0.033653215
+Israel,Asia,1998,31131.562,0.0
+Israel,Asia,2010,37424.074,0.11327209
+Israel,Asia,2018,43624.824,0.0
+Israel,Asia,2020,43004.207,0.14034487
+Israel,Asia,2000,33174.027,0.0020215272
+Israel,Asia,2013,39939.812,0.0
+Israel,Asia,2015,40827.438,0.0
+Israel,Asia,1995,29327.332,0.04290088
+Israel,Asia,2016,41783.31,0.16143915
+Italy,Europe,1997,47471.168,0.42877748
+Italy,Europe,2002,52056.73,0.152102649
+Italy,Europe,2012,48939.332,0.8211762861999999
+Italy,Europe,2017,49039.57,0.1357174645
+Italy,Europe,2022,52924.61,0.0
+Italy,Europe,1992,44174.438,0.052819286
+Italy,Europe,1994,44703.363,0.846057
+Italy,Europe,1996,46598.926,0.0024382318
+Italy,Europe,2000,50999.895,0.70202863
+Italy,Europe,2001,51993.96,0.02380945413
+Italy,Europe,2003,51860.34,0.36550916899999997
+Italy,Europe,2008,52814.434,0.011541709
+Italy,Europe,2009,49785.203,0.11977660229999999
+Italy,Europe,2010,50391.234,0.04082206
+Italy,Europe,2011,50654.496,0.023747336
+Italy,Europe,2013,47495.805,0.036415856
+Italy,Europe,2014,47061.367,0.050277296
+Italy,Europe,2015,47523.953,0.062233288
+Italy,Europe,2016,48193.258,0.293009597
+Italy,Europe,2018,49539.02,0.058080269399999995
+Italy,Europe,2019,50328.594,0.0
+Italy,Europe,2020,46089.297,0.0068512585
+Italy,Europe,2021,50465.086,0.0027373615
+Italy,Europe,1990,43204.402,0.17820518089999998
+Italy,Europe,1998,48313.824,0.002259749
+Italy,Europe,1993,43770.95,0.058687758
+Italy,Europe,2004,52285.293,0.0
+Italy,Europe,2006,53208.9,0.0
+Italy,Europe,2005,52425.67,0.0
+Italy,Europe,2007,53715.055,0.0
+Italy,Europe,1991,43838.72,0.0
+Italy,Europe,1999,49116.26,0.00043993889
+Jamaica,America,2000,9518.231,0.06662917
+Jamaica,America,2014,9719.304,0.071946494
+Jamaica,America,1991,9084.997,0.73060113
+Jamaica,America,1993,9932.031,0.20220307
+Jamaica,America,2002,9716.8955,0.216380088
+Jamaica,America,2006,10359.316,0.0
+Jamaica,America,1994,9966.491,0.018340012
+Jamaica,America,1996,9990.347,0.040574033
+Jamaica,America,2001,9585.314,0.6034654
+Jamaica,America,2004,10085.591,8.796358
+Jamaica,America,2005,10119.534,0.30683398
+Jamaica,America,2007,10457.972,2.3438232
+Jamaica,America,2008,10328.04,0.48286572
+Jamaica,America,2010,9654.072,1.1345973
+Jamaica,America,2012,9676.848,0.11171678
+Jamaica,America,2016,9886.552,0.0
+Jamaica,America,2017,9964.391,0.0
+Japan,Asia,1990,35466.086,0.17932112
+Japan,Asia,1993,36477.11,0.07313298300000001
+Japan,Asia,1995,37648.477,1.80475612104
+Japan,Asia,1998,38427.03,0.08138616
+Japan,Asia,1999,38228.844,0.110160043
+Japan,Asia,2000,39220.08,0.20107241199999998
+Japan,Asia,2001,39276.754,0.041145569
+Japan,Asia,2003,39718.695,0.029184246480000002
+Japan,Asia,2004,40573.332,0.921570208
+Japan,Asia,2005,41301.355,0.029537758999999997
+Japan,Asia,2006,41841.63,0.05445624
+Japan,Asia,2007,42413.78,0.301544763
+Japan,Asia,2008,41874.23,0.0054242685
+Japan,Asia,2010,41106.26,0.0
+Japan,Asia,2011,41192.277,3.409513615
+Japan,Asia,2012,41825.312,0.027141285600000002
+Japan,Asia,2013,42725.55,0.00426297057
+Japan,Asia,2015,43624.926,0.036675488500000006
+Japan,Asia,2016,43976.266,1.16314443
+Japan,Asia,2017,44749.637,0.04465773
+Japan,Asia,2018,45094.734,0.61497187
+Japan,Asia,2019,44976.508,0.5121146905
+Japan,Asia,2020,43238.297,0.1186805794
+Japan,Asia,2021,44549.34,0.2105421743
+Japan,Asia,2022,45174.73,0.2747150361
+Japan,Asia,1992,36764.38,0.0
+Japan,Asia,1994,36769.496,0.00352884887
+Japan,Asia,2009,39495.164,0.0264675644
+Japan,Asia,2014,42909.004,0.13643062758
+Japan,Asia,1991,36571.74,0.27676311785999996
+Japan,Asia,1996,38740.336,0.0
+Japan,Asia,1997,39027.367,0.0022259576
+Japan,Asia,2002,39201.977,0.00060963276
+Jordan,Asia,1999,7920.02,0.0
+Jordan,Asia,2000,8086.9224,0.0
+Jordan,Asia,1991,7134.2905,0.0
+Jordan,Asia,1997,7775.543,0.013801024
+Jordan,Asia,2018,9311.531,0.0
+Jordan,Asia,2002,8638.08,0.0
+Jordan,Asia,1992,7737.969,7.531775
+Kazakhstan,Asia,2021,32945.85,0.0
+Kazakhstan,Asia,1993,12795.875,0.1560579
+Kazakhstan,Asia,2000,12935.864,0.00820031
+Kazakhstan,Asia,2001,14612.029,0.0
+Kazakhstan,Asia,2005,20565.53,0.013413004
+Kazakhstan,Asia,2008,24895.664,0.09742086
+Kazakhstan,Asia,2010,26374.84,0.02335469
+Kazakhstan,Asia,2011,27946.16,0.034782343
+Kazakhstan,Asia,2012,28881.242,0.0
+Kazakhstan,Asia,2014,30986.438,0.0
+Kazakhstan,Asia,2015,30893.76,0.0028743674
+Kazakhstan,Asia,2017,31524.441,0.0
+Kazakhstan,Asia,2018,32330.227,0.0
+Kazakhstan,Asia,2020,32011.549,0.0
+Kazakhstan,Asia,2003,17344.752,0.0
+Kazakhstan,Asia,1995,10600.33,0.014724431
+Kazakhstan,Asia,1997,11298.58,0.0
+Kazakhstan,Asia,2013,30177.488,0.0
+Kazakhstan,Asia,2004,18886.582,0.0
+Kenya,Africa,1991,4102.4766,0.0
+Kenya,Africa,1992,3946.8408,0.0
+Kenya,Africa,1994,3833.2236,0.0
+Kenya,Africa,1995,3890.0986,0.0
+Kenya,Africa,1997,3853.3713,0.08996807
+Kenya,Africa,1998,3871.8218,0.0
+Kenya,Africa,1999,3848.4646,0.0
+Kenya,Africa,2000,3756.6362,0.0
+Kenya,Africa,2001,3778.2585,0.00029262266
+Kenya,Africa,2002,3681.2568,0.0
+Kenya,Africa,2004,3743.5679,0.62129796
+Kenya,Africa,2005,3844.7356,0.0026683894
+Kenya,Africa,2006,3970.7334,0.0
+Kenya,Africa,2008,4002.8835,0.0
+Kenya,Africa,2009,4012.1943,0.0
+Kenya,Africa,2011,4307.106,0.0
+Kenya,Africa,2012,4387.938,0.17731532
+Kenya,Africa,2014,4558.552,0.0
+Kenya,Africa,2015,4679.622,0.0
+Kenya,Africa,2016,4770.3105,0.0
+Kenya,Africa,2017,4846.8623,0.0
+Kenya,Africa,2018,5017.668,0.37959728
+Kenya,Africa,2019,5171.7124,0.0
+Kenya,Africa,2020,5057.4014,0.020052123999999998
+Kenya,Africa,2021,5338.8525,0.109301746
+Kenya,Africa,2022,5491.694,0.10572034
+Kenya,Africa,1990,4177.486,0.0
+Kenya,Africa,1996,3941.4092,0.0
+Kenya,Africa,2003,3674.086,0.0
+Kenya,Africa,2007,4116.451,0.0
+Kenya,Africa,2010,4211.5244,0.0
+Kenya,Africa,2013,4443.371,0.05837386
+Kiribati,Oceania,1999,2364.3452,0.0
+Kiribati,Oceania,2008,2172.357,0.0
+Kiribati,Oceania,2014,2381.3474,0.0
+Kiribati,Oceania,2015,2615.8406,0.0
+Kuwait,Asia,1997,61839.484,0.0
+Kuwait,Asia,2018,51364.27,0.0
+Kyrgyzstan,Asia,2009,4969.9614,0.0
+Kyrgyzstan,Asia,1998,3419.2236,0.14581123
+Kyrgyzstan,Asia,2005,4156.959,0.108119234
+Kyrgyzstan,Asia,2007,4558.713,0.0052596
+Kyrgyzstan,Asia,2012,4993.3945,0.0
+Kyrgyzstan,Asia,1992,4701.9917,6.9499526
+Kyrgyzstan,Asia,1997,3399.9346,0.113130875
+Kyrgyzstan,Asia,2006,4240.1704,0.0
+Kyrgyzstan,Asia,2008,4894.943,0.0
+Kyrgyzstan,Asia,2011,5092.852,0.0
+Kyrgyzstan,Asia,2015,5600.215,0.17968975
+Kyrgyzstan,Asia,2017,5861.2227,0.0
+Kyrgyzstan,Asia,2014,5513.755,0.0
+Kyrgyzstan,Asia,2000,3638.4636,0.0
+Kyrgyzstan,Asia,2022,6139.7783,0.0
+Kyrgyzstan,Asia,1994,3176.924,2.1415734
+Kyrgyzstan,Asia,2002,3760.5325,0.09342051
+Kyrgyzstan,Asia,2003,3982.9272,0.0
+Kyrgyzstan,Asia,2004,4211.523,0.0
+Kyrgyzstan,Asia,2010,4876.4795,0.0
+Kyrgyzstan,Asia,2021,5736.479,0.0
+Laos,Asia,1991,2033.5826,0.034149995
+Laos,Asia,1992,2088.02,2.2944448
+Laos,Asia,1993,2152.2766,22.786767258999998
+Laos,Asia,1999,2786.5205,0.0
+Laos,Asia,2019,8075.275,0.0
+Laos,Asia,1994,2267.7822,0.0
+Laos,Asia,1995,2368.0547,0.0
+Laos,Asia,1996,2473.773,0.0
+Laos,Asia,2000,2899.0195,0.05776347
+Laos,Asia,2001,3015.6326,0.0
+Laos,Asia,2002,3143.2234,0.0
+Laos,Asia,2008,4367.163,0.0
+Laos,Asia,2009,4625.072,1.7134619
+Laos,Asia,2011,5266.879,0.0
+Laos,Asia,2013,5974.4736,1.0097425
+Laos,Asia,2014,6341.2124,0.0
+Laos,Asia,2015,6703.741,0.06931745
+Laos,Asia,2016,7063.2554,0.0003142185
+Laos,Asia,2018,7775.086,1.2402399
+Laos,Asia,2022,8183.0327,0.0
+Laos,Asia,2021,8080.4355,0.00063737744
+Laos,Asia,2017,7432.4595,0.0
+Laos,Asia,2020,7995.595,0.0
+Latvia,Europe,1999,13136.248,0.0066367676
+Latvia,Europe,2005,22390.348,1.9113756
+Latvia,Europe,2001,15139.424,0.0
+Latvia,Europe,2003,18054.053,0.0
+Latvia,Europe,2006,25494.701,0.0
+Latvia,Europe,2012,26521.684,0.0
+Latvia,Europe,2022,36348.81,0.0
+Latvia,Europe,2018,33498.4,0.0
+Lebanon,Asia,2003,12272.344,0.0
+Lebanon,Asia,1992,8924.152,2.652484
+Lebanon,Asia,2002,12053.834,0.0
+Lebanon,Asia,2015,14980.0205,0.0
+Lebanon,Asia,2018,16290.052,0.0
+Lebanon,Asia,2019,15659.566,0.0
+Lebanon,Asia,2007,13941.562,0.0
+Lebanon,Asia,2020,12507.437,0.0
+Lesotho,Africa,1992,1571.827,0.0
+Lesotho,Africa,1993,1602.5963,0.0
+Lesotho,Africa,1994,1675.5978,0.0
+Lesotho,Africa,2002,2024.7872,0.0
+Lesotho,Africa,2003,2127.373,0.0
+Lesotho,Africa,2007,2470.3147,0.0
+Lesotho,Africa,2008,2589.1663,0.0
+Lesotho,Africa,2011,2749.3196,0.0
+Lesotho,Africa,2012,2894.227,0.0
+Lesotho,Africa,2016,3057.261,0.0
+Lesotho,Africa,2017,2924.681,0.0
+Lesotho,Africa,2019,2773.2864,0.0
+Lesotho,Africa,2020,2517.1104,0.0
+Lesotho,Africa,2021,2544.7825,0.0
+Lesotho,Africa,2022,2577.5454,0.0
+Lesotho,Africa,1990,1422.1505,0.0
+Lesotho,Africa,1996,1786.1823,0.0
+Lesotho,Africa,2001,2004.0334,0.0
+Lesotho,Africa,2014,2930.6172,0.0
+Liberia,Africa,2007,1422.1002,0.0
+Liberia,Africa,2008,1463.124,0.0
+Liberia,Africa,2009,1492.9982,0.0
+Liberia,Africa,2010,1538.8508,0.0
+Liberia,Africa,2016,1653.3105,0.0
+Libya,Africa,1995,17718.604,0.16522206
+Libya,Africa,2013,16553.143,0.0
+Libya,Africa,2019,14333.423,0.010252094
+Lithuania,Europe,2006,26458.053,0.74733686
+Lithuania,Europe,2018,41797.613,0.0
+Lithuania,Europe,2005,24245.934,0.11495276
+Lithuania,Europe,2010,27225.742,0.0
+Lithuania,Europe,1999,15333.7,0.0045572273
+Lithuania,Europe,2001,17146.045,0.0
+Lithuania,Europe,2012,31323.63,0.0
+Lithuania,Europe,2022,47238.098,0.0
+Luxembourg,Europe,1993,91338.95,0.062792294
+Luxembourg,Europe,2021,137947.34,0.0
+Luxembourg,Europe,1990,82483.01,2.8954222
+Luxembourg,Europe,1995,93562.46,0.047954515
+Luxembourg,Europe,2010,133098.05,0.05514642
+Luxembourg,Europe,2019,134105.64,0.0
+Luxembourg,Europe,2003,121922.36,0.0
+Luxembourg,Europe,2022,137059.19,0.0
+Macao,Asia,1993,59528.12,0.0
+Macao,Asia,2017,133500.28,2.8183622
+Madagascar,Africa,1990,1975.1466,0.0
+Madagascar,Africa,1991,1796.0927,0.0
+Madagascar,Africa,1992,1763.4319,0.0
+Madagascar,Africa,2000,1707.3855,0.19441606
+Madagascar,Africa,2002,1491.6256,0.003382102
+Madagascar,Africa,2003,1590.2839,2.3538647
+Madagascar,Africa,2004,1625.7778,4.9360948
+Madagascar,Africa,2005,1653.9325,0.0
+Madagascar,Africa,2006,1692.7548,0.0
+Madagascar,Africa,2008,1800.6693,0.5594334
+Madagascar,Africa,2009,1678.999,0.051991917
+Madagascar,Africa,2010,1640.9562,0.0
+Madagascar,Africa,2011,1620.1902,0.0
+Madagascar,Africa,2014,1626.017,0.0
+Madagascar,Africa,2015,1633.2649,0.40625203
+Madagascar,Africa,2016,1654.671,0.0
+Madagascar,Africa,2017,1675.5592,0.15178752
+Madagascar,Africa,2018,1684.6494,0.0
+Madagascar,Africa,2020,1551.1256,0.0
+Madagascar,Africa,2021,1599.4127,0.0
+Madagascar,Africa,2022,1622.6108,0.10459436
+Madagascar,Africa,1998,1664.6821,0.0
+Madagascar,Africa,2007,1737.6652,2.8153744
+Madagascar,Africa,2019,1713.7961,0.17724633
+Madagascar,Africa,1994,1692.2314,0.2895895
+Madagascar,Africa,1996,1649.0651,0.0
+Madagascar,Africa,1997,1655.2087,1.1728925
+Madagascar,Africa,2012,1623.4409,0.8636343
+Madagascar,Africa,2013,1616.2273,0.20123065
+Malawi,Africa,1990,1047.4644,0.0
+Malawi,Africa,1992,994.0365,0.0
+Malawi,Africa,1993,1074.5848,0.0
+Malawi,Africa,1994,975.8497,0.0
+Malawi,Africa,1995,1140.7561,0.0
+Malawi,Africa,2002,1140.8428,0.0
+Malawi,Africa,2005,1214.7427,0.0
+Malawi,Africa,2006,1237.2739,0.0
+Malawi,Africa,2007,1318.3319,0.0
+Malawi,Africa,2012,1518.1481,0.0
+Malawi,Africa,2013,1555.5061,0.0
+Malawi,Africa,2015,1597.6914,4.230176
+Malawi,Africa,2016,1593.5955,0.0
+Malawi,Africa,2017,1613.0593,0.0
+Malawi,Africa,2022,1659.9594,0.0
+Malawi,Africa,1991,1104.3905,0.7484134
+Malawi,Africa,1997,1221.094,0.0
+Malawi,Africa,1998,1241.5243,0.0034934708
+Malawi,Africa,1999,1249.7753,0.0
+Malawi,Africa,2000,1239.3917,0.039411854
+Malawi,Africa,2001,1149.5804,0.26821363
+Malawi,Africa,2003,1176.1239,0.0
+Malawi,Africa,2008,1378.4288,0.0
+Malawi,Africa,2009,1449.7261,0.0
+Malawi,Africa,2010,1504.3751,0.0
+Malawi,Africa,2011,1533.2289,0.0
+Malawi,Africa,2018,1638.9166,0.0
+Malawi,Africa,2019,1687.2894,0.0
+Malawi,Africa,2020,1656.4398,0.0
+Malawi,Africa,2021,1687.5936,0.0
+Malaysia,Asia,1998,16817.172,0.0027713305
+Malaysia,Asia,2014,26818.432,0.08400724
+Malaysia,Asia,1993,14533.79,0.0
+Malaysia,Asia,1996,17771.71,0.051558968
+Malaysia,Asia,1999,17428.625,0.0
+Malaysia,Asia,2000,18532.91,0.0010662148
+Malaysia,Asia,2001,18186.441,0.0
+Malaysia,Asia,2002,18708.87,0.0
+Malaysia,Asia,2003,19329.006,0.0
+Malaysia,Asia,2004,20168.506,0.40881936599999996
+Malaysia,Asia,2005,20767.586,0.0
+Malaysia,Asia,2006,21444.486,0.013522463
+Malaysia,Asia,2007,22305.12,0.5001303
+Malaysia,Asia,2008,22898.002,0.0
+Malaysia,Asia,2009,22106.643,0.0
+Malaysia,Asia,2011,24115.818,0.0
+Malaysia,Asia,2013,25736.354,0.00061866594
+Malaysia,Asia,2015,27699.627,6.636685e-07
+Malaysia,Asia,2016,28425.371,0.009065493
+Malaysia,Asia,2017,29551.545,0.032806855
+Malaysia,Asia,2018,30459.965,0.0
+Malaysia,Asia,2019,31300.508,0.0
+Malaysia,Asia,2020,29200.453,0.0020150766
+Malaysia,Asia,2021,29822.85,0.32545775
+Malaysia,Asia,2022,32079.152,0.05984199
+Malaysia,Asia,1997,18604.514,0.3009839867
+Malaysia,Asia,1995,16568.516,0.0
+Maldives,Asia,2007,17332.729,0.0
+Maldives,Asia,2019,21855.502,0.0
+Maldives,Asia,2004,15873.35,38.31828
+Maldives,Asia,1991,8761.195,12.275122
+Maldives,Asia,2021,19052.623,0.0
+Mali,Africa,1991,1614.5194,0.0
+Mali,Africa,2001,1952.6859,0.0
+Mali,Africa,2005,2091.45,0.0
+Mali,Africa,2006,2118.3147,0.0
+Mali,Africa,2010,2224.4338,0.0
+Mali,Africa,2011,2222.8792,0.0
+Mali,Africa,2012,2140.8455,0.0
+Mali,Africa,2020,2348.8818,0.0
+Mali,Africa,2022,2357.1904,0.0
+Mali,Africa,1998,1747.7778,0.0
+Mali,Africa,1999,1796.7638,0.0
+Mali,Africa,2000,1744.1157,0.0
+Mali,Africa,2002,1951.7542,0.0
+Mali,Africa,2003,2063.0972,0.0
+Mali,Africa,2007,2121.4102,0.0
+Mali,Africa,2008,2150.8135,0.0
+Mali,Africa,2009,2181.9348,0.0
+Mali,Africa,2013,2126.94,0.0
+Mali,Africa,2015,2270.787,0.0
+Mali,Africa,2016,2328.7483,0.0
+Mali,Africa,2018,2411.532,0.0
+Mali,Africa,2019,2451.122,0.0
+Malta,Europe,2022,59133.773,0.0
+Marshall Islands,Oceania,2013,4469.8535,0.0
+Marshall Islands,Oceania,2015,4670.1094,1.8904
+Marshall Islands,Oceania,2016,4896.522,0.71774
+Marshall Islands,Oceania,2022,6844.3345,0.0
+Marshall Islands,Oceania,2008,3903.3057,0.0
+Marshall Islands,Oceania,2014,4491.9917,0.0
+Marshall Islands,Oceania,1991,3828.4636,0.0
+Marshall Islands,Oceania,2019,6405.0757,0.0
+Mauritania,Africa,1993,5439.8223,0.0
+Mauritania,Africa,1997,5302.3667,0.0
+Mauritania,Africa,1998,5310.158,0.0
+Mauritania,Africa,2001,4847.4106,0.0
+Mauritania,Africa,2002,4806.8984,0.0
+Mauritania,Africa,2003,5023.6523,0.0
+Mauritania,Africa,2010,5605.7637,0.0
+Mauritania,Africa,2011,5653.2173,0.0
+Mauritania,Africa,2012,5716.252,0.0
+Mauritania,Africa,2017,6050.6216,0.0
+Mauritania,Africa,2018,6153.6377,0.0
+Mauritania,Africa,2019,6162.2104,0.0
+Mauritania,Africa,2020,5963.2354,0.0
+Mauritania,Africa,2021,5836.566,0.0
+Mauritania,Africa,2022,6053.2617,0.0
+Mauritania,Africa,1995,5446.2695,0.0
+Mauritania,Africa,1999,5359.989,0.0
+Mauritania,Africa,2005,5445.8296,0.0
+Mauritania,Africa,2006,6284.702,0.0
+Mauritania,Africa,2007,6002.7783,0.0
+Mauritania,Africa,2009,5639.7876,0.0
+Mauritania,Africa,2013,5769.7285,0.027689053
+Mauritania,Africa,1991,5456.5557,0.0
+Mauritius,Africa,1999,12433.67,4.0288153
+Mauritius,Africa,2013,20811.494,0.016269457
+Mauritius,Africa,1991,9248.0,0.0
+Mauritius,Africa,1994,10366.591,3.805355
+Mauritius,Africa,1996,11202.286,0.0
+Mauritius,Africa,2002,13784.199,1.0327783
+Mauritius,Africa,2007,16703.99,0.0
+Mauritius,Africa,2018,25024.135,0.0
+Mauritius,Africa,2022,24831.373,0.0
+Mexico,America,1995,17232.238,0.6696698614000001
+Mexico,America,1996,17988.953,0.2776785639687
+Mexico,America,1999,20030.547,0.1398810424
+Mexico,America,2000,20715.873,0.00820711176
+Mexico,America,2002,19981.475,0.129523112
+Mexico,America,2011,20702.826,0.048632491
+Mexico,America,1990,17375.404,0.05155908099999999
+Mexico,America,1991,17721.645,0.00063869264
+Mexico,America,1993,18186.0,0.333464882
+Mexico,America,1998,19807.688,0.10972963641999998
+Mexico,America,2001,20318.896,0.050372798
+Mexico,America,2003,19937.625,0.028254198
+Mexico,America,2004,20368.49,0.0004393141
+Mexico,America,2005,20520.318,0.8620578
+Mexico,America,2006,21217.143,0.0002646371
+Mexico,America,2007,21355.223,0.3265734
+Mexico,America,2008,21244.197,0.00645687
+Mexico,America,2009,19617.918,0.004239815
+Mexico,America,2010,20298.826,0.6392116281
+Mexico,America,2013,21054.742,0.4295498
+Mexico,America,2015,21665.557,0.06799668
+Mexico,America,2016,21836.922,0.0067431886
+Mexico,America,2017,22038.57,0.6972243154
+Mexico,America,2018,22261.46,0.04328623
+Mexico,America,2019,21964.354,0.02934388
+Mexico,America,2020,19964.967,0.036582935999999996
+Mexico,America,2021,21031.709,0.0853295903
+Mexico,America,2022,21643.973,0.0051846908
+Mexico,America,1997,18962.25,0.0863120515
+Mexico,America,2012,21149.451,0.09361725400000001
+Mexico,America,2014,21322.33,0.18625765
+Mexico,America,1992,18009.732,0.0223043511
+Mexico,America,1994,18643.654,0.0
+Micronesia (country),Oceania,1998,3418.5696,0.0
+Micronesia (country),Oceania,2016,3794.7454,0.0
+Micronesia (country),Oceania,2008,3669.0864,0.0
+Micronesia (country),Oceania,2002,3696.5852,0.20617095
+Micronesia (country),Oceania,2003,3760.1504,0.0
+Micronesia (country),Oceania,2004,3656.054,0.0
+Micronesia (country),Oceania,2015,3788.934,3.4756243
+Micronesia (country),Oceania,2019,3938.5571,0.0
+Moldova,Europe,2000,5727.079,2.4525986
+Moldova,Europe,2007,8854.834,9.224813
+Moldova,Europe,2012,10158.386,0.0
+Moldova,Europe,1997,6185.8394,2.5905647
+Moldova,Europe,1999,5597.4653,0.3416517
+Moldova,Europe,2002,6580.2783,0.050065644
+Moldova,Europe,2005,8161.4736,0.25940797
+Moldova,Europe,2008,9563.698,0.0
+Moldova,Europe,2010,9649.951,0.0
+Moldova,Europe,2006,8577.028,0.0
+Moldova,Europe,2019,14621.24,0.0
+Mongolia,Asia,2000,5818.243,7.0367026
+Mongolia,Asia,2001,5917.071,0.0
+Mongolia,Asia,2002,6117.9824,0.0
+Mongolia,Asia,1994,5213.846,0.0
+Mongolia,Asia,1996,5494.3213,127.27764
+Mongolia,Asia,2003,6463.7896,0.016924744
+Mongolia,Asia,2009,9095.977,0.2324342678
+Mongolia,Asia,2018,15230.241,0.0
+Mongolia,Asia,2019,15790.696,0.0
+Mongolia,Asia,2020,14801.342,0.012769491
+Mongolia,Asia,2021,14792.251,0.0
+Mongolia,Asia,2022,15310.435,0.0
+Mongolia,Asia,1990,6637.8193,4.2955565
+Mongolia,Asia,1991,5874.2554,0.0
+Mongolia,Asia,1993,5162.1,1.3014028
+Mongolia,Asia,2008,9379.8545,0.0
+Mongolia,Asia,2010,9507.119,0.71548355
+Mongolia,Asia,2015,13974.597,0.0
+Mongolia,Asia,2016,13898.1455,0.0
+Mongolia,Asia,2017,14401.537,0.0
+Montenegro,Europe,2007,19229.266,0.0
+Montenegro,Europe,2009,19347.316,0.0
+Montenegro,Europe,2010,19839.947,0.0
+Montenegro,Europe,2012,19884.969,0.0
+Montenegro,Europe,2022,26164.635,0.0
+Montenegro,Europe,2017,23293.2,0.0
+Morocco,Africa,1999,5043.665,0.44051278
+Morocco,Africa,2000,5100.1157,0.8099689918999999
+Morocco,Africa,2001,5417.5786,0.800272854
+Morocco,Africa,1995,4444.2285,0.023059016
+Morocco,Africa,1996,4916.48,0.12742817
+Morocco,Africa,1997,4766.1104,0.0
+Morocco,Africa,2002,5544.072,0.42483416
+Morocco,Africa,2003,5810.053,0.0
+Morocco,Africa,2006,6488.674,0.0
+Morocco,Africa,2008,6901.9507,0.0
+Morocco,Africa,2009,7063.727,0.0
+Morocco,Africa,2010,7210.6367,0.028751208
+Morocco,Africa,2014,7951.7983,0.25182396
+Morocco,Africa,2019,8768.176,0.0
+Morocco,Africa,2021,8623.266,0.0
+Morocco,Africa,2004,5996.39,0.60501426
+Morocco,Africa,2005,6103.4224,7.261884e-05
+Morocco,Africa,2012,7628.644,0.0
+Morocco,Africa,2016,8141.9404,0.0
+Morocco,Africa,2017,8450.009,0.0
+Morocco,Africa,2018,8611.75,0.0
+Mozambique,Africa,1991,563.5121,0.999753
+Mozambique,Africa,1992,510.8228,0.40951058
+Mozambique,Africa,1998,660.6502,0.0
+Mozambique,Africa,1999,722.30554,0.19728824
+Mozambique,Africa,2001,785.79016,0.63715076
+Mozambique,Africa,2002,842.64526,0.0
+Mozambique,Africa,2003,883.23914,0.0
+Mozambique,Africa,2005,970.38995,0.0
+Mozambique,Africa,2006,1041.8047,0.0
+Mozambique,Africa,2007,1095.1257,1.4660375
+Mozambique,Africa,2008,1141.9425,0.251541356
+Mozambique,Africa,2009,1178.7091,0.02446205
+Mozambique,Africa,2010,1224.2302,0.0
+Mozambique,Africa,2016,1537.9086,0.012428483
+Mozambique,Africa,2017,1532.0073,0.12816028
+Mozambique,Africa,2020,1466.1248,0.0
+Mozambique,Africa,2021,1457.2354,0.0
+Mozambique,Africa,2022,1476.6656,0.0
+Mozambique,Africa,1997,612.3715,0.0010259222
+Mozambique,Africa,2000,711.9764,7.085184457
+Mozambique,Africa,2011,1275.5295,0.0
+Mozambique,Africa,2013,1385.8325,0.17443815
+Mozambique,Africa,2014,1449.9293,0.0
+Mozambique,Africa,2015,1512.5997,0.0
+Mozambique,Africa,2018,1538.8351,0.0339607
+Mozambique,Africa,2019,1528.8899,14.375263
+Mozambique,Africa,1994,546.2097,0.0
+Mozambique,Africa,1996,562.8575,0.35978845
+Mozambique,Africa,2012,1338.516,0.0
+Myanmar,Asia,1991,759.2828,3.8573165
+Myanmar,Asia,1992,821.32776,2.2854574
+Myanmar,Asia,1995,962.2094,0.0
+Myanmar,Asia,1997,1054.7675,0.0
+Myanmar,Asia,1999,1209.0165,0.0
+Myanmar,Asia,2001,1498.3116,0.0
+Myanmar,Asia,2002,1661.7358,0.0
+Myanmar,Asia,2006,2669.327,0.0
+Myanmar,Asia,2007,2968.3032,0.0
+Myanmar,Asia,2011,4078.6123,0.008836672700000001
+Myanmar,Asia,2012,4340.9995,0.0019520237
+Myanmar,Asia,2013,4666.9536,0.0
+Myanmar,Asia,2014,5006.507,0.0
+Myanmar,Asia,2015,5313.886,0.19937202
+Myanmar,Asia,2016,5580.9897,0.026259116
+Myanmar,Asia,2017,5877.8745,0.0
+Myanmar,Asia,2018,6201.263,0.0
+Myanmar,Asia,2019,6562.989,0.0
+Myanmar,Asia,2020,5926.8345,0.0
+Myanmar,Asia,2021,5178.4473,0.0
+Myanmar,Asia,2004,2110.2373,4.7380642177
+Myanmar,Asia,1994,911.46844,0.22561868
+Myanmar,Asia,2008,3254.739,12.553922
+Myanmar,Asia,2010,3893.7903,0.11505665
+Myanmar,Asia,2005,2377.9026,0.0
+Myanmar,Asia,2009,3578.1743,0.0
+Namibia,Africa,1991,7618.333,1.3354579
+Namibia,Africa,1992,7911.0103,0.29094642
+Namibia,Africa,1995,7506.105,0.0
+Namibia,Africa,1996,7538.925,0.0
+Namibia,Africa,1998,7709.89,0.0020211665
+Namibia,Africa,1999,7773.9434,0.02382592
+Namibia,Africa,2001,7786.5415,0.0
+Namibia,Africa,2002,8017.2812,0.0
+Namibia,Africa,2003,8237.366,0.0
+Namibia,Africa,2013,11593.575,0.48981476
+Namibia,Africa,2014,11982.696,0.04028893
+Namibia,Africa,2015,12166.565,0.42369327
+Namibia,Africa,2016,11846.788,0.111673795
+Namibia,Africa,2018,11214.386,0.0
+Namibia,Africa,2019,10813.305,0.0
+Namibia,Africa,2020,9652.248,0.0
+Namibia,Africa,2000,7858.3877,0.0
+Namibia,Africa,2004,9130.824,0.0
+Namibia,Africa,2006,9773.298,0.1061014
+Namibia,Africa,2007,10162.24,0.0
+Namibia,Africa,2008,10286.513,0.0
+Namibia,Africa,2009,10166.29,0.0
+Namibia,Africa,2010,10614.62,0.0
+Namibia,Africa,2011,10965.273,0.09582093
+Namibia,Africa,2012,11266.609,0.0
+Namibia,Africa,2017,11408.726,0.0
+Namibia,Africa,2021,9709.1,0.0
+Nepal,Asia,2006,2641.348,0.0
+Nepal,Asia,2009,2961.839,0.466745
+Nepal,Asia,1990,1808.2649,0.0
+Nepal,Asia,1991,1874.2751,0.0
+Nepal,Asia,1993,1916.9435,5.464419
+Nepal,Asia,1995,2043.6052,0.027265884
+Nepal,Asia,1996,2105.5083,0.0
+Nepal,Asia,1998,2188.222,0.55598396
+Nepal,Asia,1999,2242.6501,0.03973266
+Nepal,Asia,2000,2340.8157,0.114665285
+Nepal,Asia,2003,2439.4949,0.0
+Nepal,Asia,2004,2521.541,0.0
+Nepal,Asia,2005,2580.231,0.0
+Nepal,Asia,2007,2708.7144,0.02324316
+Nepal,Asia,2008,2852.6099,0.00023115972
+Nepal,Asia,2010,3085.314,0.0
+Nepal,Asia,2011,3176.6504,0.0005701341
+Nepal,Asia,2012,3316.5007,0.0046076365
+Nepal,Asia,2013,3426.5579,0.0
+Nepal,Asia,2014,3621.7317,0.0659874
+Nepal,Asia,2016,3743.7446,0.0611643
+Nepal,Asia,2017,4071.7043,2.0537362
+Nepal,Asia,2018,4371.3857,0.0
+Nepal,Asia,2019,4607.5244,0.5967324
+Nepal,Asia,2020,4412.542,0.29909977
+Nepal,Asia,2021,4546.2295,0.0
+Nepal,Asia,2022,4763.3877,0.0
+Nepal,Asia,2015,3745.2617,21.239038
+Nepal,Asia,2002,2380.2441,0.0
+Nepal,Asia,1992,1896.9717,0.18228798
+Nepal,Asia,1997,2166.3127,0.0
+Nepal,Asia,2001,2413.8142,0.0
+Netherlands,Europe,1992,44729.29,0.0076040835
+Netherlands,Europe,1993,44977.203,0.0149908
+Netherlands,Europe,1998,52446.613,0.12102512462199999
+Netherlands,Europe,2021,69323.33,0.0
+Netherlands,Europe,1990,43599.863,0.5497431
+Netherlands,Europe,1994,46030.645,0.00052752317
+Netherlands,Europe,1995,47231.113,0.26088783
+Netherlands,Europe,1997,50427.266,0.0
+Netherlands,Europe,2002,57283.96,0.06330957
+Netherlands,Europe,2005,59060.78,0.014591124
+Netherlands,Europe,2007,63286.086,0.064815775
+Netherlands,Europe,2008,64374.64,0.0
+Netherlands,Europe,2010,62191.176,0.0033042994
+Netherlands,Europe,2013,61951.316,0.0011400261
+Netherlands,Europe,2016,64970.418,0.10764477
+Netherlands,Europe,2018,67488.18,0.012035643
+Netherlands,Europe,2022,72103.87,0.05631273
+Netherlands,Europe,2003,57070.105,0.0
+Netherlands,Europe,2006,61051.844,0.0
+Netherlands,Europe,2012,62153.023,0.0
+Netherlands,Europe,2019,68589.68,0.0
+Netherlands,Europe,2020,65571.375,0.0
+New Zealand,Oceania,1994,31735.357,0.18078366
+New Zealand,Oceania,2013,43549.457,0.467768049
+New Zealand,Oceania,1991,29072.213,0.0
+New Zealand,Oceania,1997,33650.656,0.0
+New Zealand,Oceania,1998,33639.93,0.13338748
+New Zealand,Oceania,1999,35262.613,0.0
+New Zealand,Oceania,2000,36062.344,0.0019002996
+New Zealand,Oceania,2002,38152.508,0.0007504383
+New Zealand,Oceania,2004,40175.938,0.23579183
+New Zealand,Oceania,2005,41057.066,0.07147829600000001
+New Zealand,Oceania,2006,41687.01,0.0026896468
+New Zealand,Oceania,2015,45170.42,0.15219207
+New Zealand,Oceania,2016,45822.71,2.078497337
+New Zealand,Oceania,2017,46400.08,0.044055791999999996
+New Zealand,Oceania,2018,47171.28,0.011798759
+New Zealand,Oceania,2020,46289.387,0.051747713599999995
+New Zealand,Oceania,2021,48194.043,0.10839293700000001
+New Zealand,Oceania,2010,41374.203,4.436329
+New Zealand,Oceania,2011,41980.227,10.695737
+New Zealand,Oceania,1992,29085.615,0.12364996
+New Zealand,Oceania,1996,33400.73,0.0
+New Zealand,Oceania,2003,39175.887,0.0033993993
+New Zealand,Oceania,2007,42559.742,0.0
+New Zealand,Oceania,2012,42706.58,0.0051643904
+New Zealand,Oceania,2022,49474.242,0.0
+New Zealand,Oceania,2001,37073.49,0.37124744
+New Zealand,Oceania,1995,32750.96,0.0
+New Zealand,Oceania,2019,47523.23,0.0
+Nicaragua,America,1994,3947.3425,0.41416603
+Nicaragua,America,1997,4372.173,0.045558363
+Nicaragua,America,2000,4838.238,0.019579707
+Nicaragua,America,2001,4917.6606,0.01878588
+Nicaragua,America,2014,6657.196,0.025251603
+Nicaragua,America,2015,6882.0977,0.0
+Nicaragua,America,2018,6991.2417,0.0
+Nicaragua,America,2019,6701.1943,0.0
+Nicaragua,America,1990,4183.017,0.0
+Nicaragua,America,1999,4711.983,0.010297138
+Nicaragua,America,2002,4895.006,0.020098720969999997
+Nicaragua,America,2007,5650.469,0.0
+Nicaragua,America,2008,5761.387,0.0
+Nicaragua,America,2009,5492.955,0.0
+Nicaragua,America,2010,5654.358,0.0
+Nicaragua,America,2011,5927.27,0.0
+Nicaragua,America,2012,6224.3403,0.0
+Nicaragua,America,2013,6440.852,0.0
+Nicaragua,America,2017,7330.631,0.0
+Nicaragua,America,1992,4004.1628,1.3944668
+Nicaragua,America,1998,4465.6694,21.308372
+Nicaragua,America,1993,3901.8264,0.0
+Nicaragua,America,1995,4096.4106,0.017437633
+Nicaragua,America,1996,4276.1313,0.23442839
+Nicaragua,America,2004,5161.697,0.0
+Nicaragua,America,2005,5313.022,0.0
+Nicaragua,America,2016,7100.007,0.0
+Nicaragua,America,2020,6501.6875,7.2486844
+Nicaragua,America,2022,7258.6816,1.1485757
+Nicaragua,America,1991,4079.948,5.3734403
+Niger,Africa,1990,1411.8489,0.0
+Niger,Africa,1991,1362.7455,0.0
+Niger,Africa,1997,1217.3125,0.0
+Niger,Africa,1998,1294.1619,0.0
+Niger,Africa,2001,1233.0651,0.0
+Niger,Africa,2002,1248.8231,0.0
+Niger,Africa,2005,1233.8755,0.0
+Niger,Africa,2006,1260.1205,0.0
+Niger,Africa,2009,1277.6923,0.0
+Niger,Africa,2010,1336.5641,0.0
+Niger,Africa,2011,1318.1013,0.0
+Niger,Africa,2012,1403.1897,1.9530785
+Niger,Africa,2015,1471.6614,0.0
+Niger,Africa,2016,1500.0085,0.0
+Niger,Africa,2017,1520.0016,0.08940462
+Niger,Africa,2020,1615.6927,0.07275557
+Niger,Africa,2022,1717.5189,0.0
+Niger,Africa,1994,1291.6816,0.0
+Niger,Africa,1999,1247.6471,0.0
+Niger,Africa,2000,1190.5668,0.0
+Niger,Africa,2003,1231.2781,0.0
+Niger,Africa,2007,1252.7483,0.0
+Niger,Africa,2008,1300.5542,0.0
+Niger,Africa,2013,1423.2617,0.6330039
+Niger,Africa,2014,1462.8213,0.018411215
+Niger,Africa,2018,1574.3384,0.0
+Niger,Africa,2019,1612.6373,0.0
+Niger,Africa,2021,1585.5992,0.0
+Nigeria,Africa,2022,5552.838,0.88865453
+Nigeria,Africa,1994,3317.8074,0.08271184
+Nigeria,Africa,1998,3285.238,0.0
+Nigeria,Africa,1999,3218.4636,0.0
+Nigeria,Africa,2000,3290.7056,0.009693305
+Nigeria,Africa,2001,3392.0354,0.004078423
+Nigeria,Africa,2002,3806.2158,0.0
+Nigeria,Africa,2003,3974.7678,0.0024537193
+Nigeria,Africa,2004,4223.798,0.0
+Nigeria,Africa,2005,4372.9756,8.3679355e-05
+Nigeria,Africa,2006,4511.6396,0.0
+Nigeria,Africa,2007,4677.542,0.0
+Nigeria,Africa,2009,5102.9165,0.0
+Nigeria,Africa,2010,5359.5186,0.0081746
+Nigeria,Africa,2011,5488.005,0.0010857326
+Nigeria,Africa,2012,5563.6416,0.10798088469999999
+Nigeria,Africa,2013,5775.866,0.0
+Nigeria,Africa,2014,5980.192,0.0
+Nigeria,Africa,2015,5985.094,0.0050707194
+Nigeria,Africa,2016,5744.558,0.0
+Nigeria,Africa,2017,5651.7344,0.0
+Nigeria,Africa,2018,5628.7407,0.06520617
+Nigeria,Africa,2019,5628.1777,0.0
+Nigeria,Africa,2020,5410.6934,0.023137495
+Nigeria,Africa,2021,5491.7,0.0
+Nigeria,Africa,1992,3636.7712,0.0
+North Macedonia,Europe,1993,10875.199,0.0
+North Macedonia,Europe,1995,10608.88,5.204968
+North Macedonia,Europe,2002,11951.697,0.0
+North Macedonia,Europe,2003,12201.825,0.0
+North Macedonia,Europe,2004,12813.572,0.063349225
+North Macedonia,Europe,2005,13491.541,0.0
+North Macedonia,Europe,2006,14263.149,0.0
+North Macedonia,Europe,2013,17940.512,0.0
+North Macedonia,Europe,2015,19412.312,0.86442274
+North Macedonia,Europe,2016,20029.28,0.562194295
+North Macedonia,Europe,2001,11690.593,0.0
+North Macedonia,Europe,2007,15273.429,0.0
+North Macedonia,Europe,2012,17366.447,0.0
+North Macedonia,Europe,2014,18641.613,0.0
+North Macedonia,Europe,2017,20327.588,0.0
+North Macedonia,Europe,2000,12111.301,0.35948864
+North Macedonia,Europe,2021,22371.496,0.0
+Norway,Europe,1995,66930.94,0.19732998
+Norway,Europe,2000,77783.39,0.0
+Norway,Europe,2001,78990.53,0.0
+Norway,Europe,1990,57251.28,0.10852158
+Norway,Europe,1992,60486.004,0.0
+Norway,Europe,1993,61837.77,0.002487991
+Norway,Europe,2005,84292.59,0.041938383
+Norway,Europe,2008,86598.08,0.0
+Norway,Europe,2011,83302.54,0.0
+Norway,Europe,2022,91068.6,0.0
+Norway,Europe,2019,87947.55,0.0
+Norway,Europe,2020,86313.75,0.035361312
+Oman,Asia,2016,39860.99,0.0
+Oman,Asia,2017,38691.11,0.0
+Oman,Asia,2019,38292.387,0.0
+Oman,Asia,2020,37560.6,0.0
+Oman,Asia,2002,42654.15,0.24822819
+Oman,Asia,2003,41247.586,0.004622416
+Oman,Asia,2007,43696.97,9.266876
+Oman,Asia,2010,48191.613,1.5386155
+Oman,Asia,2011,44440.31,0.0
+Oman,Asia,2015,39813.79,0.2807747
+Oman,Asia,2018,38673.605,0.0
+Oman,Asia,2021,38719.457,0.0907112
+Pakistan,Asia,1999,3484.4568,0.033085909999999996
+Pakistan,Asia,2000,3531.713,0.059541315
+Pakistan,Asia,2001,3559.7278,0.31471781123
+Pakistan,Asia,2002,3563.6785,0.06052140622
+Pakistan,Asia,2003,3668.7793,0.05285738
+Pakistan,Asia,2019,5295.953,0.0052974443
+Pakistan,Asia,1991,3252.351,0.021917647
+Pakistan,Asia,1992,3404.1213,2.0461016
+Pakistan,Asia,1993,3369.238,0.0
+Pakistan,Asia,1994,3395.5044,0.17593019
+Pakistan,Asia,1995,3462.4734,0.0
+Pakistan,Asia,1996,3526.1416,0.0
+Pakistan,Asia,1997,3462.5815,0.0
+Pakistan,Asia,1998,3454.1768,0.0
+Pakistan,Asia,2004,3859.646,0.0
+Pakistan,Asia,2005,4042.1545,3.601715938
+Pakistan,Asia,2006,4185.8667,0.0
+Pakistan,Asia,2007,4257.926,1.05740672
+Pakistan,Asia,2008,4233.348,0.055884225
+Pakistan,Asia,2009,4270.439,0.0
+Pakistan,Asia,2010,4228.7817,4.879273628
+Pakistan,Asia,2011,4246.067,1.0841914
+Pakistan,Asia,2012,4292.021,0.99957234
+Pakistan,Asia,2013,4407.147,0.6185793039999999
+Pakistan,Asia,2014,4520.235,0.7435780796
+Pakistan,Asia,2015,4645.286,0.00033337378
+Pakistan,Asia,2016,4886.6123,0.0006376941
+Pakistan,Asia,2017,5031.5605,0.032428715
+Pakistan,Asia,2018,5255.0635,0.0
+Pakistan,Asia,2020,5135.0146,0.49929166
+Pakistan,Asia,2021,5367.2734,0.0028693033
+Pakistan,Asia,2022,5526.2793,0.0
+Pakistan,Asia,1990,3199.7297,0.0024993487
+Palau,Oceania,2015,20021.318,0.0
+Palau,Oceania,2016,19902.984,0.0
+Palau,Oceania,2012,18219.705,0.0
+Palau,Oceania,2013,17783.629,0.0
+Palau,Oceania,2021,15663.175,0.0
+Palestine,Asia,2008,4984.8057,0.0
+Palestine,Asia,2010,5432.2437,0.0
+Palestine,Asia,2012,6009.1094,0.0
+Palestine,Asia,2013,6142.202,0.0
+Palestine,Asia,2015,6072.6504,0.0
+Palestine,Asia,2020,5423.6826,0.0
+Palestine,Asia,2022,5753.084,0.0
+Panama,America,2013,28135.328,0.43859744
+Panama,America,2015,29933.156,0.0
+Panama,America,2018,32681.447,0.07531739
+Panama,America,2019,33163.727,0.030572638
+Panama,America,1991,12143.149,0.0
+Panama,America,1995,13349.334,0.07311611
+Panama,America,1999,14261.741,0.0
+Panama,America,2000,14572.976,0.010565571
+Panama,America,2001,14427.83,0.0
+Panama,America,2002,14507.144,0.003847838
+Panama,America,2003,14957.554,0.0
+Panama,America,2004,15875.112,0.0
+Panama,America,2005,16867.96,0.042749673
+Panama,America,2006,18190.273,0.0
+Panama,America,2007,20208.822,0.0
+Panama,America,2008,21867.818,0.039752126
+Panama,America,2009,21822.988,0.0
+Panama,America,2010,22739.111,0.0
+Panama,America,2011,24999.46,0.0
+Panama,America,2012,26926.885,0.004946858
+Panama,America,2014,28931.805,0.0
+Panama,America,2020,26881.799,0.01926889
+Panama,America,2021,30932.764,0.0
+Panama,America,2022,33833.027,0.0
+Panama,America,1992,12866.849,0.12434196
+Panama,America,1998,13826.532,0.0004319473
+Panama,America,2016,30765.236,0.0
+Panama,America,2017,31979.812,0.0
+Papua New Guinea,Oceania,1997,3864.2302,0.0
+Papua New Guinea,Oceania,1998,3590.1,0.0
+Papua New Guinea,Oceania,2015,4154.5234,0.2761994
+Papua New Guinea,Oceania,1992,3690.345,0.0
+Papua New Guinea,Oceania,1993,4206.429,0.18092087399999998
+Papua New Guinea,Oceania,1999,3531.6594,1.243242
+Papua New Guinea,Oceania,2004,3046.333,0.0
+Papua New Guinea,Oceania,2005,3136.5857,0.0
+Papua New Guinea,Oceania,2006,3202.4873,0.0
+Papua New Guinea,Oceania,2008,3233.9182,0.0
+Papua New Guinea,Oceania,2012,3577.4517,0.12678932
+Papua New Guinea,Oceania,2013,3615.2832,0.0
+Papua New Guinea,Oceania,2014,3998.6182,0.0
+Papua New Guinea,Oceania,2016,4275.7485,0.0
+Papua New Guinea,Oceania,2019,4301.6113,0.0
+Papua New Guinea,Oceania,2020,4077.6313,0.0
+Papua New Guinea,Oceania,1990,3164.149,0.0
+Papua New Guinea,Oceania,2000,3326.7986,0.0
+Papua New Guinea,Oceania,2001,3211.7593,0.0
+Papua New Guinea,Oceania,2002,3100.7952,0.0
+Papua New Guinea,Oceania,2018,4211.1455,0.25300935
+Papua New Guinea,Oceania,2022,4125.493,0.0
+Papua New Guinea,Oceania,2007,3345.8503,0.0
+Papua New Guinea,Oceania,2011,3514.8328,0.0
+Papua New Guinea,Oceania,1994,4297.891,1.9989874
+Papua New Guinea,Oceania,1996,4167.036,0.0
+Papua New Guinea,Oceania,1991,3358.1887,0.0
+Papua New Guinea,Oceania,2003,3064.444,0.0
+Papua New Guinea,Oceania,2009,3349.6436,0.0
+Paraguay,America,1999,10435.398,0.0
+Paraguay,America,2000,9998.593,0.0
+Paraguay,America,2001,9749.259,0.0
+Paraguay,America,2002,9610.748,0.0
+Paraguay,America,2005,10290.101,0.0
+Paraguay,America,2008,11751.14,0.0
+Paraguay,America,2009,11601.285,0.0036680584
+Paraguay,America,2012,12834.802,0.0180332234
+Paraguay,America,2013,13700.703,0.06493317
+Paraguay,America,2014,14219.3545,0.0
+Paraguay,America,2016,14826.664,0.0
+Paraguay,America,1990,9962.48,0.0
+Paraguay,America,1992,9948.421,0.0
+Paraguay,America,1995,10908.272,0.0
+Paraguay,America,1997,11033.016,0.016928868
+Paraguay,America,1998,10802.56,0.05399287
+Paraguay,America,2015,14427.601,0.0
+Paraguay,America,2018,15592.984,0.0
+Paraguay,America,2019,15321.324,0.0
+Paraguay,America,2021,15406.167,0.0
+Paraguay,America,2011,13109.467,0.0
+Paraguay,America,2004,10187.194,0.0
+Paraguay,America,2010,12738.576,0.0
+Paraguay,America,2007,11141.87,0.16800705
+Peru,America,1990,6318.203,0.140096399
+Peru,America,1992,6162.7324,0.69509506
+Peru,America,2002,7932.991,0.0
+Peru,America,2004,8497.498,0.0
+Peru,America,2006,9549.612,0.0
+Peru,America,1993,6356.393,0.0
+Peru,America,1994,6998.951,0.11140304
+Peru,America,1999,7586.6777,0.0021917885
+Peru,America,2000,7670.46,0.0
+Peru,America,2001,7613.021,0.5765887
+Peru,America,2003,8175.834,0.0
+Peru,America,2007,10288.186,0.5872509
+Peru,America,2008,11153.515,0.0
+Peru,America,2009,11206.371,0.0
+Peru,America,2010,12061.164,0.0
+Peru,America,2011,12728.865,0.0
+Peru,America,2012,13397.783,0.0
+Peru,America,2013,14054.639,0.0
+Peru,America,2014,14247.101,0.0
+Peru,America,2015,14545.381,0.04952504
+Peru,America,2016,14920.104,0.0010422198
+Peru,America,2017,15072.204,1.5165303
+Peru,America,2019,15466.295,0.0
+Peru,America,2020,13612.021,0.0049517793
+Peru,America,2021,15282.273,0.011174792
+Peru,America,2022,15548.932,0.0
+Peru,America,1991,6323.7,0.0
+Peru,America,1996,7438.516,0.0
+Peru,America,2005,8951.547,6.5737055e-05
+Peru,America,2018,15388.998,0.0
+Peru,America,1997,7775.2104,0.0016846651
+Peru,America,1998,7605.1626,0.019856067
+Peru,America,1995,7373.3545,0.0
+Philippines,Asia,1990,4504.4624,1.50925886315
+Philippines,Asia,1991,4378.3955,1.0150944009999998
+Philippines,Asia,1992,4293.7183,0.159848592
+Philippines,Asia,1998,4616.673,0.316055
+Philippines,Asia,2002,4856.4995,0.02080838835
+Philippines,Asia,2007,5840.068,0.010613512299999999
+Philippines,Asia,2015,7691.763,0.62937537238
+Philippines,Asia,2016,8131.825,0.0682130172
+Philippines,Asia,2019,9452.294,0.164313307
+Philippines,Asia,1993,4283.1597,0.5440826692999999
+Philippines,Asia,1994,4374.0674,0.235998587
+Philippines,Asia,1995,4477.323,1.20319465
+Philippines,Asia,1996,4631.772,0.04453339
+Philippines,Asia,1997,4758.7085,0.008050468724
+Philippines,Asia,1999,4650.7593,0.0960775733
+Philippines,Asia,2000,4740.439,0.10727647829999999
+Philippines,Asia,2001,4778.401,0.1389245812
+Philippines,Asia,2003,5003.3833,0.045786321
+Philippines,Asia,2004,5229.4507,0.148751613
+Philippines,Asia,2005,5386.8164,0.0023412777399999998
+Philippines,Asia,2006,5578.5723,0.2720509602
+Philippines,Asia,2008,5987.0376,0.264943147
+Philippines,Asia,2009,5965.307,0.5467301147000001
+Philippines,Asia,2010,6273.039,0.143576887612
+Philippines,Asia,2011,6388.313,0.32702294
+Philippines,Asia,2012,6697.556,0.3839374305
+Philippines,Asia,2013,7016.5386,4.375726008
+Philippines,Asia,2014,7340.362,0.35756263705
+Philippines,Asia,2017,8584.136,0.049078653
+Philippines,Asia,2018,9016.286,0.16425697749999998
+Philippines,Asia,2021,8857.79,0.2664980212
+Philippines,Asia,2022,9457.104,0.0760531595
+Philippines,Asia,2020,8455.185,0.3078011198
+Poland,Europe,2018,37136.016,0.0
+Poland,Europe,1997,16310.892,2.1963103
+Poland,Europe,1998,17058.617,0.0
+Poland,Europe,2001,19127.988,0.3666736
+Poland,Europe,2004,21242.229,0.0
+Poland,Europe,2005,21944.541,0.0
+Poland,Europe,2006,23320.338,0.0
+Poland,Europe,2009,26660.725,0.022741145
+Poland,Europe,2010,27584.254,0.6474715
+Poland,Europe,2016,33244.3,0.0
+Poland,Europe,2020,38122.438,0.0
+Poland,Europe,2021,41774.582,0.0
+Poland,Europe,1990,13044.731,0.075783126
+Poland,Europe,1994,13430.024,0.00090249744
+Poland,Europe,1999,17861.717,0.0058812923
+Poland,Europe,2002,19500.68,7.535021e-05
+Poland,Europe,2007,24910.422,0.023308896
+Poland,Europe,2008,25998.893,0.009370319
+Poland,Europe,2012,29457.092,0.0011913644
+Poland,Europe,2013,29676.557,0.0
+Poland,Europe,2015,32252.387,0.0
+Poland,Europe,2017,34952.836,0.052416775
+Poland,Europe,2019,38846.504,0.0
+Poland,Europe,2022,44160.86,0.0
+Poland,Europe,2000,18889.662,0.0
+Poland,Europe,2003,20201.39,0.0
+Poland,Europe,2011,29018.326,0.0
+Poland,Europe,2014,30863.12,0.0
+Poland,Europe,1992,12352.658,0.0
+Portugal,Europe,1997,31741.37,0.043839959
+Portugal,Europe,2004,35846.69,0.1770077
+Portugal,Europe,2005,36059.992,1.34492422
+Portugal,Europe,2022,41288.047,0.0
+Portugal,Europe,1996,30539.4,0.064421385
+Portugal,Europe,2001,35687.953,0.0
+Portugal,Europe,2002,35766.66,0.0
+Portugal,Europe,2003,35301.07,1.0470496
+Portugal,Europe,2006,36579.953,0.0
+Portugal,Europe,2008,37488.703,0.0
+Portugal,Europe,2010,36897.203,0.68034924
+Portugal,Europe,2015,35992.688,0.0
+Portugal,Europe,1998,33099.777,0.05808966
+Portugal,Europe,2000,35255.277,0.0
+Portugal,Europe,2013,34835.01,0.0
+Portugal,Europe,2014,35283.008,0.0
+Portugal,Europe,2018,39330.5,0.0476656
+Portugal,Europe,2019,40400.805,0.0
+Portugal,Europe,2009,36283.67,0.0
+Portugal,Europe,1991,28594.176,0.0
+Portugal,Europe,2016,36830.03,0.07605626
+Portugal,Europe,2017,38143.758,0.3306862
+Puerto Rico,America,1994,30225.781,0.0050389725
+Puerto Rico,America,1992,28219.115,0.57752675
+Puerto Rico,America,2001,39568.555,0.21095705
+Puerto Rico,America,2003,39876.066,0.0
+Puerto Rico,America,2004,43355.824,0.124498405
+Puerto Rico,America,2014,42183.695,0.0
+Puerto Rico,America,2018,42372.66,0.0
+Puerto Rico,America,2022,42562.375,2.2188957830000002
+Puerto Rico,America,2020,40171.79,0.97914401
+Puerto Rico,America,1995,31310.18,0.70344377
+Puerto Rico,America,1996,31677.23,1.1027586
+Puerto Rico,America,1998,34537.184,3.2355638
+Puerto Rico,America,1999,36216.84,0.2593316
+Puerto Rico,America,2007,41888.625,0.0
+Puerto Rico,America,2011,41136.617,0.49824765
+Puerto Rico,America,2012,41649.58,0.0
+Puerto Rico,America,2017,42547.17,65.73509
+Qatar,Asia,2018,114909.945,0.0054544974
+Romania,Europe,2000,14986.157,1.61191868
+Romania,Europe,1991,14460.882,0.1733064
+Romania,Europe,1994,14087.381,0.00997579
+Romania,Europe,1995,14995.828,0.0033031194
+Romania,Europe,1996,15626.781,0.0058576297
+Romania,Europe,1997,14911.898,0.30920404
+Romania,Europe,1998,14639.484,0.35974595
+Romania,Europe,1999,14607.255,0.16688381
+Romania,Europe,2001,15989.738,0.3341988
+Romania,Europe,2002,17213.893,0.0006295383
+Romania,Europe,2003,17744.418,0.0
+Romania,Europe,2004,19706.793,0.0
+Romania,Europe,2005,20754.506,1.3336126
+Romania,Europe,2006,22554.06,0.0
+Romania,Europe,2007,24545.506,0.0
+Romania,Europe,2008,27280.908,0.0
+Romania,Europe,2009,25991.533,0.0
+Romania,Europe,2010,25125.145,0.6536683
+Romania,Europe,2013,27182.37,0.005795902
+Romania,Europe,2014,28407.402,0.0
+Romania,Europe,2015,29442.305,0.0
+Romania,Europe,2016,30458.562,0.0
+Romania,Europe,2018,35381.91,0.0
+Romania,Europe,2019,36964.258,0.0
+Romania,Europe,2020,35802.69,0.033815704
+Romania,Europe,2021,38071.176,0.0
+Romania,Europe,1990,16462.46,0.0
+Romania,Europe,1993,13534.737,0.0
+Romania,Europe,2017,33145.82,0.0034737561
+Romania,Europe,2012,27006.336,0.0
+Romania,Europe,2022,39733.656,0.0
+Russia,Europe,1993,22122.291,0.007814588
+Russia,Europe,1998,17226.227,0.164787215
+Russia,Europe,2003,24302.658,0.002463126
+Russia,Europe,2010,33399.926,0.24040656999999999
+Russia,Europe,2012,36104.273,0.079563696
+Russia,Europe,1992,24209.033,0.011014781599999999
+Russia,Europe,1994,19348.201,0.08778028800000001
+Russia,Europe,1996,17879.922,0.07617591
+Russia,Europe,1997,18160.229,0.042995196
+Russia,Europe,1999,18385.465,0.05831130434
+Russia,Europe,2000,20309.268,0.017275027323
+Russia,Europe,2001,21435.766,0.10055379296400001
+Russia,Europe,2002,22546.727,0.15919448094
+Russia,Europe,2004,26157.557,0.0106188202
+Russia,Europe,2005,27937.998,0.003097841
+Russia,Europe,2006,30328.078,0.1199487396
+Russia,Europe,2007,32962.3,0.034296439
+Russia,Europe,2011,34795.035,0.001173798
+Russia,Europe,2013,36628.92,0.04362107
+Russia,Europe,2014,36217.965,0.00038849254
+Russia,Europe,2015,35393.57,0.010034601
+Russia,Europe,2016,35361.547,0.00093985966
+Russia,Europe,2017,35932.234,0.00012704871
+Russia,Europe,2018,36908.367,0.00060338055
+Russia,Europe,2019,37698.953,0.034965138800000004
+Russia,Europe,2021,38938.496,0.010887956
+Russia,Europe,2022,38263.617,0.0
+Russia,Europe,1995,18550.52,0.02732992
+Russia,Europe,2008,34691.574,0.0
+Rwanda,Africa,1996,887.3726,0.0
+Rwanda,Africa,1997,873.9478,0.0
+Rwanda,Africa,1999,944.92566,0.0
+Rwanda,Africa,2000,1015.7939,0.0
+Rwanda,Africa,2003,1219.457,0.0
+Rwanda,Africa,2004,1276.1022,0.0
+Rwanda,Africa,2005,1359.1343,0.0
+Rwanda,Africa,2006,1445.4756,0.0
+Rwanda,Africa,2007,1514.9728,0.00022108968
+Rwanda,Africa,2001,1092.2506,0.0
+Rwanda,Africa,2002,1219.6971,0.0
+Rwanda,Africa,2008,1640.3757,0.0
+Rwanda,Africa,2011,1872.6146,0.0
+Rwanda,Africa,2012,1986.3146,0.0
+Rwanda,Africa,2015,2236.628,0.0
+Rwanda,Africa,2016,2314.6592,0.0
+Rwanda,Africa,2018,2491.3108,0.74717829
+Rwanda,Africa,2019,2665.1868,0.0
+Rwanda,Africa,2020,2518.1653,0.0
+Rwanda,Africa,2021,2731.09,0.0
+Rwanda,Africa,2022,2889.8848,0.0
+Rwanda,Africa,2017,2349.5889,0.0
+Rwanda,Africa,2010,1777.6393,0.0
+Saint Kitts and Nevis,America,1990,14333.845,0.0
+Saint Kitts and Nevis,America,1995,16605.307,62.841885
+Saint Kitts and Nevis,America,1998,17973.484,104.36852
+Saint Kitts and Nevis,America,1999,18301.387,10.18211
+Saint Kitts and Nevis,America,2008,25912.89,0.0
+Saint Kitts and Nevis,America,2017,29965.234,1.8897042
+Saint Lucia,America,2010,20848.877,0.033729427
+Saint Lucia,America,2013,20989.217,0.0
+Saint Lucia,America,2022,22961.963,0.0
+Saint Lucia,America,2007,20759.127,2.993813
+Saint Lucia,America,1994,18020.357,0.0
+Saint Lucia,America,1999,19039.299,0.0
+Saint Lucia,America,2004,19715.66,0.046875
+Saint Lucia,America,2016,21775.162,0.0
+Saint Lucia,America,2021,19101.166,1.733711
+Saint Lucia,America,1996,18300.996,0.0
+Saint Vincent and the Grenadines,America,2010,13032.493,3.4700637
+Saint Vincent and the Grenadines,America,1992,7897.287,0.0
+Saint Vincent and the Grenadines,America,2011,13025.741,0.0
+Saint Vincent and the Grenadines,America,2013,13654.122,14.121685
+Saint Vincent and the Grenadines,America,2016,15047.248,0.79822797
+Saint Vincent and the Grenadines,America,1999,9746.234,0.0
+Saint Vincent and the Grenadines,America,2002,10619.379,2.2551897
+Saint Vincent and the Grenadines,America,2004,11849.677,0.9092559
+Saint Vincent and the Grenadines,America,2005,12186.143,0.0
+Saint Vincent and the Grenadines,America,2021,15900.977,37.261147
+Samoa,Oceania,2015,6432.36,0.0
+Samoa,Oceania,2001,4941.115,0.5632754
+Samoa,Oceania,2009,6104.1274,19.7514
+Samoa,Oceania,1990,3990.9268,159.02515
+Samoa,Oceania,1991,3891.63,221.3425
+Samoa,Oceania,2004,5568.347,0.0
+Samoa,Oceania,2005,5914.8896,0.0
+Samoa,Oceania,2012,6311.961,17.20254
+Samoa,Oceania,2018,6805.0454,0.0
+Sao Tome and Principe,Africa,2021,5732.6943,0.0
+Saudi Arabia,Asia,2002,46435.48,0.0
+Saudi Arabia,Asia,2003,48152.598,0.0
+Saudi Arabia,Asia,2004,49961.168,0.0
+Saudi Arabia,Asia,2005,50638.95,0.0
+Saudi Arabia,Asia,2009,47715.746,0.20974235
+Saudi Arabia,Asia,2010,50620.293,0.0
+Saudi Arabia,Asia,2011,53692.3,0.04433708
+Saudi Arabia,Asia,2012,54267.215,0.0
+Saudi Arabia,Asia,2013,52711.688,0.0
+Saudi Arabia,Asia,2015,52983.137,0.00029873737
+Saudi Arabia,Asia,2016,51997.344,0.007507509
+Saudi Arabia,Asia,2017,52431.84,0.0
+Saudi Arabia,Asia,2019,56365.508,0.0
+Saudi Arabia,Asia,2020,51782.57,0.0
+Senegal,Africa,2002,3075.2317,0.58487934
+Senegal,Africa,2011,3362.8794,0.0
+Senegal,Africa,2012,3405.1086,0.056622352
+Senegal,Africa,2013,3385.426,0.0
+Senegal,Africa,2014,3484.0122,0.0
+Senegal,Africa,2015,3593.7947,0.0
+Senegal,Africa,2018,3998.2864,0.0
+Senegal,Africa,2019,4070.6123,0.0
+Senegal,Africa,2020,4018.0413,0.073378004
+Senegal,Africa,2021,4173.6772,0.0
+Senegal,Africa,1993,2834.028,0.0
+Senegal,Africa,1994,2757.8608,0.0
+Senegal,Africa,1998,2938.6917,0.0
+Senegal,Africa,2000,3093.2878,0.0
+Senegal,Africa,2003,3170.035,0.0
+Senegal,Africa,2005,3301.8208,0.0
+Senegal,Africa,2007,3316.4204,0.0
+Senegal,Africa,2008,3359.7056,0.0
+Senegal,Africa,2009,3371.4617,0.0
+Senegal,Africa,2010,3403.5671,0.0
+Senegal,Africa,2016,3710.0554,0.0
+Senegal,Africa,2022,4227.7334,0.0
+Senegal,Africa,1999,3050.178,0.0
+Senegal,Africa,2004,3240.302,0.0
+Serbia,Europe,2007,17218.852,0.0
+Serbia,Europe,2009,17684.041,0.0
+Serbia,Europe,2010,18041.307,0.31626418
+Serbia,Europe,2013,18366.686,0.0
+Serbia,Europe,2014,18123.219,4.3522444
+Serbia,Europe,2016,19100.998,0.24574456
+Serbia,Europe,2018,20683.371,0.0
+Serbia,Europe,2019,21782.447,0.0
+Serbia,Europe,2020,21719.705,0.052477222
+Serbia,Europe,2021,23668.523,0.0
+Serbia,Europe,2012,18195.398,0.0
+Serbia,Europe,2017,19656.764,0.0
+Serbia,Europe,2022,24910.422,0.0
+Seychelles,Africa,1997,19895.143,0.283822
+Seychelles,Africa,2014,25379.418,0.0
+Seychelles,Africa,2004,18356.47,3.3594165
+Seychelles,Africa,2002,19777.752,0.0
+Seychelles,Africa,2013,24770.652,0.7019317
+Sierra Leone,Africa,1996,1879.9536,0.0
+Sierra Leone,Africa,2004,2039.2991,0.0
+Sierra Leone,Africa,2005,2071.6086,0.0
+Sierra Leone,Africa,2007,2232.1848,0.0
+Sierra Leone,Africa,2009,2306.1973,0.0
+Sierra Leone,Africa,2010,2393.2441,0.0
+Sierra Leone,Africa,2011,2471.7185,0.0
+Sierra Leone,Africa,2015,2601.3052,0.0
+Sierra Leone,Africa,2019,2851.9792,0.0
+Sierra Leone,Africa,2022,2934.03,0.0
+Sierra Leone,Africa,1999,1716.8203,0.0
+Sierra Leone,Africa,2013,3279.8674,0.0
+Sierra Leone,Africa,2017,2737.3628,0.8065723
+Sint Maarten (Dutch part),America,2017,46088.36,184.7456
+Slovakia,Europe,1997,17660.174,0.21655937
+Slovakia,Europe,1998,18311.295,0.15072347
+Slovakia,Europe,1999,18206.045,0.3719184
+Slovakia,Europe,2001,18946.719,0.019493949
+Slovakia,Europe,2002,19790.836,0.008499115
+Slovakia,Europe,2004,21889.305,0.6673347
+Slovakia,Europe,2005,23306.523,0.0
+Slovakia,Europe,2006,25385.625,0.0
+Slovakia,Europe,2010,29809.037,0.027423456
+Slovakia,Europe,2013,31144.129,0.0
+Slovakia,Europe,2020,36278.3,0.0
+Slovakia,Europe,2021,38437.492,0.0
+Slovakia,Europe,2017,35117.14,0.0
+Slovakia,Europe,2019,37273.133,0.0
+Slovakia,Europe,2003,20765.682,0.31969333
+Slovakia,Europe,2007,28123.795,0.0
+Slovakia,Europe,2011,30533.477,0.0
+Slovakia,Europe,2012,30959.865,0.0
+Slovakia,Europe,2022,38720.48,0.0
+Slovakia,Europe,2000,18374.59,0.0
+Slovenia,Europe,2005,35846.35,0.0138097145
+Slovenia,Europe,2012,37333.69,0.56894064
+Slovenia,Europe,2014,37960.152,0.0
+Slovenia,Europe,2021,46274.28,0.0
+Slovenia,Europe,1998,27912.328,0.0
+Slovenia,Europe,2004,34575.895,0.02905728
+Slovenia,Europe,2007,40319.113,0.81552154
+Slovenia,Europe,2020,42807.46,0.0
+Slovenia,Europe,2003,33093.613,0.26995367
+Slovenia,Europe,2022,47433.4,0.0
+Solomon Islands,Oceania,1997,2848.3445,0.0
+Solomon Islands,Oceania,1998,2805.2908,0.0
+Solomon Islands,Oceania,2015,2664.7305,0.15291573
+Solomon Islands,Oceania,2009,2514.886,0.0
+Solomon Islands,Oceania,2010,2682.2854,0.0
+Solomon Islands,Oceania,2012,2743.4534,0.0
+Solomon Islands,Oceania,2013,2783.5945,0.31106338
+Solomon Islands,Oceania,2014,2716.418,1.7969836
+Solomon Islands,Oceania,2007,2384.3254,0.0
+Solomon Islands,Oceania,2016,2715.234,0.0
+Solomon Islands,Oceania,1992,2644.5237,0.0
+Solomon Islands,Oceania,1993,2669.6992,0.0
+Solomon Islands,Oceania,2002,1960.441,0.0
+Solomon Islands,Oceania,2003,2050.3267,0.0
+Solomon Islands,Oceania,2011,2777.471,0.0
+Solomon Islands,Oceania,2018,2686.12,0.0
+Solomon Islands,Oceania,2020,2515.1284,0.0
+Somalia,Africa,2014,1258.8225,0.0
+Somalia,Africa,2015,1343.443,0.0
+Somalia,Africa,2016,1383.6586,0.0
+Somalia,Africa,2017,1527.1122,0.0
+Somalia,Africa,2019,1491.1077,0.0
+Somalia,Africa,2021,1392.4642,4.602671
+Somalia,Africa,2022,1387.8137,5.1840715
+Somalia,Africa,2013,1197.2919,0.03426992
+Somalia,Africa,2018,1504.4391,0.9663922
+Somalia,Africa,2020,1396.0535,0.0
+South Africa,Africa,1991,10472.158,0.5920242
+South Africa,Africa,1992,10065.916,0.13579656
+South Africa,Africa,1995,10331.469,0.0045289164
+South Africa,Africa,2004,12356.316,0.0
+South Africa,Africa,2015,14559.475,0.029839955
+South Africa,Africa,2016,14519.031,0.118502847
+South Africa,Africa,2017,14591.437,0.46040901
+South Africa,Africa,2018,14571.376,0.12581016
+South Africa,Africa,2019,14370.238,0.047517525000000005
+South Africa,Africa,2021,13711.294,0.017852135
+South Africa,Africa,1993,9989.177,0.0
+South Africa,Africa,1994,10143.206,0.0
+South Africa,Africa,1996,10636.864,0.005563897
+South Africa,Africa,1997,10783.461,0.0
+South Africa,Africa,1999,10844.917,0.029435648000000002
+South Africa,Africa,2000,11197.515,0.112024322
+South Africa,Africa,2001,11401.431,0.0
+South Africa,Africa,2002,11711.884,0.010877114
+South Africa,Africa,2003,11937.716,0.0
+South Africa,Africa,2006,13460.689,0.07108568
+South Africa,Africa,2007,14033.4,0.0
+South Africa,Africa,2008,14315.189,0.13641928392
+South Africa,Africa,2009,13927.729,0.004548845
+South Africa,Africa,2011,14451.929,0.048232265499999996
+South Africa,Africa,2012,14581.589,0.046040457
+South Africa,Africa,2014,14661.263,0.022298072
+South Africa,Africa,2020,13266.786,0.0
+South Africa,Africa,2022,13777.192,0.906801
+South Africa,Africa,1990,10824.385,0.31178564
+South Africa,Africa,2005,12877.307,0.0069235964
+South Africa,Africa,1998,10706.777,0.10785513
+South Africa,Africa,2010,14182.334,0.0
+South Africa,Africa,2013,14699.066,0.0
+South Korea,Asia,2001,26210.3,0.06683024
+South Korea,Asia,1990,13883.375,0.015527629499999999
+South Korea,Asia,1991,15228.258,0.125511483
+South Korea,Asia,1992,16005.019,0.0
+South Korea,Asia,1996,21242.283,0.019666744
+South Korea,Asia,1997,22342.555,0.00028959816
+South Korea,Asia,1998,21044.047,0.3935895327
+South Korea,Asia,1999,23291.014,0.0675357874
+South Korea,Asia,2000,25189.857,0.022961599
+South Korea,Asia,2002,28072.367,0.7261892999999999
+South Korea,Asia,2004,30183.496,0.10433944786
+South Korea,Asia,2005,31417.291,0.017702408
+South Korea,Asia,2006,32897.965,0.0
+South Korea,Asia,2007,34630.492,0.0059695686
+South Korea,Asia,2008,35404.05,0.0
+South Korea,Asia,2011,38819.777,0.004149081
+South Korea,Asia,2014,41648.246,0.00087572254
+South Korea,Asia,2020,46506.934,0.098521405
+South Korea,Asia,2022,49933.977,0.025270078
+South Korea,Asia,2016,43674.508,0.0182705659
+South Korea,Asia,2017,44928.05,0.0
+South Korea,Asia,1993,16932.875,0.035168081999999996
+South Korea,Asia,1994,18317.098,2.3726336e-06
+South Korea,Asia,1995,19877.193,0.099720955
+South Korea,Asia,2003,28806.19,0.6403735
+South Korea,Asia,2010,37728.88,0.0
+South Korea,Asia,2012,39543.996,0.062517285
+South Korea,Asia,2019,46903.84,0.033486273
+South Korea,Asia,2021,48571.434,0.0007149016
+South Korea,Asia,2018,46034.29,0.0
+Spain,Europe,1990,31639.244,0.052525017
+Spain,Europe,1991,32362.303,0.14608833
+Spain,Europe,1992,32503.44,0.13364258
+Spain,Europe,1993,32001.795,0.16058114
+Spain,Europe,1994,32608.84,0.15892044
+Spain,Europe,1995,33360.46,0.27168207
+Spain,Europe,1999,37980.48,0.5920553426999999
+Spain,Europe,1996,34088.027,0.0928431693
+Spain,Europe,1997,35163.18,0.0008473467
+Spain,Europe,2000,39777.45,0.012534191
+Spain,Europe,2001,41050.457,0.011468072
+Spain,Europe,2002,41589.918,0.023551524
+Spain,Europe,2004,42612.938,0.0016168475
+Spain,Europe,2006,44384.727,0.05228503
+Spain,Europe,2007,45110.254,0.027136995
+Spain,Europe,2010,42515.49,0.023908166
+Spain,Europe,2011,42093.582,0.013507029
+Spain,Europe,2012,40861.01,0.02981693
+Spain,Europe,2013,40409.99,0.0
+Spain,Europe,2015,42851.414,0.00016720213
+Spain,Europe,2016,44063.383,0.004053326
+Spain,Europe,2018,46114.344,0.010550729
+Spain,Europe,2019,46682.477,0.1834586
+Spain,Europe,2021,44091.11,0.210354953
+Spain,Europe,1998,36524.426,0.00696171934
+Spain,Europe,2005,43387.035,0.210190412
+Spain,Europe,2009,42671.52,0.12739085
+Spain,Europe,2014,41147.246,0.0
+Spain,Europe,2020,41372.78,0.024645403
+Spain,Europe,2003,42045.082,0.0969706
+Spain,Europe,2022,46479.086,0.0
+Spain,Europe,2017,45233.24,0.0
+Sri Lanka,Asia,2001,6230.031,0.0
+Sri Lanka,Asia,2002,6409.863,0.0
+Sri Lanka,Asia,2012,11447.693,0.08261504700000001
+Sri Lanka,Asia,2014,12909.966,0.0327159563
+Sri Lanka,Asia,2016,13845.614,1.372049463
+Sri Lanka,Asia,2017,14578.602,0.791966292
+Sri Lanka,Asia,2019,14637.444,0.0
+Sri Lanka,Asia,2020,13886.651,0.0
+Sri Lanka,Asia,1990,4561.579,0.0
+Sri Lanka,Asia,1991,4735.8193,0.3333199
+Sri Lanka,Asia,1992,4866.2393,2.6048613
+Sri Lanka,Asia,1993,5114.4365,0.0029984487
+Sri Lanka,Asia,1994,5322.7295,0.0
+Sri Lanka,Asia,1995,5523.312,0.00306991
+Sri Lanka,Asia,1996,5624.024,0.0
+Sri Lanka,Asia,1997,5871.723,0.0027829472
+Sri Lanka,Asia,1998,6032.622,0.0
+Sri Lanka,Asia,1999,6176.2354,0.0
+Sri Lanka,Asia,2000,6428.6133,0.01837018
+Sri Lanka,Asia,2003,6741.0127,0.15358733
+Sri Lanka,Asia,2004,7059.911,6.3714375
+Sri Lanka,Asia,2005,7452.742,0.0
+Sri Lanka,Asia,2006,7970.665,0.010608278
+Sri Lanka,Asia,2007,8454.207,0.00015455837
+Sri Lanka,Asia,2008,8897.827,0.0
+Sri Lanka,Asia,2009,9156.319,0.0
+Sri Lanka,Asia,2010,9832.187,0.17907038
+Sri Lanka,Asia,2011,10618.492,0.7379716
+Sri Lanka,Asia,2013,12249.723,0.002597383
+Sri Lanka,Asia,2015,13329.779,0.0
+Sri Lanka,Asia,2018,14759.825,0.0
+Sri Lanka,Asia,2021,14316.135,0.0
+Sri Lanka,Asia,2022,13249.408,0.0
+Sudan,Africa,1990,2460.1887,0.0
+Sudan,Africa,1991,2591.8691,0.0
+Sudan,Africa,1992,2709.79,0.0
+Sudan,Africa,1996,2924.2908,0.0
+Sudan,Africa,2000,3575.852,0.0
+Sudan,Africa,2001,3701.5488,0.012725592
+Sudan,Africa,2012,4145.9316,0.0
+Sudan,Africa,2015,4159.1943,0.0
+Sudan,Africa,2022,3132.0771,0.019356497
+Sudan,Africa,1993,2777.275,0.0022519974
+Sudan,Africa,1994,2736.472,0.0
+Sudan,Africa,1997,3380.1868,0.0
+Sudan,Africa,1998,3441.1792,0.35554856
+Sudan,Africa,1999,3459.23,0.0
+Sudan,Africa,2002,3814.3132,0.0
+Sudan,Africa,2003,3946.9226,0.86161286
+Sudan,Africa,2005,4152.3228,0.0
+Sudan,Africa,2006,4299.974,0.0
+Sudan,Africa,2007,4415.785,0.5047094
+Sudan,Africa,2009,4188.0547,0.0
+Sudan,Africa,2010,4219.837,0.0
+Sudan,Africa,2013,4130.486,0.010601701
+Sudan,Africa,2014,4207.5005,0.0
+Sudan,Africa,2016,4174.561,0.0
+Sudan,Africa,2017,4061.0183,0.0
+Sudan,Africa,2018,3816.66,0.0
+Sudan,Africa,2019,3625.5232,0.0
+Sudan,Africa,2020,3401.2498,0.9247411
+Sudan,Africa,2021,3248.9756,0.0
+Sudan,Africa,2011,4467.626,0.0
+Suriname,America,2006,20113.67,0.0
+Suriname,America,2008,21515.812,0.0
+Suriname,America,2021,18458.234,0.0
+Suriname,America,2022,18742.588,0.57995224
+Sweden,Europe,2021,63124.598,0.010942373
+Sweden,Europe,1990,40457.207,0.0038190358
+Sweden,Europe,1999,46116.637,0.058378782
+Sweden,Europe,2002,49646.94,0.0
+Sweden,Europe,2005,53539.113,0.7138885
+Sweden,Europe,2013,56713.703,0.0
+Sweden,Europe,2020,59945.586,0.0
+Sweden,Europe,2022,63611.363,0.0
+Sweden,Europe,2018,60696.242,0.018363312
+Switzerland,Europe,1997,63276.434,0.023237022
+Switzerland,Europe,1999,65766.62,0.8443177499999999
+Switzerland,Europe,2005,70322.12,0.5020502
+Switzerland,Europe,2006,72728.92,0.0
+Switzerland,Europe,2007,74904.84,0.09169812
+Switzerland,Europe,2021,81603.21,0.0
+Switzerland,Europe,1990,64588.953,0.1053568
+Switzerland,Europe,1993,61837.77,0.16300471
+Switzerland,Europe,1994,62125.742,0.0016590623
+Switzerland,Europe,1998,65000.26,0.0003295338
+Switzerland,Europe,2002,68055.63,0.058195658
+Switzerland,Europe,2003,67530.695,0.078712959
+Switzerland,Europe,2009,73366.586,0.18043607
+Switzerland,Europe,2010,74961.31,0.0023378101
+Switzerland,Europe,2011,75476.55,0.0
+Switzerland,Europe,2013,76034.81,0.035398986
+Switzerland,Europe,2014,76877.805,0.0
+Switzerland,Europe,2018,79977.305,0.0
+Switzerland,Europe,2019,80315.68,0.0
+Switzerland,Europe,2020,78023.34,0.0
+Switzerland,Europe,2001,68622.65,0.0
+Switzerland,Europe,2012,75560.02,0.0
+Switzerland,Europe,2022,83007.28,0.0
+Switzerland,Europe,2017,78328.09,0.0
+Switzerland,Europe,2000,67987.01,0.11818805
+Syria,Asia,1999,7951.39,0.0
+Syria,Asia,2000,7807.93,0.0
+Syria,Asia,2008,8903.772,0.0
+Syria,Asia,2009,9284.102,0.0
+Syria,Asia,2010,9546.561,0.0
+Syria,Asia,2021,4592.8384,0.0
+Syria,Asia,2006,8885.806,0.0
+Syria,Asia,2019,4825.4062,0.0
+Syria,Asia,2001,7698.397,0.0
+Syria,Asia,2004,8528.656,0.0
+Syria,Asia,2015,5302.074,0.0
+Syria,Asia,2020,4633.3496,0.0
+Syria,Asia,2002,7811.816,0.0
+Tajikistan,Asia,2000,1365.2333,2.660352
+Tajikistan,Asia,2001,1467.3988,3.232923714
+Tajikistan,Asia,2008,2308.0942,16.274971
+Tajikistan,Asia,1992,2630.3865,16.975282
+Tajikistan,Asia,1994,1678.3385,0.0
+Tajikistan,Asia,1996,1175.7941,0.0
+Tajikistan,Asia,1998,1236.6755,4.999244
+Tajikistan,Asia,1999,1275.8225,0.584753025
+Tajikistan,Asia,2002,1594.939,0.23224846
+Tajikistan,Asia,2003,1736.6404,3.9220262
+Tajikistan,Asia,2004,1878.287,0.5779855
+Tajikistan,Asia,2005,1965.3002,2.1623003
+Tajikistan,Asia,2007,2181.898,0.0
+Tajikistan,Asia,2009,2349.5002,0.020082451
+Tajikistan,Asia,2010,2449.2737,3.6421824729999996
+Tajikistan,Asia,2011,2572.4807,0.0
+Tajikistan,Asia,2012,2700.0955,0.009956719
+Tajikistan,Asia,2014,2943.0886,0.021947619
+Tajikistan,Asia,2015,3041.4448,0.060449027
+Tajikistan,Asia,2016,3169.9668,0.0
+Tajikistan,Asia,2017,3312.712,0.0
+Tajikistan,Asia,2018,3479.6924,0.0
+Tajikistan,Asia,2019,3649.8838,0.0
+Tajikistan,Asia,2020,3724.749,0.0
+Tajikistan,Asia,2021,3985.9126,0.10069586
+Tajikistan,Asia,2006,2063.2886,0.7773265
+Tajikistan,Asia,2013,2828.3855,0.0
+Tajikistan,Asia,1993,2169.9675,9.048435
+Tajikistan,Asia,1997,1181.2811,0.0
+Tanzania,Africa,1991,1785.664,0.0
+Tanzania,Africa,1992,1751.9185,0.0
+Tanzania,Africa,1996,1730.5546,0.0
+Tanzania,Africa,1997,1755.8037,0.0
+Tanzania,Africa,1998,1773.7242,0.0
+Tanzania,Africa,1999,1810.9716,0.0
+Tanzania,Africa,2000,1839.9366,0.0
+Tanzania,Africa,2003,2059.8374,0.0
+Tanzania,Africa,2004,2155.2415,0.0
+Tanzania,Africa,2006,2334.1045,0.0
+Tanzania,Africa,2011,2779.7078,0.0
+Tanzania,Africa,2012,2822.4854,0.0
+Tanzania,Africa,2021,3493.083,0.0
+Tanzania,Africa,2022,3546.981,0.0
+Tanzania,Africa,1990,1794.2046,0.00657471
+Tanzania,Africa,1993,1718.3931,0.082438834
+Tanzania,Africa,1994,1679.6624,0.0
+Tanzania,Africa,1995,1685.8511,0.0
+Tanzania,Africa,2001,1899.7454,0.0
+Tanzania,Africa,2002,1982.6443,0.0
+Tanzania,Africa,2005,2253.0933,0.0
+Tanzania,Africa,2008,2493.2593,0.0
+Tanzania,Africa,2009,2560.811,0.0
+Tanzania,Africa,2010,2654.8035,0.0
+Tanzania,Africa,2014,3027.569,0.0040010624
+Tanzania,Africa,2015,3111.4446,0.0
+Tanzania,Africa,2016,3214.2468,0.92015153
+Tanzania,Africa,2017,3319.3767,0.0
+Tanzania,Africa,2018,3392.6887,0.0
+Tanzania,Africa,2019,3484.6326,0.0
+Tanzania,Africa,2020,3449.8215,0.0
+Thailand,Asia,1991,9293.7,0.009977124799999999
+Thailand,Asia,1993,10538.441,1.6408814395999998
+Thailand,Asia,1999,11252.987,0.010473737
+Thailand,Asia,2002,12511.738,0.0298784295
+Thailand,Asia,2005,14457.741,0.335636913
+Thailand,Asia,2008,15891.217,0.00945385
+Thailand,Asia,2010,16729.775,0.0973308
+Thailand,Asia,2011,16765.752,10.590416
+Thailand,Asia,2012,17869.002,0.2633454225
+Thailand,Asia,2014,18323.963,0.0176756935
+Thailand,Asia,2015,18811.328,0.34044855698
+Thailand,Asia,2016,19369.92,0.36544974399999997
+Thailand,Asia,2017,20093.963,0.411324544
+Thailand,Asia,2019,21277.082,0.0
+Thailand,Asia,2020,19956.547,0.011989036100000001
+Thailand,Asia,1994,11214.638,0.196340723
+Thailand,Asia,1995,11953.495,0.08299911
+Thailand,Asia,1996,12455.886,0.08222460143
+Thailand,Asia,1997,11952.424,0.029631019
+Thailand,Asia,2000,11622.111,0.08628379
+Thailand,Asia,2001,11900.895,0.023691468
+Thailand,Asia,2003,13286.832,0.017336415
+Thailand,Asia,2004,13996.504,0.67960055
+Thailand,Asia,2006,15050.525,0.026047967
+Thailand,Asia,2007,15742.096,0.0005704667
+Thailand,Asia,2009,15665.346,0.000105459636
+Thailand,Asia,2013,18241.777,0.13774772
+Thailand,Asia,2021,20245.242,0.11689821
+Thailand,Asia,2022,20741.523,0.0026240184
+Thailand,Asia,1990,8701.645,0.05858698
+Thailand,Asia,1992,9886.548,0.0
+Togo,Africa,1994,1913.7184,0.0
+Togo,Africa,1995,1975.9492,0.0
+Togo,Africa,1998,2180.6558,0.0
+Togo,Africa,1999,2172.4917,0.0
+Togo,Africa,2006,1941.173,0.0
+Togo,Africa,2007,1863.2831,0.0
+Togo,Africa,2008,1883.5494,0.0
+Togo,Africa,2009,1930.7802,0.0
+Togo,Africa,2010,1988.9521,0.0
+Togo,Africa,2017,2389.2124,0.0
+Togo,Africa,2020,2490.053,0.0
+Togo,Africa,2022,2662.2593,0.0
+Tonga,Oceania,2015,6194.639,0.0
+Tonga,Oceania,2009,5453.875,3.0411904
+Tonga,Oceania,1990,4487.8193,2.2014053
+Tonga,Oceania,1997,5455.9053,0.0
+Tonga,Oceania,1998,5541.6836,0.0
+Tonga,Oceania,2001,5860.0806,28.324196
+Tonga,Oceania,2004,5900.4575,0.0
+Tonga,Oceania,2011,5847.444,0.72370577
+Tonga,Oceania,2014,6096.869,7.047415
+Tonga,Oceania,2016,6639.1367,0.0
+Tonga,Oceania,2018,6896.042,0.0
+Tonga,Oceania,2020,6995.3174,22.896189
+Trinidad and Tobago,America,2010,35423.855,0.0
+Trinidad and Tobago,America,1993,13192.512,0.0014990935
+Trinidad and Tobago,America,1996,14956.588,0.0
+Trinidad and Tobago,America,2018,34346.15,0.015059579
+Trinidad and Tobago,America,2022,31323.277,0.0
+Trinidad and Tobago,America,1997,16021.307,0.43571076
+Trinidad and Tobago,America,1990,11963.664,0.0
+Trinidad and Tobago,America,2004,26970.121,0.0075299647
+Trinidad and Tobago,America,2005,29770.69,0.0
+Tunisia,Africa,1990,6705.2,1.9754986
+Tunisia,Africa,2003,9697.955,0.0
+Tunisia,Africa,2007,11549.532,0.0
+Tunisia,Africa,2009,12161.968,0.0
+Tunisia,Africa,2018,13090.62,0.08433564
+Tunisia,Africa,2020,11889.292,0.0
+Tunisia,Africa,2021,12375.343,0.0
+Tunisia,Africa,2022,12632.039,0.0
+Tunisia,Africa,2017,12881.717,0.0
+Turkey,Asia,1990,12124.939,0.0995649
+Turkey,Asia,1991,11999.29,0.016552484
+Turkey,Asia,1995,13035.547,0.180309928
+Turkey,Asia,1998,14764.592,0.5617122800000001
+Turkey,Asia,2000,14878.176,0.014947430500000001
+Turkey,Asia,2001,13849.279,0.012391382
+Turkey,Asia,2002,14565.538,0.039542295
+Turkey,Asia,2003,15227.171,0.042912237
+Turkey,Asia,2004,16533.355,0.0
+Turkey,Asia,2005,17828.541,0.0
+Turkey,Asia,2006,18872.418,0.05690425
+Turkey,Asia,2007,19792.387,0.0
+Turkey,Asia,2009,18495.398,0.084708
+Turkey,Asia,2011,21643.8,0.20791972
+Turkey,Asia,2012,22392.938,0.0
+Turkey,Asia,2015,25992.297,0.0
+Turkey,Asia,2019,28400.7,0.0
+Turkey,Asia,2020,28649.55,0.10203536199999999
+Turkey,Asia,2021,31637.53,0.066474339
+Turkey,Asia,2022,33061.047,0.0055119595
+Turkey,Asia,1992,12390.487,0.4713875
+Turkey,Asia,1996,13788.159,0.016532168
+Turkey,Asia,1999,14093.176,8.190457
+Turkey,Asia,2010,19751.621,0.0
+Turkey,Asia,2014,24830.574,0.0
+Turkey,Asia,2017,28117.953,0.069849595
+Turkey,Asia,1994,12282.972,0.0
+Turkey,Asia,2008,19702.756,0.0
+Turkey,Asia,1993,13110.391,0.0
+Turkey,Asia,2013,23983.133,0.0
+Turkey,Asia,2018,28575.762,0.0
+Turkmenistan,Asia,1993,6085.5254,3.1396258
+Turkmenistan,Asia,2000,5112.5293,0.0
+Turks and Caicos Islands,America,2017,27058.115,48.90621
+Tuvalu,Oceania,2011,3687.4355,0.0
+Tuvalu,Oceania,2021,5352.973,0.0
+Tuvalu,Oceania,1990,2984.2825,0.0
+Tuvalu,Oceania,1993,3189.9458,0.0
+Tuvalu,Oceania,2015,4088.7617,0.0
+Tuvalu,Oceania,2020,5154.454,0.0
+Uganda,Africa,1998,1422.2079,0.012149163
+Uganda,Africa,1999,1487.7579,0.013336527
+Uganda,Africa,2000,1487.005,0.0
+Uganda,Africa,2001,1516.9642,0.0
+Uganda,Africa,2002,1598.5829,0.0
+Uganda,Africa,2005,1765.0378,0.0
+Uganda,Africa,2006,1898.9791,0.0
+Uganda,Africa,2008,2110.1006,0.0
+Uganda,Africa,2009,2188.299,0.0
+Uganda,Africa,2011,2384.4653,0.0
+Uganda,Africa,2022,2724.906,0.0
+Uganda,Africa,1997,1396.6311,0.01595066
+Uganda,Africa,2003,1649.1483,0.0
+Uganda,Africa,2004,1709.3616,0.0
+Uganda,Africa,2007,1999.0625,0.00059651013
+Uganda,Africa,2012,2405.0945,0.0
+Uganda,Africa,2013,2420.8882,0.010720788
+Uganda,Africa,2016,2554.2278,0.009245313
+Uganda,Africa,2017,2543.8477,0.0
+Uganda,Africa,2019,2689.4102,0.0
+Uganda,Africa,2020,2678.009,0.0
+Uganda,Africa,2021,2684.9204,0.0
+Uganda,Africa,1990,1080.0383,0.0
+Uganda,Africa,1994,1187.3678,1.7541968
+Uganda,Africa,2010,2244.606,0.0
+Uganda,Africa,2018,2613.88,0.0
+Ukraine,Europe,2012,17848.74,0.9255621
+Ukraine,Europe,1993,16012.372,0.36406183
+Ukraine,Europe,1995,10983.009,0.0
+Ukraine,Europe,1996,9969.501,0.0
+Ukraine,Europe,1997,9754.05,0.10169181
+Ukraine,Europe,1998,9646.055,0.003006027
+Ukraine,Europe,2001,11379.386,0.038158637
+Ukraine,Europe,2003,13342.88,0.0
+Ukraine,Europe,2005,15610.573,0.0
+Ukraine,Europe,2006,16901.508,0.021321047
+Ukraine,Europe,2008,18883.986,0.53160274
+Ukraine,Europe,2010,16811.795,0.0013455217
+Ukraine,Europe,2013,17889.092,0.011023691
+Ukraine,Europe,2016,15856.8125,0.0
+Ukraine,Europe,2020,17092.54,0.2016764
+Ukraine,Europe,1992,18671.873,0.0021649115
+Ukraine,Europe,2000,10364.0625,0.633203
+Ukraine,Europe,2007,18374.014,0.06723419
+Ukraine,Europe,2018,16978.984,0.0
+Ukraine,Europe,2021,17846.408,0.08509962
+Ukraine,Europe,2009,16092.796,0.0
+Ukraine,Europe,2017,16310.36,0.0
+United Arab Emirates,Asia,2017,68871.85,0.0
+United Kingdom,Europe,2022,54805.445,0.015905809
+United Kingdom,Europe,1993,35919.582,0.017618427
+United Kingdom,Europe,1994,37206.207,0.020692864
+United Kingdom,Europe,1997,40742.605,0.015913775
+United Kingdom,Europe,1998,42006.35,0.11280194199999999
+United Kingdom,Europe,1999,43146.945,0.0079202269
+United Kingdom,Europe,2000,44859.66,0.44539147999999995
+United Kingdom,Europe,2001,45836.996,0.0
+United Kingdom,Europe,2002,46462.96,0.022402603
+United Kingdom,Europe,2004,48600.23,0.0039644437
+United Kingdom,Europe,2007,51317.055,0.314122887
+United Kingdom,Europe,2008,50788.082,0.0017068273
+United Kingdom,Europe,2009,48076.367,0.020059349
+United Kingdom,Europe,2012,49331.72,0.108825356
+United Kingdom,Europe,2013,49884.434,0.007480944
+United Kingdom,Europe,2014,51100.336,0.0657702634
+United Kingdom,Europe,2015,51823.973,0.0819697
+United Kingdom,Europe,2017,53449.293,0.0
+United Kingdom,Europe,2019,54440.105,0.0
+United Kingdom,Europe,2020,48656.164,0.0
+United Kingdom,Europe,1990,35586.742,0.43817547
+United Kingdom,Europe,1991,35085.508,0.078754134
+United Kingdom,Europe,1995,38047.36,0.048354454
+United Kingdom,Europe,1996,38930.49,0.021132031
+United Kingdom,Europe,2005,49586.67,0.027524596
+United Kingdom,Europe,2010,48766.29,2.0116817e-05
+United Kingdom,Europe,2018,53872.934,0.0
+United Kingdom,Europe,2021,52872.195,0.0
+United Kingdom,Europe,2003,47704.984,0.0
+United States,America,1991,43742.027,0.1124421624
+United States,America,1999,53474.047,0.15359290028500003
+United States,America,2000,55038.62,0.048200074169999996
+United States,America,2001,55017.305,0.08303889807
+United States,America,2002,55436.117,0.1028941496
+United States,America,2007,61306.598,0.06498580114
+United States,America,2008,60798.434,0.3929310779
+United States,America,2009,58714.973,0.0852423676
+United States,America,2011,60294.98,0.380987415
+United States,America,2012,61224.406,0.6061348861999999
+United States,America,2014,63191.246,0.09559743369999998
+United States,America,2015,64575.406,0.13961028399999997
+United States,America,2017,66458.02,0.973404839
+United States,America,2018,68070.21,0.3295498868
+United States,America,2020,67352.39,0.36371451400000004
+United States,America,2021,71318.305,0.606538749
+United States,America,2022,72841.92,0.5802031166
+United States,America,1990,44378.523,0.012287142459999999
+United States,America,1992,44659.152,0.5414477662000001
+United States,America,1993,45286.934,0.26860598442
+United States,America,1994,46537.355,0.433005062249
+United States,America,1995,47220.957,0.21944439
+United States,America,1996,48435.7,0.068839542
+United States,America,1997,49984.27,0.118355414836
+United States,America,1998,51619.87,0.1982451732
+United States,America,2003,56498.207,0.16556624150000002
+United States,America,2004,58131.633,0.4561626415
+United States,America,2005,59604.754,1.2177418422
+United States,America,2006,60676.566,0.0495737865
+United States,America,2010,59799.285,0.060884592194
+United States,America,2013,62089.348,0.1056058792
+United States,America,2016,65275.57,0.24004415783999997
+United States,America,2019,69511.766,0.10827382526
+United States Virgin Islands,America,2004,55883.453,0.0
+United States Virgin Islands,America,2017,43277.156,0.0
+Uruguay,America,1999,19255.072,0.38459635
+Uruguay,America,2000,18812.98,0.69121826
+Uruguay,America,2018,29854.62,0.15072417
+Uruguay,America,2019,30108.074,0.15838683
+Uruguay,America,2020,27871.6,0.18312363
+Uruguay,America,2021,29441.477,0.16002795
+Uruguay,America,2022,30879.93,0.13807352
+Uruguay,America,1991,14521.76,0.0
+Uruguay,America,1992,15586.964,0.0
+Uruguay,America,1998,19641.396,0.019695982
+Uruguay,America,2001,18045.338,0.0
+Uruguay,America,2002,16626.63,0.1837355
+Uruguay,America,2003,16748.678,0.0
+Uruguay,America,2007,20871.482,0.18909332
+Uruguay,America,2009,23213.256,0.0
+Uruguay,America,2015,29035.658,0.0
+Uruguay,America,2016,29427.865,0.005219135
+Uruguay,America,2017,29859.129,0.0
+Uruguay,America,1993,15916.822,0.0
+Uruguay,America,1997,18885.1,0.0
+Uruguay,America,2005,18872.436,0.0
+Uruguay,America,2004,17576.299,0.0
+Uruguay,America,2010,24960.666,0.0
+Uzbekistan,Asia,2000,3410.6504,0.14038852
+Uzbekistan,Asia,2001,3509.7285,0.26910523
+Uzbekistan,Asia,2005,4160.955,0.0
+Uzbekistan,Asia,2020,8727.411,0.0
+Uzbekistan,Asia,2022,9607.562,0.0
+Uzbekistan,Asia,1992,3547.3115,0.0
+Uzbekistan,Asia,2011,6100.251,0.0
+Uzbekistan,Asia,1999,3326.4253,0.0
+Uzbekistan,Asia,2021,9247.644,0.0
+Vanuatu,Oceania,2002,2911.0413,0.0
+Vanuatu,Oceania,2009,3396.736,0.0
+Vanuatu,Oceania,1990,3101.6807,0.0
+Vanuatu,Oceania,1994,3269.6284,0.0
+Vanuatu,Oceania,1997,3315.4814,0.0
+Vanuatu,Oceania,1999,3228.5918,0.0
+Vanuatu,Oceania,1992,3122.8894,0.0
+Vanuatu,Oceania,1993,3069.806,2.9926403
+Vanuatu,Oceania,1998,3285.1384,0.0
+Vanuatu,Oceania,2001,3148.3347,0.0
+Vanuatu,Oceania,2004,3005.7974,0.0
+Vanuatu,Oceania,2011,3390.961,0.0
+Vanuatu,Oceania,2014,3320.3792,0.25896135
+Vanuatu,Oceania,2015,3259.1482,61.488297
+Vanuatu,Oceania,2017,3465.9197,0.0
+Vanuatu,Oceania,2020,3259.9954,0.0
+Vanuatu,Oceania,2005,3089.437,0.0
+Vanuatu,Oceania,2006,3270.7024,0.0
+Vanuatu,Oceania,2008,3381.3857,0.0
+Vanuatu,Oceania,2018,3482.0227,0.0
+Vanuatu,Oceania,2021,3135.8367,0.0
+Vietnam,Asia,1997,3820.3025,2.00983521
+Vietnam,Asia,1998,3982.958,1.7250742030000001
+Vietnam,Asia,1999,4119.0537,1.0790116
+Vietnam,Asia,2002,4809.6216,0.81051545193
+Vietnam,Asia,2005,5776.3633,0.600989805
+Vietnam,Asia,2015,9248.024,0.2771479749
+Vietnam,Asia,2016,9743.188,2.4307643299999997
+Vietnam,Asia,2017,10290.549,1.408481293
+Vietnam,Asia,2019,11628.614,0.0185425945
+Vietnam,Asia,2020,11851.396,0.4189053863
+Vietnam,Asia,1990,2467.9646,0.01120255
+Vietnam,Asia,1991,2560.8438,0.59500471
+Vietnam,Asia,1992,2726.4736,0.66991047
+Vietnam,Asia,1993,2890.4243,0.56900282
+Vietnam,Asia,1994,3089.6094,1.555282283
+Vietnam,Asia,1995,3328.2148,0.516971205
+Vietnam,Asia,1996,3584.029,3.0474334
+Vietnam,Asia,2000,4349.2236,0.9336268799999999
+Vietnam,Asia,2001,4570.2686,0.5259261399999999
+Vietnam,Asia,2003,5090.29,0.26546985
+Vietnam,Asia,2004,5421.097,0.083649121
+Vietnam,Asia,2006,6098.245,1.6558271039999999
+Vietnam,Asia,2007,6418.544,1.26720564
+Vietnam,Asia,2008,6659.1357,0.6794087799999999
+Vietnam,Asia,2009,6914.339,1.0047667
+Vietnam,Asia,2010,7274.733,0.47873259799999995
+Vietnam,Asia,2011,7652.619,0.12688777
+Vietnam,Asia,2012,7979.868,0.190602145
+Vietnam,Asia,2013,8324.198,0.726563423
+Vietnam,Asia,2018,10936.894,0.09261334900000001
+Vietnam,Asia,2021,12048.902,0.0072377166
+Vietnam,Asia,2022,12930.256,0.01626702847
+Vietnam,Asia,2014,8751.883,0.0045833937
+Zambia,Africa,1991,2364.8623,0.0
+Zambia,Africa,1992,2268.498,0.0
+Zambia,Africa,1995,2119.9565,0.0
+Zambia,Africa,2005,2564.4756,0.0
+Zambia,Africa,2019,3591.5642,0.0
+Zambia,Africa,2020,3391.5955,0.0
+Zambia,Africa,2021,3503.035,0.0
+Zambia,Africa,2022,3585.1238,0.0
+Zambia,Africa,1998,2157.5735,0.585119
+Zambia,Africa,2000,2220.5654,0.0
+Zambia,Africa,2001,2268.9697,0.0
+Zambia,Africa,2003,2383.8762,0.0
+Zambia,Africa,2004,2471.7207,0.0
+Zambia,Africa,2007,2796.353,0.0
+Zambia,Africa,2008,2908.1436,0.0
+Zambia,Africa,2009,3065.8442,0.0
+Zambia,Africa,2010,3266.5076,0.0
+Zambia,Africa,2011,3335.6433,0.0
+Zambia,Africa,2013,3535.2246,0.0
+Zambia,Africa,2014,3585.5774,0.0
+Zimbabwe,Africa,1991,4126.4053,0.091656804
+Zimbabwe,Africa,1992,3649.8918,0.15570933
+Zimbabwe,Africa,1993,3634.7505,0.16016105
+Zimbabwe,Africa,1994,3965.731,0.15256375
+Zimbabwe,Africa,1995,3935.28,0.1482362
+Zimbabwe,Africa,1998,4342.8584,0.0
+Zimbabwe,Africa,2001,4102.087,0.053117834
+Zimbabwe,Africa,2002,3701.458,0.0
+Zimbabwe,Africa,2003,3036.0557,3.491869
+Zimbabwe,Africa,2007,2395.9907,0.02267595
+Zimbabwe,Africa,2008,1949.0364,0.0
+Zimbabwe,Africa,2009,2152.7952,0.0
+Zimbabwe,Africa,2010,2572.77,0.0
+Zimbabwe,Africa,2011,2897.1008,0.0
+Zimbabwe,Africa,2012,3299.2598,0.0
+Zimbabwe,Africa,2013,3357.1282,0.640715
+Zimbabwe,Africa,2014,3360.5522,0.73000893
+Zimbabwe,Africa,2015,3382.923,0.612725
+Zimbabwe,Africa,2016,3366.3442,0.59526473
+Zimbabwe,Africa,2017,3453.5098,1.135769697
+Zimbabwe,Africa,2018,3572.9836,0.0
+Zimbabwe,Africa,2019,3294.8062,0.0
+Zimbabwe,Africa,2020,2987.2698,0.0
+Zimbabwe,Africa,2021,3184.7854,0.0
+Zimbabwe,Africa,2022,3323.1218,0.0
+Zimbabwe,Africa,2000,4071.022,1.089693

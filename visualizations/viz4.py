@@ -2,7 +2,7 @@
 import pandas as pd
 import plotly.express as px
 
-def get_treemap_viz(data: pd.DataFrame) -> px.treemap:
+def get_treemap_v(data: pd.DataFrame) -> px.treemap:
     """
     Creates an interactive treemap visualization using the provided preprocessed data.
 
@@ -70,5 +70,5 @@ if __name__ == "__main__":
         ],
         'value': [80, 20, 180, 150]
     })
-    fig = get_treemap_viz(sample_data)
+    fig = get_treemap_v(sample_data)
     fig.show()

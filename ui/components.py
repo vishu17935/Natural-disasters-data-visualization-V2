@@ -1,12 +1,10 @@
 # components.py
 from dash import html
-from .widgets import SafeVizWidget, data_choropleth, data_gdp, data_bar, data_pie, data_treemap, data_sankey
-from visualizations.viz1 import get_sunburst_viz
-from visualizations.viz2 import get_sankey_viz
-from visualizations.viz3 import get_bar_viz
-from visualizations.viz4 import get_treemap_viz
-from visualizations.viz6 import get_pie_viz
-from visualizations.viz7 import get_choropleth_viz
+
+from .widgets import *
+from visualizations import *
+
+
 
 # Topbar
 Topbar = html.Div(className="topbar", children=[
@@ -60,12 +58,8 @@ def SkeletonWidget(style=None):
 def region_widgets(region):
     if region == "overview":
         return [
-            SafeVizWidget(get_choropleth_viz, data_choropleth, {"gridColumn": "1 / 4", "gridRow": "3 / 6"}),
-            SafeVizWidget(get_sunburst_viz, data_gdp, {"gridColumn": "1 / 2", "gridRow": "1 / 2"}),
-            SafeVizWidget(get_bar_viz, data_bar, {"gridColumn": "2 / 4", "gridRow": "1 / 2"}),
-            SafeVizWidget(get_pie_viz, data_pie, {"gridColumn": "1 / 2", "gridRow": "2 / 3"}),
-            SafeVizWidget(get_treemap_viz, data_treemap, {"gridColumn": "2 / 3", "gridRow": "2 / 3"}),
-            SafeVizWidget(get_sankey_viz, data_sankey, {"gridColumn": "3 / 4", "gridRow": "2 / 3"}),
+            SafeVizWidget(get_choropleth_viz,combined_disaster_data_data,{"gridColumn": "1 / 4", "gridRow": "1 / 3"}),
+            SafeVizWidget(get_treemap_viz,merged_output_data,{"gridColumn": "1 / 4", "gridRow": "3 / 4"}),
         ]
     elif region == "disaster-analysis":
         return [
@@ -74,17 +68,14 @@ def region_widgets(region):
             SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "2 / 3"}),
             SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "2 / 3"}),
             SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "3 / 4", "background": "#b33"})
+            SkeletonWidget({"gridColumn": "2 / 4", "gridRow": "3 / 4"})
         ]
     elif region == "economic-impact":
         return [
-            SkeletonWidget({"gridColumn": "1 / 4", "gridRow": "1 / 2"}),
-            SkeletonWidget({"gridColumn": "1 / 4", "gridRow": "2 / 3", "background": "#b33"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "2 / 4", "gridRow": "2 / 3"})
+        SafeVizWidget(get_bubble_viz_tab3, tab3_bubble_data,  {"gridColumn": "1 / 4", "gridRow": "4 / 7"}),
+            SafeVizWidget(get_area_chart3, tab3_area_data,  {"gridColumn": "1 / 4", "gridRow": "7 / 10"}),
+            SafeVizWidget(get_lollipop3, tab3_lolli_data, {"gridColumn": "1 / 4", "gridRow": " 10/ 12"}),
+            SafeVizWidget(get_scatter_plot3, tab3_scatter_data, {"gridColumn": "1 / 4", "gridRow": "1 / 4"}),
         ]
     elif region == "country-profiles":
         return [
@@ -96,13 +87,12 @@ def region_widgets(region):
             SkeletonWidget({"gridColumn": "2 / 4", "gridRow": "3 / 4"})
         ]
     elif region == "trends-correlations":
-        return [
-            SkeletonWidget({"gridColumn": "1 / 4", "gridRow": "1 / 2"}),
-            SkeletonWidget({"gridColumn": "2 / 3", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "1 / 2", "gridRow": "2 / 3"}),
-            SkeletonWidget({"gridColumn": "1 / 3", "gridRow": "3 / 4"}),
-            SkeletonWidget({"gridColumn": "3 / 4", "gridRow": "3 / 4"})
+        return [ 
+            SafeVizWidget(get_country_metric_correlation_viz,combined_disaster_data_data,{"gridColumn": "1 / 3", "gridRow": "1 / 2"}),
+            SafeVizWidget(get_disaster_network_viz,combined_disaster_data_data,{"gridColumn": "3 / 4", "gridRow": "1 / 2"}),
+            SafeVizWidget(get_multi_metric_parallel_viz,combined_disaster_data_data,{"gridColumn": "1 / 4", "gridRow": "3 / 4"}),
+            SafeVizWidget(get_rolling_correlation_viz,combined_disaster_data_data, {"gridColumn": "1 / 4", "gridRow": "4 / 5"}),
+            SafeVizWidget( get_scatter_matrix_viz,merged_output_data,{"gridColumn": "1 / 4", "gridRow": "5 / 6"}),
         ]
     else:
         return [SkeletonWidget()]
@@ -112,4 +102,18 @@ def ContentSection(region):
         id=f"content-{region}",
         className="content-section active" if region == "overview" else "content-section",
         children=region_widgets(region)
+    )
+
+def GlobeBackground():
+    return html.Div(
+        id="globe-container",
+        style={
+            "position": "fixed",
+            "top": 0,
+            "left": 0,
+            "width": "100vw",
+            "height": "100vh",
+            "zIndex": 0,
+            "pointerEvents": "none"
+        }
     )

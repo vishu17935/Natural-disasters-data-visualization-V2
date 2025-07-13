@@ -13,6 +13,7 @@ body, #app-container {
   background-repeat: no-repeat;
   background-attachment: fixed; /* Optional: for parallax effect */
   color: var(--text-color, #111);
+  
 }
 #app-container.dark {
   background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148879890.jpg?semt=ais_hybrid&w=740');
@@ -21,6 +22,7 @@ body, #app-container {
   background-repeat: no-repeat;
   background-attachment: fixed; /* Optional: for parallax effect */
   color: var(--text-color, #eee);
+  
 }
 
 .sidebar-tab--active {
@@ -694,4 +696,12 @@ button, .action-button, a, .sidebar-tab {
   margin: 24px auto 12px auto;
   background: rgba(180,180,180,0.18);
 }
-
+#globe-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}

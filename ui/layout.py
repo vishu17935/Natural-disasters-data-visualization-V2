@@ -1,6 +1,6 @@
 # layout.py
 from dash import html
-from ui.components import Topbar, Sidebar, ContentSection
+from .components import *
 
 tabs = ["overview","disaster-analysis", "economic-impact", "country-profiles", "trends-correlations"]
 

@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-def get_choropleth_viz(data: pd.DataFrame, value_col: str = 'avg deaths by year', location_col: str = 'ISO', hover_name_col: str = 'hovername') -> px.choropleth:
+def get_choropleth_v(data: pd.DataFrame, value_col: str = 'avg deaths by year', location_col: str = 'ISO', hover_name_col: str = 'hovername') -> px.choropleth:
     """
     Creates a choropleth map visualization for world data.
 
@@ -74,5 +74,5 @@ if __name__ == "__main__":
         'avg deaths by year': [1000, 2000, 1500],
         'avg economical loss': [500000, 300000, 400000]
     })
-    fig = get_choropleth_viz(sample_data)
+    fig = get_choropleth_v(sample_data)
     fig.show()

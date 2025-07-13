@@ -41,11 +41,7 @@ function initializeDashboardUI(retries = 10) {
 
       const target = tab.dataset.tab;
       sections.forEach(section => {
-        if (section.id === `content-${target}`) {
-          section.classList.add('active');
-        } else {
-          section.classList.remove('active');
-        }
+        section.classList.toggle('active', section.id === `content-${target}`);
       });
     });
   });
