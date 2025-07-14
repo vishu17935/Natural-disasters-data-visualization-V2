@@ -2,6 +2,40 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
+import plotly.express as px
+import pandas as pd
+
+def plot_stacked_disasters_by_year(df):
+    # Drop rows with missing year or type
+    filtered = df.dropna(subset=['Start Year', 'Disaster Type'])
+
+    # Group and count disasters per year and type
+    count_df = (
+        filtered.groupby(['Start Year', 'Disaster Type'])
+        .size()
+        .reset_index(name='Disaster Count')
+    )
+
+    # Create stacked bar chart
+    fig = px.bar(
+        count_df,
+        x='Start Year',
+        y='Disaster Count',
+        color='Disaster Type',
+        title='Disaster Events per Year by Type (Stacked)',
+        labels={'Start Year': 'Year', 'Disaster Count': 'Number of Disasters'},
+        height=500
+    )
+
+    fig.update_layout(
+        barmode='stack',
+        xaxis=dict(type='category', tickangle=45),
+        legend=dict(title='Disaster Type')
+    )
+
+    return fig
+
+
 def get_area_chart_viz(
     data: pd.DataFrame,
     country: str,

@@ -725,3 +725,37 @@ def update_multi_country_risk_radar(selected_countries):
     except Exception as e:
         print(f"Error updating multi-country risk radar: {e}")
         return {}
+
+
+@callback(
+    Output("tab2_bar_chart", "figure", allow_duplicate=True),
+    Input("tab2_bar_chart", "id"),
+    # Input("country-selector", "value"),
+    # Input("year-selector_2", "value"),
+    # Input("map-style-selector", "value"),
+    prevent_initial_call=True
+)
+def update_tab2_barchart():
+    # """Update the region hotspot map based on selected country, year, and map style. If year is 'all', show all years."""
+    # if not s:
+    #     return {}
+    try:
+        from visualizations.tab2_stacked_area import plot_stacked_disasters_by_year 
+        # year_arg = None if selected_year == "all" else selected_year
+        
+        fig = plot_stacked_disasters_by_year(risk_data)
+        return fig
+    except Exception as e:
+        print(f"Error updating region hotspot map: {e}")
+        return {} 
+
+
+@callback(
+    Output('wordcloud-img', 'src'),
+     Input("country-selector", "value"),
+)
+def update_wordcloud(selected_country):
+    if not selected_country:
+        return ''
+    from visualizations.tab4_wordclound import generate_location_wordcloud
+    return generate_location_wordcloud(risk_data, selected_country)

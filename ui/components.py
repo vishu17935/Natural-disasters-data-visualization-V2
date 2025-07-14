@@ -66,7 +66,18 @@ def region_widgets(region):
         ]
     elif region == "disaster-analysis":
         return [
-            SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 7"}),
+             html.Div(
+                className="widget",
+                style={"gridColumn": "2 / 4", "gridRow": "2 / 4"},
+                children=[
+                    dcc.Graph(
+                        id="tab2_bar_chart",
+                        config={"displayModeBar": False},
+                        clear_on_unhover=True
+                    )
+                ]
+            ),
+            # SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 7"}),
             
         ]
     elif region == "economic-impact":
@@ -335,7 +346,15 @@ def region_widgets(region):
                 }
             )
         )
-    ]
+    ],
+    )
+    ,
+    html.Div(
+        className="widget",
+        style={"gridColumn": "1 / 2", "gridRow": "9 / 10", "height": "500px", "width": "500px", "marginTop": "200px"},
+        children=[
+            html.Img(id="wordcloud-img", style={"width": "500px", "height": "300px"})
+        ]
 )
 
 
