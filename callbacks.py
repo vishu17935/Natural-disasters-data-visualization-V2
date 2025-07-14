@@ -12,9 +12,11 @@ risk_data_path = data_dir / "final_risk_merged.csv"
 ranked_data_path = data_dir / "ranked_data.csv"
 cities_data_path = data_dir / "cities.csv"
 cluster_data_path = data_dir / "risk_data_clustered.csv"
+index_data_path = data_dir / "index.csv"
 
 # Load the risk data
 try:
+    index_data = pd.read_csv(index_data_path)
     risk_data = pd.read_csv(risk_data_path)
     cluster_data = pd.read_csv(cluster_data_path)
     print(f"Loaded risk data with {len(risk_data)} rows and columns: {list(risk_data.columns)}")
@@ -667,7 +669,7 @@ def update_tab4_parallel_plot(plot_type, selected_country, selected_year):
     try:
         from visualizations.tab4_parallel_plot import plot_parallel_coordinates
         # For parallel plot, we can use all data regardless of year selection
-        df = risk_data
+        df = index_data
         fig = plot_parallel_coordinates(df, plot_type=plot_type)
         fig.update_layout(width=1200, height=500)
         return fig

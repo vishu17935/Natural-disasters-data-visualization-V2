@@ -1,5 +1,5 @@
 import plotly.graph_objects as go
-
+# import pandas as pd.
 def plot_parallel_coordinates(df, plot_type='risk_vs_outcome'):
     """
     Draws a parallel coordinates plot for different themes in a disaster dataset.
@@ -12,7 +12,7 @@ def plot_parallel_coordinates(df, plot_type='risk_vs_outcome'):
     plot_configs = {
         'risk_vs_outcome': {
             'cols': [
-                'World Risk Index', 'Disaster_Score', 'Total Deaths',
+                'World Risk Index', 'Disaster Severity Index',
                 "Total Damage ('000 US$)", 'Coping Capacity', 'Adaptive Capacity'
             ],
             'color': 'World Risk Index',
@@ -22,7 +22,7 @@ def plot_parallel_coordinates(df, plot_type='risk_vs_outcome'):
         'wealth_vs_impact': {
             'cols': [
                 'gdp_per_capita', 'hdi', 'hospital_beds',
-                'urban_population_pct', 'Total Deaths', "Total Damage ('000 US$)"
+                'urban_population_pct', 'Disaster Severity Index', "Total Damage ('000 US$)"
             ],
             'color': 'gdp_per_capita',
             'title': 'Wealth, Health & Urbanization vs Impact',
@@ -31,7 +31,7 @@ def plot_parallel_coordinates(df, plot_type='risk_vs_outcome'):
         'vulnerability_path': {
             'cols': [
                 'Vulnerability', 'Exposure', 'Coping Capacity',
-                'Adaptive Capacity', 'gov_effectiveness', 'Total Deaths'
+                'Adaptive Capacity', 'gov_effectiveness', 'Disaster Severity Index'
             ],
             'color': 'Vulnerability',
             'title': 'Governance, Vulnerability & Deaths',
