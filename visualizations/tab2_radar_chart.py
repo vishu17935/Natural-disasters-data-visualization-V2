@@ -4,9 +4,8 @@ import plotly.express as px
 def get_radar_viz(
     data: pd.DataFrame,
     country: str = "World",
-    year_start: int = 1960,
-    year_end: int = 2020
-) -> px.line_polar:
+    year_start: int = 1999,
+    year_end: int = 2020):
     """
     Generates an interactive radar (polar) chart of normalized metrics per disaster type,
     with true values shown on hover.
@@ -21,6 +20,17 @@ def get_radar_viz(
     - Plotly radar chart figure.
     """
     try:
+        # Rename columns to standard ones
+        data = data.rename(columns={
+            "Start Year": "Year",
+            "Country_x": "Country name",
+            "Total Deaths": "Deaths",
+            "Total Injured": "Injuries",
+            "Total Damage ('000 US$)": "Damages",
+            "Total Affected": "Affected",
+            "Reconstruction Costs ('000 US$)": "Assistance",
+            "Total Homeless": "Rendered homeless"
+        })
         metrics = ['Deaths', 'Injuries', 'Damages', 'Affected', 'Assistance', 'Rendered homeless']
 
         # Filter data

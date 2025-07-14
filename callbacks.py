@@ -631,6 +631,7 @@ def initialize_region_hotspot_map(country_options, year_options):
     try:
         from visualizations.tab4_region_hotspot import plot_disasters_on_map
         fig = plot_disasters_on_map(risk_data, cities_data, default_country, year_arg)
+        # fig.update_layout(height=400, width=700)
         return fig
     except Exception as e:
         print(f"Error initializing region hotspot map: {e}")
@@ -651,6 +652,7 @@ def update_region_hotspot_map(selected_country, selected_year, map_style):
         from visualizations.tab4_region_hotspot import plot_disasters_on_map
         year_arg = None if selected_year == "all" else selected_year
         fig = plot_disasters_on_map(risk_data, cities_data, selected_country, year_arg, mapbox_style=map_style)
+        # fig.update_layout(height=400, width=700)
         return fig
     except Exception as e:
         print(f"Error updating region hotspot map: {e}")
@@ -741,8 +743,6 @@ def update_tab2_barchart():
     #     return {}
     try:
         from visualizations.tab2_stacked_area import plot_stacked_disasters_by_year 
-        # year_arg = None if selected_year == "all" else selected_year
-        
         fig = plot_stacked_disasters_by_year(risk_data)
         return fig
     except Exception as e:

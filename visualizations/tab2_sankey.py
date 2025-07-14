@@ -5,72 +5,74 @@ import plotly.colors as pc
 
 def get_sankey_viz(data: pd.DataFrame,
                    country: str = "World",
-                   year_start: int = 1960,
+                   year_start: int = 1999,
                    year_end: int = 2020,
-                   metrics: list = ['Deaths', 'Damages', 'Affected'],
                    use_log: bool = True) -> go.Figure:
     """
-    Generates a colorful Sankey diagram linking disaster types to selected metrics.
+    Generates a Sankey diagram linking disaster types to deaths, damages, and affected.
 
     Parameters:
-    - data (pd.DataFrame): Input dataframe with disaster data.
-    - country (str): Country to filter; 'World' for global.
-    - year_start (int): Start year.
-    - year_end (int): End year.
-    - metrics (list): Metrics to include.
-    - use_log (bool): Whether to apply log scaling to values.
+    - data (pd.DataFrame): Your disaster dataset.
+    - country (str): Filter by country; use 'World' for global.
+    - year_start (int): Start year for filtering.
+    - year_end (int): End year for filtering.
+    - use_log (bool): Whether to apply log scale to values.
 
     Returns:
     - Plotly Sankey figure.
     """
+
     try:
-        # Filter data
+        # Rename for easier processing
+        data = data.rename(columns={
+            "Start Year": "Year",
+            "Country_x": "Country name",
+            "Total Deaths": "Deaths",
+            "Total Damage ('000 US$)": "Damages",
+            "Total Affected": "Affected"
+        })
+
+        # Filter rows
         df_filtered = data[(data['Year'] >= year_start) & (data['Year'] <= year_end)]
         if country != 'World':
             df_filtered = df_filtered[df_filtered['Country name'] == country]
 
+        # Drop NA from necessary columns
+        df_filtered = pd.DataFrame(df_filtered)
+        df_filtered = df_filtered.dropna(subset=['Disaster Type', 'Deaths', 'Damages', 'Affected'])
+
         # Aggregate
-        agg_df = df_filtered.groupby('Disaster Type')[metrics].sum().reset_index()
+        metrics = ['Deaths', 'Damages', 'Affected']
+        agg_df = df_filtered.groupby('Disaster Type', as_index=False)[metrics].sum()
         disaster_types = agg_df['Disaster Type'].tolist()
 
-        # Build source-target lists
         sources = []
         targets = []
         values = []
         link_colors = []
 
-        # Create a color palette
-        palette = pc.qualitative.Plotly  # 10 distinct colors
-
-        # Assign a unique color for each disaster type
+        palette = pc.qualitative.Plotly
         type_to_color = {dt: palette[i % len(palette)] for i, dt in enumerate(disaster_types)}
 
         for i, dt in enumerate(disaster_types):
             for j, metric in enumerate(metrics):
                 val = agg_df.loc[agg_df['Disaster Type'] == dt, metric].values[0]
-                
-                if use_log:
-                    val_scaled = np.log1p(val)
-                else:
-                    val_scaled = val
-                
+                val_scaled = np.log1p(val) if use_log else val
+
                 if val_scaled > 0:
                     sources.append(i)
                     targets.append(len(disaster_types) + j)
                     values.append(val_scaled)
                     link_colors.append(type_to_color[dt])
 
-        # Labels
-        labels = disaster_types + metrics
-
-        # Sankey figure
+        # Sankey Plot
         fig = go.Figure(go.Sankey(
             node=dict(
                 pad=15,
                 thickness=20,
                 line=dict(color="black", width=0.5),
-                label=labels,
-                color="lightgray"  # Node color
+                label=disaster_types + metrics,
+                color="lightgray"
             ),
             link=dict(
                 source=sources,
@@ -86,9 +88,9 @@ def get_sankey_viz(data: pd.DataFrame,
             font_size=12,
             margin=dict(t=50, l=20, r=20, b=20)
         )
+
         return fig
 
     except Exception as e:
-        print(f"Error creating Sankey plot: {str(e)}")
+        print(f"Error generating Sankey diagram: {e}")
         return go.Figure()
-

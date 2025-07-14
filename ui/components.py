@@ -3,11 +3,20 @@ from dash import html, dcc
 
 from .widgets import *
 from visualizations import *
-
+from visualizations.tab2_stacked_area import plot_stacked_disasters_by_year 
+from visualizations.tab2_sankey import get_sankey_viz
+from visualizations.tab2_radar_chart import get_radar_viz
 # --- Radar Chart Box Size Variables ---
 RADAR_BOX_WIDTH = "550px"   # Change this to control width
 RADAR_BOX_HEIGHT = "550px"  # Change this to control height
+data_dir = Path(__file__).resolve().parent.parent / "data" / "Risk_Analysis"
+risk_data_path = data_dir / "final_risk_merged.csv"
+ranked_data_path = data_dir / "ranked_data.csv"
+cities_data_path = data_dir / "cities.csv"
+cluster_data_path = data_dir / "risk_data_clustered.csv"
+index_data_path = data_dir / "index.csv"
 
+main_data = pd.read_csv(risk_data_path)
 
 # Topbar
 Topbar = html.Div(className="topbar", children=[
@@ -68,16 +77,40 @@ def region_widgets(region):
         return [
              html.Div(
                 className="widget",
-                style={"gridColumn": "2 / 4", "gridRow": "2 / 4"},
+                style={"gridColumn": "1 / 3", "gridRow": "2 / 4"},
                 children=[
                     dcc.Graph(
-                        id="tab2_bar_chart",
-                        config={"displayModeBar": False},
-                        clear_on_unhover=True
-                    )
+    id="tab2_bar_chart",
+    figure=plot_stacked_disasters_by_year(main_data),  # Directly assign the figure here
+    config={"displayModeBar": False},
+    clear_on_unhover=True
+)
                 ]
             ),
-            # SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 7"}),
+             html.Div(
+                className="widget",
+                style={"gridColumn": "3 / 5", "gridRow": "2 / 4"},
+                children=[
+                    dcc.Graph(
+    id="tab2_sankey",
+    figure=get_sankey_viz(main_data),  # Directly assign the figure here
+    config={"displayModeBar": False},
+    clear_on_unhover=True
+)
+                ]
+            ),
+ html.Div(
+                className="widget",
+                style={"gridColumn": "1 / 3", "gridRow": "4 / 6"},
+                children=[
+                    dcc.Graph(
+    id="tab2_radar",
+    figure=get_radar_viz(main_data),  # Directly assign the figure here
+    config={"displayModeBar": False},
+    clear_on_unhover=True
+)
+                ]
+            )            # SafeVizWidget(get_choropleth_viz,chloropleth_tab1_data,{"gridColumn": "1 / 4", "gridRow": "1 / 7"}),
             
         ]
     elif region == "economic-impact":
@@ -151,8 +184,7 @@ def region_widgets(region):
                                             {"label": "Open Street Map", "value": "open-street-map"},
                                             {"label": "Carto Positron", "value": "carto-positron"},
                                             {"label": "Carto Dark Matter", "value": "carto-darkmatter"},
-                                            {"label": "Stamen Terrain", "value": "stamen-terrain"},
-                                            {"label": "Stamen Toner", "value": "stamen-toner"}
+                                
                                         ],
                                         value="open-street-map",
                                         style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
