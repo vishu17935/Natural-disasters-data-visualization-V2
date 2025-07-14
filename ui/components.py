@@ -5,8 +5,8 @@ from .widgets import *
 from visualizations import *
 
 # --- Radar Chart Box Size Variables ---
-RADAR_BOX_WIDTH = "600px"   # Change this to control width
-RADAR_BOX_HEIGHT = "600px"  # Change this to control height
+RADAR_BOX_WIDTH = "550px"   # Change this to control width
+RADAR_BOX_HEIGHT = "550px"  # Change this to control height
 
 
 # Topbar

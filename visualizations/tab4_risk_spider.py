@@ -120,8 +120,8 @@ def country_risk_radar_with_slider(df, country_name):
             font=dict(size=16, family='Arial, sans-serif')
         ),
         font=dict(family='Arial, sans-serif'),
-        width=700,
-        height=700,
+        width=500,
+        height=500,
         margin=dict(l=80, r=80, t=100, b=80),
         sliders=sliders
     )
@@ -135,7 +135,7 @@ def country_risk_radar_with_slider(df, country_name):
         font=dict(size=10, color="gray"),
         xanchor="center"
     )
-    fig.update_layout(width=600, height=600,
+    fig.update_layout(width=500, height=500,
         paper_bgcolor='rgba(0,0,0,0)',   # Transparent outer background
     plot_bgcolor='rgba(0,0,0,0)'
     )
@@ -298,9 +298,7 @@ def multi_country_risk_radar_with_slider(df, countries_list, max_countries=4):
             font=dict(size=16, family='Arial, sans-serif', color='white')
         ),
         font=dict(family='Arial, sans-serif', color='white'),
-        width=600,
-        height=600,
-        margin=dict(l=80, r=80, t=120, b=80),
+        
         sliders=sliders,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'
@@ -430,8 +428,9 @@ def country_risk_radar_yearly(df, country_name):
             font=dict(size=16, family='Arial, sans-serif', color='white')
         ),
         font=dict(family='Arial, sans-serif', color='white'),
-        width=600,
-        height=600,
+        width=520,
+        height=520,
+        autosize=False,
         margin=dict(l=80, r=80, t=120, b=80),
         sliders=sliders,
         paper_bgcolor='rgba(0,0,0,0)',
@@ -440,7 +439,6 @@ def country_risk_radar_yearly(df, country_name):
     # Update annotation color if present
     for ann in fig.layout.annotations or []:
         ann.font.color = 'white'
-    
     # Add annotations to explain the chart
     fig.add_annotation(
         text="Scale: 0-100 (original scores) • Use slider to change year",
@@ -450,7 +448,6 @@ def country_risk_radar_yearly(df, country_name):
         font=dict(size=10, color="white"),
         xanchor="center"
     )
-    
     return fig
 
 # Example usage:

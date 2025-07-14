@@ -4,16 +4,19 @@ import pandas as pd
 from pathlib import Path
 from utils.data_loader import load_all_csvs
 from visualizations.tab4_small_plots import plot_disaster_types_by_year
+from visualizations.tab4_small_plots import plot_disaster_types_pie_chart
 
 # Load data - specifically use final_risk_merged.csv, ranked_data.csv, and cities.csv
 data_dir = Path(__file__).resolve().parent / "data" / "Risk_Analysis"
 risk_data_path = data_dir / "final_risk_merged.csv"
 ranked_data_path = data_dir / "ranked_data.csv"
 cities_data_path = data_dir / "cities.csv"
+cluster_data_path = data_dir / "risk_data_clustered.csv"
 
 # Load the risk data
 try:
     risk_data = pd.read_csv(risk_data_path)
+    cluster_data = pd.read_csv(cluster_data_path)
     print(f"Loaded risk data with {len(risk_data)} rows and columns: {list(risk_data.columns)}")
 except Exception as e:
     print(f"Error loading risk data: {e}")
@@ -225,7 +228,7 @@ def update_metrics_card(clickData, selected_country, selected_year, click_state)
                             html.Div(["🌊 Magnitude: ", html.B(f"{row['Magnitude']} {row['Magnitude Scale']}" if 'Magnitude' in row and pd.notna(row['Magnitude']) and 'Magnitude Scale' in row and pd.notna(row['Magnitude Scale']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
                             html.Div(["🏛️ Declaration: ", html.B(row['Declaration'] if 'Declaration' in row and pd.notna(row['Declaration']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
                             html.Div(["📢 Appeal: ", html.B(row['Appeal'] if 'Appeal' in row and pd.notna(row['Appeal']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                            html.Div(["🏢 Admin Units: ", html.B(row['Admin Units'] if 'Admin Units' in row and pd.notna(row['Admin Units']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            # html.Div(["🏢 Admin Units: ", html.B(row['Admin Units'] if 'Admin Units' in row and pd.notna(row['Admin Units']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
                         ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
                         
                         # Risk Metrics
@@ -254,10 +257,10 @@ def update_metrics_card(clickData, selected_country, selected_year, click_state)
         if selected_year == "all":
             # Show metrics for all years for the selected country
             country_year_data = risk_data[risk_data['Country_x'] == selected_country]
-            bar_fig = plot_disaster_types_by_year(risk_data, selected_country, None)  # Pass None for year to show all years
+            bar_fig = plot_disaster_types_pie_chart(risk_data, selected_country, None)  # Pass None for year to show all years
         else:
             country_year_data = risk_data[(risk_data['Country_x'] == selected_country) & (risk_data['Start Year'] == selected_year)]
-            bar_fig = plot_disaster_types_by_year(risk_data, selected_country, selected_year)
+            bar_fig = plot_disaster_types_pie_chart(risk_data, selected_country, selected_year)
         
         if country_year_data.empty:
             return [
@@ -522,8 +525,10 @@ def initialize_economic_bubble(country_options):
     
     default_country = country_options[0]["value"]
     try:
-        from visualizations.tab4_bubble import create_disaster_bubble_chart
-        fig = create_disaster_bubble_chart(risk_data, [default_country], 'gdp_per_capita', 'Total Affected')
+        # from visualizations.tab4_bubble import create_disaster_bubble_chart
+        from visualizations.tab4_cluster_chlorepath import plot_cluster_choropleth_by_risk
+        fig = plot_cluster_choropleth_by_risk(cluster_data, risk_data, country_name=default_country)
+        # fig = create_disaster_bubble_chart(risk_data, [default_country], 'gdp_per_capita', 'Total Affected')
         return fig
     except Exception as e:
         print(f"Error initializing economic bubble chart: {e}")
@@ -597,8 +602,8 @@ def update_economic_bubble(selected_country):
         return {}
     
     try:
-        from visualizations.tab4_bubble import create_disaster_bubble_chart
-        fig = create_disaster_bubble_chart(risk_data, [selected_country], 'gdp_per_capita', 'Total Affected')
+        from visualizations.tab4_cluster_chlorepath import plot_cluster_choropleth_by_risk
+        fig = plot_cluster_choropleth_by_risk(cluster_data, risk_data, country_name=selected_country)
         return fig
     except Exception as e:
         print(f"Error updating economic bubble chart: {e}")

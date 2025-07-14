@@ -126,7 +126,7 @@ def plot_cluster_choropleth_by_risk(cluster_df, risk_df, risk_columns=None, coun
         width=1000
     )
 
-    fig.show()
+    return fig
 
 
 # plot_cluster_choropleth_by_risk(cluster_df,data, country_name="Australia")

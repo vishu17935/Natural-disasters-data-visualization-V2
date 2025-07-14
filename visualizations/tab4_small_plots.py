@@ -1,5 +1,6 @@
 import plotly.express as px
 import pandas as pd
+import plotly.graph_objects as go
 
 def plot_disaster_types_by_year(df, country_name, year):
     """
@@ -66,8 +67,6 @@ def plot_disaster_types_by_year(df, country_name, year):
     return fig
 
 
-import plotly.express as px
-import pandas as pd
 
 def plot_disaster_types_pie_chart(df, country_name, year):
     """
@@ -87,9 +86,11 @@ def plot_disaster_types_pie_chart(df, country_name, year):
     plotly.graph_objs._figure.Figure
         The pie chart figure object
     """
-
-    # Filter data for the specific country and year
-    country_year_data = df[(df['Country_x'] == country_name) & (df['Start Year'] == year)].copy()
+    if(year):
+        # Filter data for the specific country and year
+        country_year_data = df[(df['Country_x'] == country_name) & (df['Start Year'] == year)].copy()
+    else:
+        country_year_data = df[(df['Country_x'] == country_name)].copy()
 
     if country_year_data.empty:
         print(f"No disaster data found for {country_name} in {year}.")
@@ -108,14 +109,14 @@ def plot_disaster_types_pie_chart(df, country_name, year):
         disaster_counts,
         values='Count',
         names='Disaster Type',
-        title=f'Disaster Type Distribution in {country_name} ({year})',
+        # title=f'Disaster Type Distribution in {country_name} ({year})',
         template='plotly_white'
     )
 
-    # Update layout for better readability
+    # Update layout for better readability and remove legend
     fig.update_traces(textposition='inside', textinfo='percent+label')
-    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
-
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide', showlegend=False)
+    fig.update_layout(height=300, width=350, margin=dict(l=0, r=0, t=0, b=0))
 
     return fig
 
