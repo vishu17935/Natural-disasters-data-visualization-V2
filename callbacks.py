@@ -514,25 +514,6 @@ def initialize_disaster_pie(country_options, year_options):
         print(f"Error initializing disaster pie chart: {e}")
         return {}
 
-@callback(
-    Output("economic-bubble-chart", "figure"),
-    Input("country-selector", "options")
-)
-def initialize_economic_bubble(country_options):
-    """Initialize the economic bubble chart with default data."""
-    if not country_options or len(country_options) == 0:
-        return {}
-    
-    default_country = country_options[0]["value"]
-    try:
-        # from visualizations.tab4_bubble import create_disaster_bubble_chart
-        from visualizations.tab4_cluster_chlorepath import plot_cluster_choropleth_by_risk
-        fig = plot_cluster_choropleth_by_risk(cluster_data, risk_data, country_name=default_country)
-        # fig = create_disaster_bubble_chart(risk_data, [default_country], 'gdp_per_capita', 'Total Affected')
-        return fig
-    except Exception as e:
-        print(f"Error initializing economic bubble chart: {e}")
-        return {}
 
 @callback(
     Output("vulnerability-radar", "figure"),
@@ -592,22 +573,23 @@ def update_disaster_pie(selected_country, selected_year):
         return {}
 
 @callback(
-    Output("economic-bubble-chart", "figure", allow_duplicate=True),
+    Output("economic-bubble-chart", "figure"),
+    Output("cluster-chlorepath-title", "children"),
     Input("country-selector", "value"),
     prevent_initial_call=True
 )
 def update_economic_bubble(selected_country):
     """Update the economic bubble chart based on selected country."""
     if not selected_country:
-        return {}
+        return {},"nothing found"
     
     try:
         from visualizations.tab4_cluster_chlorepath import plot_cluster_choropleth_by_risk
-        fig = plot_cluster_choropleth_by_risk(cluster_data, risk_data, country_name=selected_country)
-        return fig
+        fig, title = plot_cluster_choropleth_by_risk(cluster_data, risk_data, country_name=selected_country)
+        return fig,title
     except Exception as e:
         print(f"Error updating economic bubble chart: {e}")
-        return {}
+        return {},"nothing found"
 
 @callback(
     Output("vulnerability-radar", "figure", allow_duplicate=True),

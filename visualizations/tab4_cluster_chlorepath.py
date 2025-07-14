@@ -94,7 +94,7 @@ def plot_cluster_choropleth_by_risk(cluster_df, risk_df, risk_columns=None, coun
             if not match.empty:
                 cluster_id = match.iloc[0]['cluster']
                 avg_risk = avg_risk_map.get((year, cluster_id), "N/A")
-                title = f"Avg Risk for {country_name} Cluster (Year {year}): {avg_risk}"
+                title_c = f" (t-SNE) Avg Risk for {country_name} Cluster (Year {year}): {avg_risk}"
             else:
                 title = f"No data for {country_name} in {year}"
         else:
@@ -104,29 +104,44 @@ def plot_cluster_choropleth_by_risk(cluster_df, risk_df, risk_columns=None, coun
             method="update",
             args=[
                 {"visible": [j == i for j in range(len(years))]},
-                {"title.text": title}
+                {"title.text": ""}
             ],
             label=str(year)
         ))
+        
 
 
+    # sliders = [dict(
+    #     active=0,
+    #     currentvalue={"prefix": "Year: "},
+    #     pad={"t": 50},
+    #     steps=steps
+    # )]
     sliders = [dict(
-        active=0,
-        currentvalue={"prefix": "Year: "},
-        pad={"t": 50},
-        steps=steps
-    )]
+    active=0,
+    currentvalue={
+        "prefix": "Year: ",
+        "font": {"color": "white", "size": 14}  # Change text color and size here
+    },
+    pad={"t": 50},
+    steps=steps,
+    font={"color": "white", "size": 12}  # Slider labels font color and size
+)]
 
     # Layout
     fig.update_layout(
-        title=title if country_name else f"Cluster Average Risk Map — Year {years[0]}",
         geo=dict(showframe=False, projection_type='natural earth'),
         sliders=sliders,
-        height=600,
-        width=1000
+        height=500,
+        width=700,
+        margin=dict(l=7, r=7, t=28, b=15),
+        paper_bgcolor='rgba(0,0,0,0)', 
+plot_bgcolor='rgba(0,0,0,0)',
+
     )
 
-    return fig
+    title=title if country_name else f"Cluster Average Risk Map — Year {years[0]}",
+    return fig, title_c
 
 
 # plot_cluster_choropleth_by_risk(cluster_df,data, country_name="Australia")

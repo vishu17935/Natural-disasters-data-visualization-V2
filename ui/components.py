@@ -236,7 +236,7 @@ def region_widgets(region):
                         id="country-risk-radar",
                         config={"displayModeBar": False},
                         style={
-                            "height": RADAR_BOX_HEIGHT,
+                            "height": "500px",
                             "width": RADAR_BOX_WIDTH,
                             "backgroundColor": "transparent"
                         }
@@ -257,8 +257,11 @@ def region_widgets(region):
             # Economic Impact Bubble Chart
             html.Div(
                 className="widget",
-                style={"gridColumn": "3 / 4", "gridRow": "4 / 5"},
+                style={"gridColumn": "2 / 3", "gridRow": "4 / 5", "marginLeft": "150px", "height": "500px", "width": "700px"} ,
+                # style={},
                 children=[
+                html.H3(id="cluster-chlorepath-title", style={"textAlign": "center", "color": "white", "fontSize": "18px", "fontWeight": "bold"}),
+                html.H5("Use the slider to see other countries with similar risk profile for different years", style={"textAlign": "center", "color": "white", "fontSize": "14px", "fontWeight": "bold", "marginTop": "2px", "marginBottom": "2px"}),
                     dcc.Graph(
                         id="economic-bubble-chart",
                         config={"displayModeBar": False}
@@ -267,7 +270,7 @@ def region_widgets(region):
             ),
             html.Div(
     className="widget",
-    style={"gridColumn": "1 / 2", "gridRow": "5 / 6"},
+    style={"gridColumn": "1 / 2", "gridRow": "6 / 7", "height": "600px", "width": "1200px", "marginTop": "500px"},
     children=[
         # Title + Dropdown Wrapper
         html.Div(
