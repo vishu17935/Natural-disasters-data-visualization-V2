@@ -21,8 +21,10 @@ def plot_disaster_types_by_year(df, country_name, year):
     """
 
     # Filter data for the specific country and year
-    country_year_data = df[(df['Country_x'] == country_name) & (df['Start Year'] == year)].copy()
-
+    country_year_data = df[(df['Country_x'] == country_name)].copy()
+    if(year):
+        country_year_data = df[(df['Start Year'] == year)]
+    
     if country_year_data.empty:
         print(f"No disaster data found for {country_name} in {year}.")
         return px.bar(title=f"No disaster data found for {country_name} in {year}")
@@ -57,7 +59,7 @@ def plot_disaster_types_by_year(df, country_name, year):
         xaxis=dict(showticklabels=True, tickfont=dict(size=10)),
         yaxis=dict(showticklabels=True, tickfont=dict(size=10)),
         font=dict(size=10),
-        height=140
+        height=300
     )
 
 

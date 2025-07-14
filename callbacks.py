@@ -1,8 +1,9 @@
 # callbacks.py
-from dash import Input, Output, callback, html, dcc, State
+from dash import Input, Output, callback, html, dcc, State, callback_context
 import pandas as pd
 from pathlib import Path
 from utils.data_loader import load_all_csvs
+from visualizations.tab4_small_plots import plot_disaster_types_by_year
 
 # Load data - specifically use final_risk_merged.csv, ranked_data.csv, and cities.csv
 data_dir = Path(__file__).resolve().parent / "data" / "Risk_Analysis"
@@ -74,24 +75,20 @@ def populate_country_dropdown(trigger):
     Input("year-selector", "id")
 )
 def populate_year_dropdown(selected_country, trigger):
-    """Populate the year dropdown based on selected country from risk dataset."""
+    """Populate the year dropdown based on selected country from risk dataset, always including an 'All' option."""
     if risk_data is None or not selected_country:
-        return []
-    
-    # Filter data for selected country
+        return [{"label": "All", "value": "all"}]
     if 'Country_x' in risk_data.columns:
         country_data = risk_data[risk_data['Country_x'] == selected_country]
     else:
-        return []
-    
-    # Get unique years for this country
+        return [{"label": "All", "value": "all"}]
     if 'Start Year' in country_data.columns:
         years = sorted(country_data['Start Year'].dropna().unique())
     else:
-        return []
-    
-    # Create options for dropdown
-    options = [{"label": str(int(year)), "value": int(year)} for year in years if pd.notna(year)]
+        return [{"label": "All", "value": "all"}]
+    options = [{"label": "All", "value": "all"}] + [
+        {"label": str(int(year)), "value": int(year)} for year in years if pd.notna(year)
+    ]
     return options
 
 @callback(
@@ -103,6 +100,35 @@ def set_default_year(year_options):
     if year_options and len(year_options) > 0:
         return year_options[0]["value"]
     return None
+
+@callback(
+    Output("click-state", "data"),
+    Output("region-hotspot-map", "clickData"),
+    Input("region-hotspot-map", "clickData"),
+    Input("reset-metrics-btn", "n_clicks"),
+    Input("country-selector", "value"),
+    Input("year-selector", "value"),
+    prevent_initial_call=True
+)
+def update_click_state(clickData, reset_clicks, selected_country, selected_year):
+    """Update the click state based on map clicks, reset button, country, and year changes."""
+    ctx = callback_context
+    if not ctx.triggered:
+        return {"show_disaster": False}, None
+    
+    trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
+    
+    # Reset to country view for any of these triggers
+    if trigger_id in ["reset-metrics-btn", "country-selector", "year-selector"]:
+        return {"show_disaster": False}, None  # Clear click data and show country summary
+    
+    elif trigger_id == "region-hotspot-map":
+        if clickData and clickData.get("points") and len(clickData["points"]) > 0:
+            return {"show_disaster": True}, clickData
+        else:
+            return {"show_disaster": False}, None
+    
+    return {"show_disaster": False}, None
 
 @callback(
     Output("country-selector", "value"),
@@ -120,20 +146,30 @@ def set_default_country(country_options):
     Input("region-hotspot-map", "clickData"),
     Input("country-selector", "value"),
     Input("year-selector", "value"),
+    State("click-state", "data"),
 )
-def update_metrics_card(clickData, selected_country, selected_year):
+def update_metrics_card(clickData, selected_country, selected_year, click_state):
     if risk_data is None:
         return []
+    
+    # Check if we should show disaster details based on click state
+    show_disaster_details = click_state.get("show_disaster", False) if click_state else False
+    
     # If a map point is clicked, show disaster info
-    if clickData and clickData.get("points"):
+    if show_disaster_details and clickData and clickData.get("points") and len(clickData["points"]) > 0:
         point = clickData["points"][0]
         disaster_id = None
         if "customdata" in point and point["customdata"]:
-            disaster_id = point["customdata"][0]
+            # Extract the disaster ID from the customdata
+            disaster_id = point["customdata"][0] if isinstance(point["customdata"], list) else point["customdata"]
         elif "text" in point and point["text"]:
             lat = point.get("lat")
             lon = point.get("lon")
-            filtered = risk_data[(risk_data["Country_x"] == selected_country) & (risk_data["Start Year"] == selected_year)]
+            # Handle "all" years case
+            if selected_year == "all":
+                filtered = risk_data[risk_data["Country_x"] == selected_country]
+            else:
+                filtered = risk_data[(risk_data["Country_x"] == selected_country) & (risk_data["Start Year"] == selected_year)]
             if lat is not None and lon is not None and isinstance(filtered, pd.DataFrame) and not filtered.empty:
                 match = filtered[(filtered["Latitude"] == lat) & (filtered["Longitude"] == lon)]
                 if isinstance(match, pd.DataFrame) and not match.empty:
@@ -152,38 +188,76 @@ def update_metrics_card(clickData, selected_country, selected_year):
                         ]
                     ),
                     html.Div([
-                        html.Div(["🆔", html.Span(f" {row['DisNo.']}" if 'DisNo.' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Type: ", html.B(row['Disaster Type'] if 'Disaster Type' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Deaths: ", html.B(f"{int(row['Total Deaths']):,}" if 'Total Deaths' in row and pd.notna(row['Total Deaths']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Damage: ", html.B(f"${int(row['Total Damage (\'000 US$)']):,}" if 'Total Damage (\'000 US$)' in row and pd.notna(row['Total Damage (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Affected: ", html.B(f"{int(row['Total Affected']):,}" if 'Total Affected' in row and pd.notna(row['Total Affected']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Event: ", html.B(row['Event Name'] if 'Event Name' in row and pd.notna(row['Event Name']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Subgroup: ", html.B(row['Disaster Subgroup'] if 'Disaster Subgroup' in row and pd.notna(row['Disaster Subgroup']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Subtype: ", html.B(row['Disaster Subtype'] if 'Disaster Subtype' in row and pd.notna(row['Disaster Subtype']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Origin: ", html.B(row['Origin'] if 'Origin' in row and pd.notna(row['Origin']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
-                        html.Div(["Magnitude: ", html.B(f"{row['Magnitude']} {row['Magnitude Scale']}" if 'Magnitude' in row and pd.notna(row['Magnitude']) and 'Magnitude Scale' in row and pd.notna(row['Magnitude Scale']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        # Basic Information
+                        html.Div([
+                            html.Div(["🆔", html.Span(f" {row['DisNo.']}" if 'DisNo.' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["Type: ", html.B(row['Disaster Type'] if 'Disaster Type' in row else "")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["Subgroup: ", html.B(row['Disaster Subgroup'] if 'Disaster Subgroup' in row and pd.notna(row['Disaster Subgroup']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["Subtype: ", html.B(row['Disaster Subtype'] if 'Disaster Subtype' in row and pd.notna(row['Disaster Subtype']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
+                        
+                        # Event Details
+                        html.Div([
+                            html.Div(["📅 Start: ", html.B(f"{row['Start Day']}/{row['Start Month']}/{row['Start Year']}" if all(pd.notna(row.get(col, None)) for col in ['Start Day', 'Start Month', 'Start Year']) else f"{row['Start Year']}" if pd.notna(row.get('Start Year', None)) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["📅 End: ", html.B(f"{row['End Day']}/{row['End Month']}/{row['End Year']}" if all(pd.notna(row.get(col, None)) for col in ['End Day', 'End Month', 'End Year']) else f"{row['End Year']}" if pd.notna(row.get('End Year', None)) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["📋 Event: ", html.B(row['Event Name'] if 'Event Name' in row and pd.notna(row['Event Name']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["📍 Origin: ", html.B(row['Origin'] if 'Origin' in row and pd.notna(row['Origin']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
+                        
+                        # Impact Metrics
+                        html.Div([
+                            html.Div(["💀 Deaths: ", html.B(f"{int(row['Total Deaths']):,}" if 'Total Deaths' in row and pd.notna(row['Total Deaths']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🏥 Injured: ", html.B(f"{int(row['No. Injured']):,}" if 'No. Injured' in row and pd.notna(row['No. Injured']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["👥 Affected: ", html.B(f"{int(row['Total Affected']):,}" if 'Total Affected' in row and pd.notna(row['Total Affected']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🏠 Homeless: ", html.B(f"{int(row['No. Homeless']):,}" if 'No. Homeless' in row and pd.notna(row['No. Homeless']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
+                        
+                        # Economic Impact
+                        html.Div([
+                            html.Div(["💰 Total Damage: ", html.B(f"${int(row['Total Damage (\'000 US$)']):,}" if 'Total Damage (\'000 US$)' in row and pd.notna(row['Total Damage (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🏗️ Reconstruction: ", html.B(f"${int(row['Reconstruction Costs (\'000 US$)']):,}" if 'Reconstruction Costs (\'000 US$)' in row and pd.notna(row['Reconstruction Costs (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🛡️ Insured Damage: ", html.B(f"${int(row['Insured Damage (\'000 US$)']):,}" if 'Insured Damage (\'000 US$)' in row and pd.notna(row['Insured Damage (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🤝 AID Contribution: ", html.B(f"${int(row['AID Contribution (\'000 US$)']):,}" if 'AID Contribution (\'000 US$)' in row and pd.notna(row['AID Contribution (\'000 US$)']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
+                        
+                        # Technical Details
+                        html.Div([
+                            html.Div(["🌊 Magnitude: ", html.B(f"{row['Magnitude']} {row['Magnitude Scale']}" if 'Magnitude' in row and pd.notna(row['Magnitude']) and 'Magnitude Scale' in row and pd.notna(row['Magnitude Scale']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🏛️ Declaration: ", html.B(row['Declaration'] if 'Declaration' in row and pd.notna(row['Declaration']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["📢 Appeal: ", html.B(row['Appeal'] if 'Appeal' in row and pd.notna(row['Appeal']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🏢 Admin Units: ", html.B(row['Admin Units'] if 'Admin Units' in row and pd.notna(row['Admin Units']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "12px", "paddingBottom": "8px", "borderBottom": "1px solid rgba(255,255,255,0.1)"}),
+                        
+                        # Risk Metrics
+                        html.Div([
+                            html.Div(["🌍 World Risk Index: ", html.B(f"{row['World Risk Index']:.2f}" if 'World Risk Index' in row and pd.notna(row['World Risk Index']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["⚠️ Disaster Score: ", html.B(f"{row['Disaster_Score']:.2f}" if 'Disaster_Score' in row and pd.notna(row['Disaster_Score']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["📊 Average Risk Index: ", html.B(f"{row['Average_Risk_Index']:.2f}" if 'Average_Risk_Index' in row and pd.notna(row['Average_Risk_Index']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                            html.Div(["🎯 Vulnerability: ", html.B(f"{row['Vulnerability']:.2f}" if 'Vulnerability' in row and pd.notna(row['Vulnerability']) else "N/A")], style={"fontSize": "12px", "marginBottom": "4px"}),
+                        ], style={"marginBottom": "8px"}),
                     ], style={"marginTop": "8px"})
                 ]
                 return summary
-    # Otherwise, show default metrics
-    if not selected_country or not selected_year or risk_data is None:
+    # Otherwise, show default metrics (for all years if year is 'all')
+    if not selected_country or risk_data is None:
         return [
             html.Div(
                 className="metrics-card-empty",
                 children=[
                     html.H3("No Data Available", style={"color": "#ff6b6b", "margin": "0"}),
-                    html.P(f"No data found for {selected_country} in {selected_year}", 
-                           style={"color": "#ccc", "margin": "5px 0 0 0"})
+                    html.P(f"No data found for {selected_country}", style={"color": "#ccc", "margin": "5px 0 0 0"})
                 ]
             )
         ]
     
     try:
-        # Filter data for selected country and year
-        country_year_data = risk_data[
-            (risk_data['Country_x'] == selected_country) & 
-            (risk_data['Start Year'] == selected_year)
-        ]
+        if selected_year == "all":
+            # Show metrics for all years for the selected country
+            country_year_data = risk_data[risk_data['Country_x'] == selected_country]
+            bar_fig = plot_disaster_types_by_year(risk_data, selected_country, None)  # Pass None for year to show all years
+        else:
+            country_year_data = risk_data[(risk_data['Country_x'] == selected_country) & (risk_data['Start Year'] == selected_year)]
+            bar_fig = plot_disaster_types_by_year(risk_data, selected_country, selected_year)
         
         if country_year_data.empty:
             return [
@@ -191,7 +265,7 @@ def update_metrics_card(clickData, selected_country, selected_year):
                     className="metrics-card-empty",
                     children=[
                         html.H3("No Data Available", style={"color": "#ff6b6b", "margin": "0"}),
-                        html.P(f"No data found for {selected_country} in {selected_year}", 
+                        html.P(f"No data found for {selected_country}", 
                                style={"color": "#ccc", "margin": "5px 0 0 0"})
                     ]
                 )
@@ -200,10 +274,18 @@ def update_metrics_card(clickData, selected_country, selected_year):
         # Get ranking data for the selected country and year
         ranking_info = {}
         if ranked_data is not None:
-            country_rank_data = ranked_data[
-                (ranked_data['Country_x'] == selected_country) & 
-                (ranked_data['Start Year'] == selected_year)
-            ]
+            if selected_year == "all":
+                # For "all" years, get the most recent year's ranking data
+                country_rank_data = ranked_data[ranked_data['Country_x'] == selected_country]
+                if not country_rank_data.empty:
+                    # Get the most recent year
+                    latest_year = country_rank_data['Start Year'].max()
+                    country_rank_data = country_rank_data[country_rank_data['Start Year'] == latest_year]
+            else:
+                country_rank_data = ranked_data[
+                    (ranked_data['Country_x'] == selected_country) & 
+                    (ranked_data['Start Year'] == selected_year)
+                ]
             
             if not country_rank_data.empty:
                 # Get ranking columns
@@ -333,9 +415,6 @@ def update_metrics_card(clickData, selected_country, selected_year):
                 )
         
         # Add the bar graph below the metrics
-        from dash import dcc
-        from visualizations.tab4_small_plots import plot_disaster_types_by_year
-        bar_fig = plot_disaster_types_by_year(risk_data, selected_country, selected_year)
         metric_cards.append(
             html.Div(
                 style={"marginTop": "16px"},
@@ -387,7 +466,7 @@ def update_metrics_card(clickData, selected_country, selected_year):
                 className="metrics-card-error",
                 children=[
                     html.H3("Error Loading Data", style={"color": "#ff6b6b", "margin": "0", "fontSize": "14px"}),
-                    html.P(f"Could not load metrics for {selected_country} in {selected_year}", 
+                    html.P(f"Could not load metrics for {selected_country}", 
                            style={"color": "#ccc", "margin": "5px 0 0 0", "fontSize": "12px"})
                 ]
             )
@@ -472,13 +551,13 @@ def initialize_vulnerability_radar(country_options):
 @callback(
     Output("country-risk-radar", "figure", allow_duplicate=True),
     Input("country-selector", "value"),
-    Input("analysis-type-selector", "value"),
+    # Input("analysis-type-selector", "value"),
     State("multi-country-selector", "value"),
     prevent_initial_call=True
 )
-def update_risk_radar(selected_country, analysis_type, selected_countries):
+def update_risk_radar(selected_country, selected_countries):
     """Update the risk radar chart based on selected country and analysis type, only if no multi-country selection."""
-    if (selected_countries and len(selected_countries) > 0) or not selected_country or analysis_type != "risk":
+    if (selected_countries and len(selected_countries) > 0) or not selected_country:
         return {}
     try:
         from visualizations.tab4_risk_spider import country_risk_radar_yearly
@@ -492,12 +571,11 @@ def update_risk_radar(selected_country, analysis_type, selected_countries):
     Output("disaster-pie-chart", "figure", allow_duplicate=True),
     Input("country-selector", "value"),
     Input("year-selector", "value"),
-    Input("analysis-type-selector", "value"),
     prevent_initial_call=True
 )
-def update_disaster_pie(selected_country, selected_year, analysis_type):
+def update_disaster_pie(selected_country, selected_year):
     """Update the disaster pie chart based on selected country and year."""
-    if not selected_country or not selected_year or analysis_type != "disaster":
+    if not selected_country or not selected_year:
         return {}
     
     try:
@@ -511,12 +589,11 @@ def update_disaster_pie(selected_country, selected_year, analysis_type):
 @callback(
     Output("economic-bubble-chart", "figure", allow_duplicate=True),
     Input("country-selector", "value"),
-    Input("analysis-type-selector", "value"),
     prevent_initial_call=True
 )
-def update_economic_bubble(selected_country, analysis_type):
+def update_economic_bubble(selected_country):
     """Update the economic bubble chart based on selected country."""
-    if not selected_country or analysis_type != "economic":
+    if not selected_country:
         return {}
     
     try:
@@ -530,12 +607,11 @@ def update_economic_bubble(selected_country, analysis_type):
 @callback(
     Output("vulnerability-radar", "figure", allow_duplicate=True),
     Input("country-selector", "value"),
-    Input("analysis-type-selector", "value"),
     prevent_initial_call=True
 )
-def update_vulnerability_radar(selected_country, analysis_type):
+def update_vulnerability_radar(selected_country):
     """Update the vulnerability radar chart based on selected country."""
-    if not selected_country or analysis_type != "vulnerability":
+    if not selected_country:
         return {}
     
     try:
@@ -559,9 +635,13 @@ def initialize_region_hotspot_map(country_options, year_options):
     
     default_country = country_options[0]["value"]
     default_year = year_options[0]["value"]
+    
+    # Handle "all" year case for initialization
+    year_arg = None if default_year == "all" else default_year
+    
     try:
         from visualizations.tab4_region_hotspot import plot_disasters_on_map
-        fig = plot_disasters_on_map(risk_data, cities_data, default_country, default_year)
+        fig = plot_disasters_on_map(risk_data, cities_data, default_country, year_arg)
         return fig
     except Exception as e:
         print(f"Error initializing region hotspot map: {e}")
@@ -575,14 +655,13 @@ def initialize_region_hotspot_map(country_options, year_options):
     prevent_initial_call=True
 )
 def update_region_hotspot_map(selected_country, selected_year, map_style):
-    """Update the region hotspot map based on selected country, year, and map style."""
-    if not selected_country or not selected_year:
+    """Update the region hotspot map based on selected country, year, and map style. If year is 'all', show all years."""
+    if not selected_country:
         return {}
-    
     try:
         from visualizations.tab4_region_hotspot import plot_disasters_on_map
-        fig = plot_disasters_on_map(risk_data, cities_data, selected_country, selected_year, mapbox_style=map_style)
-        # fig.update_layout(width=1200, height=500)
+        year_arg = None if selected_year == "all" else selected_year
+        fig = plot_disasters_on_map(risk_data, cities_data, selected_country, year_arg, mapbox_style=map_style)
         return fig
     except Exception as e:
         print(f"Error updating region hotspot map: {e}")
@@ -600,13 +679,10 @@ def update_tab4_parallel_plot(plot_type, selected_country, selected_year):
         return {}
     try:
         from visualizations.tab4_parallel_plot import plot_parallel_coordinates
+        # For parallel plot, we can use all data regardless of year selection
         df = risk_data
-        # df = risk_data[(risk_data['Country_x'] == selected_country) & (risk_data['Start Year'] == selected_year)]
-        # if df.empty:
-            # return {}
         fig = plot_parallel_coordinates(df, plot_type=plot_type)
-        fig.update_layout(width=1200 ,height=500)
-        # Do NOT override width/height here
+        fig.update_layout(width=1200, height=500)
         return fig
     except Exception as e:
         print(f"Error updating tab4 parallel plot: {e}")
@@ -643,12 +719,11 @@ def populate_multi_country_dropdown(trigger):
 @callback(
     Output("country-risk-radar", "figure", allow_duplicate=True),
     Input("multi-country-selector", "value"),
-    Input("analysis-type-selector", "value"),
     prevent_initial_call=True
 )
-def update_multi_country_risk_radar(selected_countries, analysis_type):
+def update_multi_country_risk_radar(selected_countries):
     """Update the risk radar chart for multiple countries if selected, else fallback to single-country logic."""
-    if not selected_countries or analysis_type != "risk":
+    if not selected_countries:
         return {}
     try:
         from visualizations.tab4_risk_spider import multi_country_risk_radar_with_slider

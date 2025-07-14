@@ -105,30 +105,31 @@ def region_widgets(region):
                                     html.Label("Select Year:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
                                     dcc.Dropdown(
                                         id="year-selector",
+                                        options=[],  # Options will be set by callback
                                         placeholder="Choose a year...",
                                         style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
                                         className="selector-dropdown"
                                     )
                                 ]
                             ),
-                            html.Div(
-                                style={"display": "flex", "flexDirection": "column", "gap": "8px"},
-                                children=[
-                                    html.Label("Analysis Type:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
-                                    dcc.Dropdown(
-                                        id="analysis-type-selector",
-                                        options=[
-                                            {"label": "Risk Profile", "value": "risk"},
-                                            {"label": "Disaster Summary", "value": "disaster"},
-                                            {"label": "Economic Impact", "value": "economic"},
-                                            {"label": "Vulnerability Analysis", "value": "vulnerability"}
-                                        ],
-                                        value="risk",
-                                        style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
-                                        className="selector-dropdown"
-                                    )
-                                ]
-                            ),
+                            # html.Div(
+                            #     style={"display": "flex", "flexDirection": "column", "gap": "8px"},
+                            #     children=[
+                            #         html.Label("Analysis Type:", style={"color": "white", "fontWeight": "bold", "fontSize": "14px"}),
+                            #         dcc.Dropdown(
+                            #             id="analysis-type-selector",
+                            #             options=[
+                            #                 {"label": "Risk Profile", "value": "risk"},
+                            #                 {"label": "Disaster Summary", "value": "disaster"},
+                            #                 {"label": "Economic Impact", "value": "economic"},
+                            #                 {"label": "Vulnerability Analysis", "value": "vulnerability"}
+                            #             ],
+                            #             value="risk",
+                            #             style={"backgroundColor": "rgba(255, 255, 255, 0.1)", "color": "white", "border": "1px solid rgba(52, 152, 219, 0.5)"},
+                            #             className="selector-dropdown"
+                            #         )
+                            #     ]
+                            # ),
                             html.Div(
                                 style={"display": "flex", "flexDirection": "column", "gap": "8px"},
                                 children=[
@@ -152,14 +153,39 @@ def region_widgets(region):
                     )
                 ]
             ),
+             
             # Metrics Card
             html.Div(
                 className="widget widget--metrics",
                 style={"gridColumn": "1 / 2", "gridRow": "2 / 4", "background": "rgba(255, 107, 107, 0.1)", "border": "1px solid rgba(255, 107, 107, 0.3)", "height": "100%"},
-                children=[
+                                children=[
+                    # Hidden store to track click state
+                    dcc.Store(id="click-state", data={"show_disaster": False}),
                     html.Div(
                         id="metrics-card",
-                        style={"padding": "20px", "height": "100%", "overflowY": "auto"}
+                        style={"padding": "20px", "height": "100%", "overflowY": "auto", "position": "relative"}
+                    ),
+                    # Small reset button in top right corner
+                    html.Button(
+                        "↺",
+                        id="reset-metrics-btn",
+                        style={
+                            "position": "absolute",
+                            "top": "10px",
+                            "right": "10px",
+                            "backgroundColor": "rgba(255,255,255,0.1)",
+                            "color": "white",
+                            "border": "1px solid rgba(255,255,255,0.3)",
+                            "borderRadius": "50%",
+                            "width": "30px",
+                            "height": "30px",
+                            "cursor": "pointer",
+                            "fontSize": "16px",
+                            "display": "flex",
+                            "alignItems": "center",
+                            "justifyContent": "center",
+                            "zIndex": "10"
+                        }
                     )
                 ]
             ),
@@ -170,7 +196,8 @@ def region_widgets(region):
                 children=[
                     dcc.Graph(
                         id="region-hotspot-map",
-                        config={"displayModeBar": False}
+                        config={"displayModeBar": False},
+                        clear_on_unhover=True
                     )
                 ]
             ),
